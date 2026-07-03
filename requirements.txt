@@ -1,0 +1,27 @@
+# =====================================================
+# GraphRAG Project
+# =====================================================
+
+# ---------- PDF ----------
+PyMuPDF>=1.26.0
+
+# ---------- Gemini ----------
+google-genai>=1.30.0
+
+# ---------- Validation ----------
+pydantic>=2.11.0
+
+# ---------- Environment ----------
+python-dotenv>=1.1.0
+
+# ---------- Graph ----------
+networkx>=3.5
+
+# ---------- Utilities ----------
+typing_extensions>=4.14.0
+
+# ---------- Optional Progress Bars ----------
+tqdm>=4.67.0
+
+# Visualization
+pyvis>=0.3.2

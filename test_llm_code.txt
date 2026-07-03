@@ -1,0 +1,381 @@
+base.py:
+
+'''
+This file is so that each llm that in the future that is created inherits the functions in this file 
+This is so that each llm uses these fucntions to do each task 
+
+for eg :
+class GeminiProvider:
+    def generate(self, prompt):
+        ...
+    def generate_json(self, prompt):
+        ...
+class OpenAIProvider:
+    def ask(self, prompt):
+        ...
+    def extract_json(self, prompt):
+        ...
+
+'generate' and 'ask' does the same exact task but has different funciton names
+base.py is implemented to avoid that
+'''
+from abc import ABC, abstractmethod
+
+class BaseLLMProvider(ABC):
+    """
+    Abstract base class for all LLM providers.
+    """
+
+    def __init__(self, api_key: str, model: str):
+        self.api_key = api_key
+        self.model = model
+
+    # -------------------------------------------------
+    # Required Methods
+    # -------------------------------------------------
+
+    @abstractmethod
+    def generate(self, prompt: str, temperature: float = 0.2,) -> str:
+        """
+        Generate a text response.
+        Must be implemented by every provider.
+        """
+        pass
+
+    @abstractmethod
+    def generate_json( self, prompt: str, temperature: float = 0.0 ) -> str:
+        """
+        Generate a structured JSON response.
+        Must be implemented by every provider.
+        """
+        pass
+
+    # -------------------------------------------------
+    # Optional Utility Methods
+    # -------------------------------------------------
+
+    def __repr__(self) :
+        return (
+            f"{self.__class__.__name__}"
+            f"(model='{self.model}')"
+        )
+
+
+factory.py:
+
+"""
+factory.py
+
+Creates and returns the configured LLM provider.
+"""
+
+from llm.config import (
+    PROVIDER,
+    API_KEY,
+    MODEL,
+)
+
+from .gemini import GeminiProvider
+
+def get_provider():
+    """
+    Returns the configured LLM provider.
+    """
+    provider = PROVIDER.lower()
+
+    if provider == "gemini":
+        return GeminiProvider(
+            api_key=API_KEY,
+            model=MODEL,
+        )
+        
+    # Future providers
+    #
+    # elif provider == "groq":
+    #     return GroqProvider(...)
+    #
+    # elif provider == "ollama":
+    #     return OllamaProvider(...)
+
+    raise ValueError(f"Unsupported provider: {PROVIDER}")
+
+gemini.py :
+
+"""
+gemini.py
+
+Gemini provider implementation.
+
+Responsibilities
+----------------
+✓ Initialize Gemini client
+✓ Send prompts
+✓ Return text responses
+
+Does NOT
+---------
+✗ Parse JSON
+✗ Build prompts
+✗ Know about GraphRAG
+✗ Know about RAG
+"""
+
+from google import genai
+from .base import BaseLLMProvider
+
+class GeminiProvider(BaseLLMProvider):
+    """
+    Wrapper around Google's Gemini SDK.
+    """
+
+    def __init__( self, api_key: str, model: str = "gemini-2.5-pro"):
+        self.client = genai.Client(api_key=api_key)
+        self.model = model
+
+    # -------------------------------------------------
+    # Public Methods
+    # -------------------------------------------------
+
+    def generate(self, prompt: str, temperature: float = 0.2,) -> str:
+        """
+        Generate a response from Gemini.
+
+        Parameters
+        ----------
+        prompt : str
+            Prompt to send.
+        temperature : float
+            Controls randomness.
+
+        Returns
+        -------
+        str
+        """
+        response = self.client.models.generate_content(
+            model=self.model,
+            contents=prompt,
+            config={
+                "temperature": temperature,
+            },
+        )
+        return response.text
+
+    # -------------------------------------------------
+    def generate_json( self, prompt: str, temperature: float = 0.0 ) -> str:
+        """
+        Generate JSON output.
+
+        Returns raw JSON text.
+        Parsing happens elsewhere.
+        """
+        response = self.client.models.generate_content(
+            model=self.model,
+            contents=prompt,
+            config={
+                "temperature": temperature,
+                "response_mime_type": "application/json",
+            },
+        )
+        return response.text
+
+client.py :
+
+"""
+client.py
+
+High-level interface used by the rest of the project.
+
+The rest of the application should ONLY interact with this class,
+never directly with GeminiProvider, OpenAIProvider, etc.
+
+Architecture
+
+GraphRAG
+    │
+    ▼
+LLMClient
+    │
+    ▼
+Factory
+    │
+    ▼
+Gemini / OpenAI / Groq / Ollama
+"""
+
+from llm.provider.factory import get_provider
+
+class LLMClient:
+    """
+    High-level interface for interacting with LLMs.
+    """
+
+    def __init__(self):
+        self.provider = get_provider()
+
+    # ---------------------------------------------------------
+    # Public Methods
+    # ---------------------------------------------------------
+
+    def generate( self, prompt: str, temperature: float = 0.2,) -> str:
+        """
+        Generate a normal text response.
+        """
+        return self.provider.generate(
+            prompt=prompt,
+            temperature=temperature,
+        )
+
+    def generate_json( self, prompt: str, temperature: float = 0.0 ) -> str:
+        """
+        Generate a JSON response.
+
+        Returns
+        -------
+        str
+            Raw JSON string.
+        """
+
+        return self.provider.generate_json(
+            prompt=prompt,
+            temperature=temperature,
+        )
+
+    # ---------------------------------------------------------
+
+    def __repr__(self):
+
+        return (
+            f"LLMClient(provider={self.provider})"
+        )
+
+
+config.py() :
+
+'''
+Central configuration for the LLM layer:
+
+-> loads API keys from the .env file and stores
+-> this file is so that if you want to edit your llm, this is the only file i need to edit
+-> for eg, if i want to switch from gemini to openai , i can just change the 
+'''
+
+
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env
+load_dotenv()
+
+# =====================================================
+# Provider Configuration
+# =====================================================
+
+# Current provider
+PROVIDER = "gemini"
+
+# Default model
+MODEL = "gemini-2.5-pro"
+
+# API Key
+API_KEY = os.getenv("GEMINI_API_KEY")
+
+# =====================================================
+# Generation Parameters
+# =====================================================
+
+DEFAULT_TEMPERATURE = 0.2
+
+DEFAULT_MAX_OUTPUT_TOKENS = 8192
+
+DEFAULT_TOP_P = 0.95
+
+# =====================================================
+# Validation
+# =====================================================
+
+if API_KEY is None:
+    raise ValueError(
+        "GEMINI_API_KEY not found. "
+        "Please add it to your .env file."
+    )
+
+
+prompts.py :
+
+'''
+this file stores all the prompts that are going to be used in this project 
+'''
+"""
+prompt.py
+
+Stores all prompt templates used by the project.
+
+For now, only the extraction prompt is implemented.
+More prompts can be added later for routing,
+answer generation and summarization.
+"""
+
+from graph.ingestion.document import Document
+
+
+def build_extraction_prompt(document: Document) -> str:
+    """
+    Builds the prompt used for entity extraction.
+
+    Parameters
+    ----------
+    document : Document
+
+    Returns
+    -------
+    str
+    """
+
+    prompt = f"""
+                You are an expert AI researcher.Your task is to extract structured knowledge from the following
+                research paper.
+                Return ONLY valid JSON.
+                The JSON MUST follow this schema.
+                {{
+                    "paper": {{
+                        "id": "",
+                        "title": "",
+                        "year": "",
+                        "conference": ""
+                    }},
+                    "authors": [],
+                    "institutions": [],
+                    "methods": [],
+                    "architectures": [],
+                    "datasets": [],
+                    "benchmarks": [],
+                    "tasks": [],
+                    "metrics": [],
+                    "topics": [],
+                    "relationships": []
+                }}
+                Relationship format:
+                {{
+                    "source": "",
+                    "relationship": "",
+                    "target": ""
+                }}
+
+                Allowed relationship types:
+
+                AUTHORED
+                PROPOSES
+                USES
+                EVALUATED_ON
+                PERFORMS
+                BASED_ON
+                IMPROVES_UPON
+                BELONGS_TO
+                AFFILIATED_WITH
+                PUBLISHED_AT
+
+                Research Paper
+                ==============
+                {document.text}
+    """
+    return prompt

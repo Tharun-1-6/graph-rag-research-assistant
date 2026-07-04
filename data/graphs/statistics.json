@@ -1,0 +1,143 @@
+{
+    "summary": {
+        "total_nodes": 381,
+        "total_edges": 370,
+        "number_of_papers": 5,
+        "number_of_entities": 376,
+        "density": 0.002556,
+        "average_degree": 1.94
+    },
+    "nodes_by_type": {
+        "Paper": 5,
+        "Author": 23,
+        "Institution": 7,
+        "Method": 96,
+        "Architecture": 65,
+        "Dataset": 52,
+        "Benchmark": 25,
+        "Task": 46,
+        "Metric": 19,
+        "Topic": 39,
+        "Conference": 4
+    },
+    "edges_by_relationship": {
+        "AUTHORED": 23,
+        "PROPOSES": 185,
+        "PUBLISHED_AT": 5,
+        "AFFILIATED_WITH": 23,
+        "EVALUATED_ON": 34,
+        "PERFORMS": 53,
+        "RELATED_TO": 7,
+        "USES": 26,
+        "IMPROVES_UPON": 14
+    },
+    "connected_components": {
+        "count": 115,
+        "largest_connected_component_size": 265,
+        "average_path_length_lcc": 3.8021
+    },
+    "most_connected_authors": [
+        {
+            "id": "aidan_n_gomez",
+            "name": "Aidan N. Gomez",
+            "degree": 3
+        },
+        {
+            "id": "ashish_vaswani",
+            "name": "Ashish Vaswani",
+            "degree": 2
+        },
+        {
+            "id": "noam_shazeer",
+            "name": "Noam Shazeer",
+            "degree": 2
+        },
+        {
+            "id": "niki_parmar",
+            "name": "Niki Parmar",
+            "degree": 2
+        },
+        {
+            "id": "jakob_uszkoreit",
+            "name": "Jakob Uszkoreit",
+            "degree": 2
+        },
+        {
+            "id": "llion_jones",
+            "name": "Llion Jones",
+            "degree": 2
+        },
+        {
+            "id": "łukasz_kaiser",
+            "name": "Łukasz Kaiser",
+            "degree": 2
+        },
+        {
+            "id": "illia_polosukhin",
+            "name": "Illia Polosukhin",
+            "degree": 2
+        },
+        {
+            "id": "jacob_devlin",
+            "name": "Jacob Devlin",
+            "degree": 2
+        },
+        {
+            "id": "ming_wei_chang",
+            "name": "Ming-Wei Chang",
+            "degree": 2
+        }
+    ],
+    "most_connected_methods": [
+        {
+            "id": "bert",
+            "name": "BERT",
+            "degree": 26
+        },
+        {
+            "id": "roberta",
+            "name": "RoBERTa",
+            "degree": 24
+        },
+        {
+            "id": "bert_pretraining",
+            "name": "BERT pretraining",
+            "degree": 7
+        },
+        {
+            "id": "transformer",
+            "name": "Transformer",
+            "degree": 5
+        },
+        {
+            "id": "self_attention",
+            "name": "Self-attention",
+            "degree": 5
+        },
+        {
+            "id": "attention_mechanism",
+            "name": "Attention mechanism",
+            "degree": 3
+        },
+        {
+            "id": "encoder_decoder_architecture",
+            "name": "Encoder-Decoder Architecture",
+            "degree": 3
+        },
+        {
+            "id": "segment_pairnsp",
+            "name": "SEGMENT-PAIR+NSP",
+            "degree": 3
+        },
+        {
+            "id": "full_sentences",
+            "name": "FULL-SENTENCES",
+            "degree": 3
+        },
+        {
+            "id": "doc_sentences",
+            "name": "DOC-SENTENCES",
+            "degree": 3
+        }
+    ]
+}

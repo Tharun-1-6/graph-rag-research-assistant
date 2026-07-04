@@ -57,12 +57,17 @@ class EdgeFactory:
         if relationship.target not in self.graph:
             return False
 
+        attrs = {
+            "relationship": relationship.relationship,
+            "confidence": relationship.confidence,
+        }
+        # Filter out None values
+        attrs = {k: v for k, v in attrs.items() if v is not None}
+
         self.graph.add_edge(
             relationship.source,
             relationship.target,
-            relationship=relationship.relationship,
-            confidence=relationship.confidence,
-            metadata=relationship.metadata,
+            **attrs
         )
 
         return True

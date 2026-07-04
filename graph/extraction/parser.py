@@ -165,8 +165,16 @@ class ExtractionParser:
                 "relationships",
                 [],
             ):
+                src = relationship.get("source", "")
+                tgt = relationship.get("target", "")
                 relationships.append(
-                    Relationship(**relationship)
+                    Relationship(
+                        source=self._generate_id(src) if src else "",
+                        relationship=relationship.get("relationship", ""),
+                        target=self._generate_id(tgt) if tgt else "",
+                        confidence=relationship.get("confidence", 1.0),
+                        metadata=relationship.get("metadata", {}),
+                    )
                 )
 
             return ExtractionResult(

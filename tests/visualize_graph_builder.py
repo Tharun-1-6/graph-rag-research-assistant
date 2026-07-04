@@ -1,3 +1,4 @@
+# pyrefly: ignore [missing-import]
 from pyvis.network import Network
 
 from graph.graph_builder.serializer import GraphSerializer
@@ -13,6 +14,7 @@ net = Network(
     bgcolor="#111111",
     font_color="white",
     directed=True,
+    notebook=False,
 )
 
 net.barnes_hut()
@@ -42,6 +44,6 @@ for source, target, data in graph.edges(data=True):
         label=relation,
     )
 
-net.show("graph.html")
+net.write_html("tests/graph.html")
 
-print("graph.html created.")
+print("tests/graph.html created.")

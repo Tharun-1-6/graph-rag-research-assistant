@@ -27,8 +27,8 @@ import networkx as nx
 
 from graph.extraction.models import Entity, Relationship, ExtractionResult
 
-from .node_factory import create_node
-from .edge_factory import create_edge
+from .node_factory import NodeFactory
+from .edge_factory import EdgeFactory
 
 
 class GraphManager:
@@ -38,6 +38,8 @@ class GraphManager:
 
     def __init__(self):
         self.graph = nx.MultiDiGraph()
+        self.node_factory = NodeFactory(self.graph)
+        self.edge_factory = EdgeFactory(self.graph)
 
     # =====================================================
     # Node Operations
@@ -47,19 +49,13 @@ class GraphManager:
         """
         Add a single entity node.
         """
-
-        node_id, attributes = create_node(entity)
-
-        if not self.graph.has_node(node_id):
-            self.graph.add_node(node_id, **attributes)
+        self.node_factory.add_entity(entity)
 
     def add_entities(self, entities: List[Entity]):
         """
         Add multiple entity nodes.
         """
-
-        for entity in entities:
-            self.add_entity(entity)
+        self.node_factory.add_entities(entities)
 
     # =====================================================
     # Edge Operations
@@ -69,14 +65,7 @@ class GraphManager:
         """
         Add a graph edge.
         """
-
-        source, target, attributes = create_edge(relationship)
-
-        self.graph.add_edge(
-            source,
-            target,
-            **attributes,
-        )
+        self.edge_factory.add_relationship(relationship)
 
     def add_relationships(
         self,

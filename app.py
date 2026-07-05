@@ -1,11 +1,6 @@
-import argparse
-import json
+import os
 import sys
-from pathlib import Path
-
-from ingestion.ingest import IngestionPipeline
-from retrieval.retrieve import RetrievalPipeline
-from context_builder import build_context
+from flask import Flask, render_template, request, jsonify
 
 # Reconfigure stdout/stderr to use UTF-8 to prevent 'charmap' encode crashes on Windows
 try:
@@ -16,47 +11,40 @@ try:
 except Exception:
     pass
 
+# Initialize Flask application with static and templates folders
+app = Flask(__name__,
+            static_folder="static",
+            template_folder="templates")
 
-def run_rag(query: str, ingestion_pipeline: IngestionPipeline, retrieval_pipeline: RetrievalPipeline):
-    """Executes RAG by running ingestion if the database index does not exist,
+@app.route("/")
+def index():
+    """Serve the clean chat interface."""
+    return render_template("index.html")
 
-    then retrieves the top matched documents.
+@app.route("/api/chat", methods=["POST"])
+def chat():
     """
-    # Run ingestion if the index does not exist or is empty
-    if not retrieval_pipeline.index_exists():
-        print("Local FAISS database index not found. Running ingestion pipeline...")
-        ingestion_pipeline.run()
-
-    print(f"\nRetrieving relevant chunks for query: '{query}'...")
-    results = retrieval_pipeline.run(query, k=5)
-    return results
-
-
-def main():
-    """Run the CLI-based RAG app."""
-    parser = argparse.ArgumentParser(description="Ask questions against a local RAG index")
-    parser.add_argument("query", nargs="?", help="Question to search for")
-    args = parser.parse_args()
-
-    query = args.query or input("Enter your question: ").strip()
-    if not query:
-        print("No question provided.")
-        return
-
-    # Instantiate the modular pipelines
-    ingestion_pipeline = IngestionPipeline()
-    retrieval_pipeline = RetrievalPipeline()
-
-    # Execute RAG by passing the query, ingestion pipeline, and retrieval pipeline
+    POST route to receive chat requests and return a dummy response.
+    Expects json payload: {"message": "..."}
+    """
     try:
-        retrieval_output = run_rag(query, ingestion_pipeline, retrieval_pipeline)
-        llm_context = build_context(retrieval_output)
+        data = request.get_json() or {}
+        user_message = data.get("message", "").strip()
 
-        # Pretty print the final LLM context JSON structure to console
-        print(json.dumps(llm_context, indent=4, ensure_ascii=False))
+        if not user_message:
+            return jsonify({"error": "Message content cannot be empty."}), 400
+
+        # Dummy response logic for now - no integration with RAG/LLM yet
+        mock_response = {
+            "answer": f"This is a placeholder response from the Flask server. I received your message: '{user_message}'. Full RAG integration coming next!",
+            "status": "success"
+        }
+        return jsonify(mock_response)
+
     except Exception as e:
-        print(f"Error executing RAG pipeline: {e}")
-
+        return jsonify({"error": f"An error occurred: {str(e)}"}), 500
 
 if __name__ == "__main__":
-    main()
+    # Run the server on port 5000 in debug mode
+    print("Starting Flask server on http://127.0.0.1:5000 ...")
+    app.run(host="127.0.0.1", port=5000, debug=True)

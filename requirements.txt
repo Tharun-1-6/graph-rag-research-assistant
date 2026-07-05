@@ -33,3 +33,7 @@ langchain-text-splitters
 faiss-cpu
 pypdf
 sentence-transformers
+
+# Web Application
+flask
+

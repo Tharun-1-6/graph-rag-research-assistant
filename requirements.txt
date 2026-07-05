@@ -25,3 +25,11 @@ tqdm>=4.67.0
 
 # Visualization
 pyvis>=0.3.2
+
+# Vector RAG Dependencies
+langchain
+langchain-community
+langchain-text-splitters
+faiss-cpu
+pypdf
+sentence-transformers

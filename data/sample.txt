@@ -1,0 +1,4 @@
+This project is a beginner-friendly Retrieval-Augmented Generation (RAG) application built with Python and LangChain.
+It shows how to load local documents, split them into chunks, create embeddings with HuggingFace, and store them in a FAISS index.
+The app can answer questions by retrieving the most relevant chunks from the local database.
+The design is modular so the ingestion, retrieval, and user interface parts are separated into different folders.

@@ -1,0 +1,483 @@
+{
+    "nodes": [
+        {
+            "id": "attention_is_all_you_need",
+            "type": "Paper",
+            "title": "Attention Is All You Need",
+            "year": 2017,
+            "conference": "NIPS 2017",
+            "abstract": null,
+            "metadata": {}
+        },
+        {
+            "id": "ashish_vaswani",
+            "type": "Author",
+            "name": "Ashish Vaswani",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "noam_shazeer",
+            "type": "Author",
+            "name": "Noam Shazeer",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "niki_parmar",
+            "type": "Author",
+            "name": "Niki Parmar",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "jakob_uszkoreit",
+            "type": "Author",
+            "name": "Jakob Uszkoreit",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "llion_jones",
+            "type": "Author",
+            "name": "Llion Jones",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "aidan_n_gomez",
+            "type": "Author",
+            "name": "Aidan N. Gomez",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "łukasz_kaiser",
+            "type": "Author",
+            "name": "Łukasz Kaiser",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "illia_polosukhin",
+            "type": "Author",
+            "name": "Illia Polosukhin",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "google_brain",
+            "type": "Institution",
+            "name": "Google Brain",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "google_research",
+            "type": "Institution",
+            "name": "Google Research",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "university_of_toronto",
+            "type": "Institution",
+            "name": "University of Toronto",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "attention_mechanism",
+            "type": "Method",
+            "name": "Attention mechanism",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "self_attention",
+            "type": "Method",
+            "name": "Self-attention",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "scaled_dot_product_attention",
+            "type": "Method",
+            "name": "Scaled Dot-Product Attention",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "multi_head_attention",
+            "type": "Method",
+            "name": "Multi-Head Attention",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "positional_encoding",
+            "type": "Method",
+            "name": "Positional Encoding",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "residual_connections",
+            "type": "Method",
+            "name": "Residual Connections",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "layer_normalization",
+            "type": "Method",
+            "name": "Layer Normalization",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "position_wise_feed_forward_networks",
+            "type": "Method",
+            "name": "Position-wise Feed-Forward Networks",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "learned_embeddings",
+            "type": "Method",
+            "name": "Learned Embeddings",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "softmax_function",
+            "type": "Method",
+            "name": "Softmax function",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "dropout",
+            "type": "Method",
+            "name": "Dropout",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "label_smoothing",
+            "type": "Method",
+            "name": "Label Smoothing",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "adam_optimizer",
+            "type": "Method",
+            "name": "Adam optimizer",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "byte_pair_encoding",
+            "type": "Method",
+            "name": "Byte-pair encoding",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "word_piece_vocabulary",
+            "type": "Method",
+            "name": "Word-piece vocabulary",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "beam_search",
+            "type": "Method",
+            "name": "Beam search",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "length_penalty",
+            "type": "Method",
+            "name": "Length penalty",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "additive_attention",
+            "type": "Method",
+            "name": "Additive attention",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "dot_product_attention",
+            "type": "Method",
+            "name": "Dot-product attention",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "transformer",
+            "type": "Architecture",
+            "name": "Transformer",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "encoder_decoder_architecture",
+            "type": "Architecture",
+            "name": "Encoder-Decoder architecture",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "recurrent_neural_networks_rnns",
+            "type": "Architecture",
+            "name": "Recurrent Neural Networks (RNNs)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "long_short_term_memory_lstm",
+            "type": "Architecture",
+            "name": "Long Short-Term Memory (LSTM)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "gated_recurrent_units_grus",
+            "type": "Architecture",
+            "name": "Gated Recurrent Units (GRUs)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "convolutional_neural_networks_cnns",
+            "type": "Architecture",
+            "name": "Convolutional Neural Networks (CNNs)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "extended_neural_gpu",
+            "type": "Architecture",
+            "name": "Extended Neural GPU",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "bytenet",
+            "type": "Architecture",
+            "name": "ByteNet",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "convs2s",
+            "type": "Architecture",
+            "name": "ConvS2S",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "end_to_end_memory_networks",
+            "type": "Architecture",
+            "name": "End-to-end memory networks",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "deep_att_posunk",
+            "type": "Architecture",
+            "name": "Deep-Att + PosUnk",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "gnmt_rl",
+            "type": "Architecture",
+            "name": "GNMT + RL",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "moe",
+            "type": "Architecture",
+            "name": "MoE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "wmt_2014_english_german_dataset",
+            "type": "Dataset",
+            "name": "WMT 2014 English-German dataset",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "wmt_2014_english_french_dataset",
+            "type": "Dataset",
+            "name": "WMT 2014 English-French dataset",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "newstest2014",
+            "type": "Dataset",
+            "name": "newstest2014",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "newstest2013",
+            "type": "Dataset",
+            "name": "newstest2013",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "wmt_2014_english_to_german_translation_task",
+            "type": "Benchmark",
+            "name": "WMT 2014 English-to-German translation task",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "wmt_2014_english_to_french_translation_task",
+            "type": "Benchmark",
+            "name": "WMT 2014 English-to-French translation task",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "sequence_transduction",
+            "type": "Task",
+            "name": "Sequence transduction",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "machine_translation",
+            "type": "Task",
+            "name": "Machine Translation",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "language_modeling",
+            "type": "Task",
+            "name": "Language Modeling",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "reading_comprehension",
+            "type": "Task",
+            "name": "Reading Comprehension",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "abstractive_summarization",
+            "type": "Task",
+            "name": "Abstractive Summarization",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "textual_entailment",
+            "type": "Task",
+            "name": "Textual Entailment",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "learning_task_independent_sentence_representations",
+            "type": "Task",
+            "name": "Learning task-independent sentence representations",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "simple_language_question_answering",
+            "type": "Task",
+            "name": "Simple-language question answering",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "bleu_score",
+            "type": "Metric",
+            "name": "BLEU score",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "perplexity_ppl",
+            "type": "Metric",
+            "name": "Perplexity (PPL)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "training_cost_flops",
+            "type": "Metric",
+            "name": "Training Cost (FLOPs)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "training_time",
+            "type": "Metric",
+            "name": "Training Time",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "neural_machine_translation",
+            "type": "Topic",
+            "name": "Neural Machine Translation",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "attention_mechanisms",
+            "type": "Topic",
+            "name": "Attention Mechanisms",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "deep_learning_architectures",
+            "type": "Topic",
+            "name": "Deep Learning Architectures",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "sequence_modeling",
+            "type": "Topic",
+            "name": "Sequence Modeling",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "parallelization_in_deep_learning",
+            "type": "Topic",
+            "name": "Parallelization in Deep Learning",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "natural_language_processing",
+            "type": "Topic",
+            "name": "Natural Language Processing",
+            "description": null,
+            "metadata": {}
+        }
+    ],
+    "edges": []
+}

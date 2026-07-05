@@ -1,0 +1,840 @@
+{
+    "nodes": [
+        {
+            "id": "deberta_decoding_enhanced_bert_with_disentangled_attention",
+            "type": "Paper",
+            "title": "DEBERTA: DECODING-ENHANCED BERT WITH DISENTANGLED ATTENTION",
+            "year": 2021,
+            "conference": "ICLR 2021",
+            "abstract": null,
+            "metadata": {}
+        },
+        {
+            "id": "pengcheng_he",
+            "type": "Author",
+            "name": "Pengcheng He",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "xiaodong_liu",
+            "type": "Author",
+            "name": "Xiaodong Liu",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "jianfeng_gao",
+            "type": "Author",
+            "name": "Jianfeng Gao",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "weizhu_chen",
+            "type": "Author",
+            "name": "Weizhu Chen",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "microsoft_dynamics_365_ai",
+            "type": "Institution",
+            "name": "Microsoft Dynamics 365 AI",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "microsoft_research",
+            "type": "Institution",
+            "name": "Microsoft Research",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "disentangled_attention_mechanism",
+            "type": "Method",
+            "name": "Disentangled attention mechanism",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "enhanced_mask_decoder_emd",
+            "type": "Method",
+            "name": "Enhanced mask decoder (EMD)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "virtual_adversarial_training_vat",
+            "type": "Method",
+            "name": "Virtual adversarial training (VAT)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "scale_invariant_fine_tuning_sift",
+            "type": "Method",
+            "name": "Scale-invariant-Fine-Tuning (SiFT)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "masked_language_modeling_mlm",
+            "type": "Method",
+            "name": "Masked Language Modeling (MLM)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "auto_regressive_language_model_arlm",
+            "type": "Method",
+            "name": "Auto-regressive language model (ARLM)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "span_masking",
+            "type": "Method",
+            "name": "Span masking",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "replaced_token_detection_rtd",
+            "type": "Method",
+            "name": "Replaced token detection (RTD)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "layer_normalization",
+            "type": "Method",
+            "name": "Layer normalization",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "adam_optimizer",
+            "type": "Method",
+            "name": "Adam optimizer",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "weight_decay",
+            "type": "Method",
+            "name": "Weight decay",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "dynamic_data_batching",
+            "type": "Method",
+            "name": "Dynamic data batching",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "gradient_clipping",
+            "type": "Method",
+            "name": "Gradient Clipping",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "relative_position_embedding",
+            "type": "Method",
+            "name": "Relative position embedding",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "absolute_position_embedding",
+            "type": "Method",
+            "name": "Absolute position embedding",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "deberta",
+            "type": "Architecture",
+            "name": "DeBERTa",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "bert",
+            "type": "Architecture",
+            "name": "BERT",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "roberta",
+            "type": "Architecture",
+            "name": "RoBERTa",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "transformer",
+            "type": "Architecture",
+            "name": "Transformer",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "gpt",
+            "type": "Architecture",
+            "name": "GPT",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "xlnet",
+            "type": "Architecture",
+            "name": "XLNet",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "unilm",
+            "type": "Architecture",
+            "name": "UniLM",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "electra",
+            "type": "Architecture",
+            "name": "ELECTRA",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "t5",
+            "type": "Architecture",
+            "name": "T5",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "alum",
+            "type": "Architecture",
+            "name": "ALUM",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "structbert",
+            "type": "Architecture",
+            "name": "StructBERT",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "erine",
+            "type": "Architecture",
+            "name": "ERINE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "albert",
+            "type": "Architecture",
+            "name": "ALBERT",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "megatron",
+            "type": "Architecture",
+            "name": "Megatron",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "gpt_2",
+            "type": "Architecture",
+            "name": "GPT-2",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "transformer_xl",
+            "type": "Architecture",
+            "name": "Transformer-XL",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "deberta_ap",
+            "type": "Architecture",
+            "name": "DeBERTa-AP",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "deberta_mt",
+            "type": "Architecture",
+            "name": "DeBERTa-MT",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "debertartd",
+            "type": "Architecture",
+            "name": "DeBERTaRTD",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "wikipedia",
+            "type": "Dataset",
+            "name": "Wikipedia",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "bookcorpus",
+            "type": "Dataset",
+            "name": "BookCorpus",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "openwebtext",
+            "type": "Dataset",
+            "name": "OPENWEBTEXT",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "stories",
+            "type": "Dataset",
+            "name": "STORIES",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "glue",
+            "type": "Dataset",
+            "name": "GLUE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "superglue",
+            "type": "Dataset",
+            "name": "SuperGLUE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "mnli",
+            "type": "Dataset",
+            "name": "MNLI",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "squad_v11",
+            "type": "Dataset",
+            "name": "SQuAD v1.1",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "squad_v20",
+            "type": "Dataset",
+            "name": "SQuAD v2.0",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "race",
+            "type": "Dataset",
+            "name": "RACE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "record",
+            "type": "Dataset",
+            "name": "ReCoRD",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "swag",
+            "type": "Dataset",
+            "name": "SWAG",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "conll_2003",
+            "type": "Dataset",
+            "name": "CoNLL-2003",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "wikitext_103",
+            "type": "Dataset",
+            "name": "Wikitext-103",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "cola",
+            "type": "Dataset",
+            "name": "CoLA",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "qqp",
+            "type": "Dataset",
+            "name": "QQP",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "sst_2",
+            "type": "Dataset",
+            "name": "SST-2",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "sts_b",
+            "type": "Dataset",
+            "name": "STS-B",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "qnli",
+            "type": "Dataset",
+            "name": "QNLI",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "rte",
+            "type": "Dataset",
+            "name": "RTE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "mrpc",
+            "type": "Dataset",
+            "name": "MRPC",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "wsc",
+            "type": "Dataset",
+            "name": "WSC",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "boolq",
+            "type": "Dataset",
+            "name": "BoolQ",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "copa",
+            "type": "Dataset",
+            "name": "COPA",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "cb",
+            "type": "Dataset",
+            "name": "CB",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "wic",
+            "type": "Dataset",
+            "name": "WiC",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "multirc",
+            "type": "Dataset",
+            "name": "MultiRC",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "commoncrawl",
+            "type": "Dataset",
+            "name": "CommonCrawl",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "cc_news",
+            "type": "Dataset",
+            "name": "CC-News",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "giga5",
+            "type": "Dataset",
+            "name": "Giga5",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "clueweb",
+            "type": "Dataset",
+            "name": "ClueWeb",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "glue_benchmark",
+            "type": "Benchmark",
+            "name": "GLUE benchmark",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "superglue_benchmark",
+            "type": "Benchmark",
+            "name": "SuperGLUE benchmark",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "mnli_benchmark",
+            "type": "Benchmark",
+            "name": "MNLI benchmark",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "squad_v11_benchmark",
+            "type": "Benchmark",
+            "name": "SQuAD v1.1 benchmark",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "squad_v20_benchmark",
+            "type": "Benchmark",
+            "name": "SQuAD v2.0 benchmark",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "race_benchmark",
+            "type": "Benchmark",
+            "name": "RACE benchmark",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "record_benchmark",
+            "type": "Benchmark",
+            "name": "ReCoRD benchmark",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "swag_benchmark",
+            "type": "Benchmark",
+            "name": "SWAG benchmark",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "conll_2003_benchmark",
+            "type": "Benchmark",
+            "name": "CoNLL-2003 benchmark",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "wikitext_103_benchmark",
+            "type": "Benchmark",
+            "name": "Wikitext-103 benchmark",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "natural_language_processing_nlp",
+            "type": "Task",
+            "name": "Natural Language Processing (NLP)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "natural_language_understanding_nlu",
+            "type": "Task",
+            "name": "Natural Language Understanding (NLU)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "natural_language_generation_nlg",
+            "type": "Task",
+            "name": "Natural Language Generation (NLG)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "auto_regressive_language_modeling_arlm",
+            "type": "Task",
+            "name": "Auto-regressive Language Modeling (ARLM)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "question_answering_qa",
+            "type": "Task",
+            "name": "Question Answering (QA)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "natural_language_inference_nli",
+            "type": "Task",
+            "name": "Natural Language Inference (NLI)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "named_entity_recognition_ner",
+            "type": "Task",
+            "name": "Named Entity Recognition (NER)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "linguistic_acceptability",
+            "type": "Task",
+            "name": "Linguistic Acceptability",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "sentiment_analysis",
+            "type": "Task",
+            "name": "Sentiment Analysis",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "text_similarity",
+            "type": "Task",
+            "name": "Text Similarity",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "paraphrase_detection",
+            "type": "Task",
+            "name": "Paraphrase Detection",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "coreference_resolution",
+            "type": "Task",
+            "name": "Coreference Resolution",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "word_sense_disambiguation_wsd",
+            "type": "Task",
+            "name": "Word Sense Disambiguation (WSD)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "machine_reading_comprehension_mrc",
+            "type": "Task",
+            "name": "Machine Reading Comprehension (MRC)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "commonsense_reasoning",
+            "type": "Task",
+            "name": "Commonsense Reasoning",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "text_classification",
+            "type": "Task",
+            "name": "Text Classification",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "accuracy_acc",
+            "type": "Metric",
+            "name": "Accuracy (Acc)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "f1_score_f1",
+            "type": "Metric",
+            "name": "F1 score (F1)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "exact_match_em",
+            "type": "Metric",
+            "name": "Exact Match (EM)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "matthews_correlation_coefficient_mcc",
+            "type": "Metric",
+            "name": "Matthews correlation coefficient (Mcc)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "pearson_correlation",
+            "type": "Metric",
+            "name": "Pearson correlation",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "spearman_correlation",
+            "type": "Metric",
+            "name": "Spearman correlation",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "perplexity_ppl",
+            "type": "Metric",
+            "name": "Perplexity (PPL)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "macro_average_score",
+            "type": "Metric",
+            "name": "Macro-average score",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "pre_trained_language_models_plms",
+            "type": "Topic",
+            "name": "Pre-trained Language Models (PLMs)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "transformer_architecture",
+            "type": "Topic",
+            "name": "Transformer architecture",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "self_attention",
+            "type": "Topic",
+            "name": "Self-attention",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "positional_encoding",
+            "type": "Topic",
+            "name": "Positional encoding",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "adversarial_training",
+            "type": "Topic",
+            "name": "Adversarial training",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "model_generalization",
+            "type": "Topic",
+            "name": "Model generalization",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "model_efficiency",
+            "type": "Topic",
+            "name": "Model efficiency",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "scaling_language_models",
+            "type": "Topic",
+            "name": "Scaling language models",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "compositional_generalization",
+            "type": "Topic",
+            "name": "Compositional generalization",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "neural_language_modeling",
+            "type": "Topic",
+            "name": "Neural language modeling",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "content_embedding",
+            "type": "Topic",
+            "name": "Content embedding",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "position_embedding",
+            "type": "Topic",
+            "name": "Position embedding",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "masked_token_prediction",
+            "type": "Topic",
+            "name": "Masked token prediction",
+            "description": null,
+            "metadata": {}
+        }
+    ],
+    "edges": []
+}

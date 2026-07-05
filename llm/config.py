@@ -40,8 +40,6 @@ DEFAULT_TOP_P = 0.95
 # Validation
 # =====================================================
 
+# Optional validation handled at client startup instead of module import time.
 if LLM_API_KEY is None:
-    raise ValueError(
-        "GEMINI_API_KEY not found. "
-        "Please add it to your .env file."
-    )
+    pass

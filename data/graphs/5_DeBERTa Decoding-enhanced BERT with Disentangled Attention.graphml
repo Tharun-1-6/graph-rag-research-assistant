@@ -1,0 +1,608 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="node" attr.name="name" attr.type="string" />
+  <key id="d4" for="node" attr.name="metadata" attr.type="string" />
+  <key id="d3" for="node" attr.name="conference" attr.type="string" />
+  <key id="d2" for="node" attr.name="year" attr.type="long" />
+  <key id="d1" for="node" attr.name="title" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="deberta_decoding_enhanced_bert_with_disentangled_attention">
+      <data key="d0">Paper</data>
+      <data key="d1">DEBERTA: DECODING-ENHANCED BERT WITH DISENTANGLED ATTENTION</data>
+      <data key="d2">2021</data>
+      <data key="d3">ICLR 2021</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="pengcheng_he">
+      <data key="d0">Author</data>
+      <data key="d5">Pengcheng He</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="xiaodong_liu">
+      <data key="d0">Author</data>
+      <data key="d5">Xiaodong Liu</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="jianfeng_gao">
+      <data key="d0">Author</data>
+      <data key="d5">Jianfeng Gao</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="weizhu_chen">
+      <data key="d0">Author</data>
+      <data key="d5">Weizhu Chen</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="microsoft_dynamics_365_ai">
+      <data key="d0">Institution</data>
+      <data key="d5">Microsoft Dynamics 365 AI</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="microsoft_research">
+      <data key="d0">Institution</data>
+      <data key="d5">Microsoft Research</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="disentangled_attention_mechanism">
+      <data key="d0">Method</data>
+      <data key="d5">Disentangled attention mechanism</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="enhanced_mask_decoder_emd">
+      <data key="d0">Method</data>
+      <data key="d5">Enhanced mask decoder (EMD)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="virtual_adversarial_training_vat">
+      <data key="d0">Method</data>
+      <data key="d5">Virtual adversarial training (VAT)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="scale_invariant_fine_tuning_sift">
+      <data key="d0">Method</data>
+      <data key="d5">Scale-invariant-Fine-Tuning (SiFT)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="masked_language_modeling_mlm">
+      <data key="d0">Method</data>
+      <data key="d5">Masked Language Modeling (MLM)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="auto_regressive_language_model_arlm">
+      <data key="d0">Method</data>
+      <data key="d5">Auto-regressive language model (ARLM)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="span_masking">
+      <data key="d0">Method</data>
+      <data key="d5">Span masking</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="replaced_token_detection_rtd">
+      <data key="d0">Method</data>
+      <data key="d5">Replaced token detection (RTD)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="layer_normalization">
+      <data key="d0">Method</data>
+      <data key="d5">Layer normalization</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="adam_optimizer">
+      <data key="d0">Method</data>
+      <data key="d5">Adam optimizer</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="weight_decay">
+      <data key="d0">Method</data>
+      <data key="d5">Weight decay</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="dynamic_data_batching">
+      <data key="d0">Method</data>
+      <data key="d5">Dynamic data batching</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="gradient_clipping">
+      <data key="d0">Method</data>
+      <data key="d5">Gradient Clipping</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="relative_position_embedding">
+      <data key="d0">Method</data>
+      <data key="d5">Relative position embedding</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="absolute_position_embedding">
+      <data key="d0">Method</data>
+      <data key="d5">Absolute position embedding</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="deberta">
+      <data key="d0">Architecture</data>
+      <data key="d5">DeBERTa</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bert">
+      <data key="d0">Architecture</data>
+      <data key="d5">BERT</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="roberta">
+      <data key="d0">Architecture</data>
+      <data key="d5">RoBERTa</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="transformer">
+      <data key="d0">Architecture</data>
+      <data key="d5">Transformer</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="gpt">
+      <data key="d0">Architecture</data>
+      <data key="d5">GPT</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="xlnet">
+      <data key="d0">Architecture</data>
+      <data key="d5">XLNet</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="unilm">
+      <data key="d0">Architecture</data>
+      <data key="d5">UniLM</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="electra">
+      <data key="d0">Architecture</data>
+      <data key="d5">ELECTRA</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="t5">
+      <data key="d0">Architecture</data>
+      <data key="d5">T5</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="alum">
+      <data key="d0">Architecture</data>
+      <data key="d5">ALUM</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="structbert">
+      <data key="d0">Architecture</data>
+      <data key="d5">StructBERT</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="erine">
+      <data key="d0">Architecture</data>
+      <data key="d5">ERINE</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="albert">
+      <data key="d0">Architecture</data>
+      <data key="d5">ALBERT</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="megatron">
+      <data key="d0">Architecture</data>
+      <data key="d5">Megatron</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="gpt_2">
+      <data key="d0">Architecture</data>
+      <data key="d5">GPT-2</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="transformer_xl">
+      <data key="d0">Architecture</data>
+      <data key="d5">Transformer-XL</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="deberta_ap">
+      <data key="d0">Architecture</data>
+      <data key="d5">DeBERTa-AP</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="deberta_mt">
+      <data key="d0">Architecture</data>
+      <data key="d5">DeBERTa-MT</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="debertartd">
+      <data key="d0">Architecture</data>
+      <data key="d5">DeBERTaRTD</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="wikipedia">
+      <data key="d0">Dataset</data>
+      <data key="d5">Wikipedia</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bookcorpus">
+      <data key="d0">Dataset</data>
+      <data key="d5">BookCorpus</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="openwebtext">
+      <data key="d0">Dataset</data>
+      <data key="d5">OPENWEBTEXT</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="stories">
+      <data key="d0">Dataset</data>
+      <data key="d5">STORIES</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="glue">
+      <data key="d0">Dataset</data>
+      <data key="d5">GLUE</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="superglue">
+      <data key="d0">Dataset</data>
+      <data key="d5">SuperGLUE</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="mnli">
+      <data key="d0">Dataset</data>
+      <data key="d5">MNLI</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="squad_v11">
+      <data key="d0">Dataset</data>
+      <data key="d5">SQuAD v1.1</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="squad_v20">
+      <data key="d0">Dataset</data>
+      <data key="d5">SQuAD v2.0</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="race">
+      <data key="d0">Dataset</data>
+      <data key="d5">RACE</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="record">
+      <data key="d0">Dataset</data>
+      <data key="d5">ReCoRD</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="swag">
+      <data key="d0">Dataset</data>
+      <data key="d5">SWAG</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="conll_2003">
+      <data key="d0">Dataset</data>
+      <data key="d5">CoNLL-2003</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="wikitext_103">
+      <data key="d0">Dataset</data>
+      <data key="d5">Wikitext-103</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="cola">
+      <data key="d0">Dataset</data>
+      <data key="d5">CoLA</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="qqp">
+      <data key="d0">Dataset</data>
+      <data key="d5">QQP</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="sst_2">
+      <data key="d0">Dataset</data>
+      <data key="d5">SST-2</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="sts_b">
+      <data key="d0">Dataset</data>
+      <data key="d5">STS-B</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="qnli">
+      <data key="d0">Dataset</data>
+      <data key="d5">QNLI</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="rte">
+      <data key="d0">Dataset</data>
+      <data key="d5">RTE</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="mrpc">
+      <data key="d0">Dataset</data>
+      <data key="d5">MRPC</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="wsc">
+      <data key="d0">Dataset</data>
+      <data key="d5">WSC</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="boolq">
+      <data key="d0">Dataset</data>
+      <data key="d5">BoolQ</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="copa">
+      <data key="d0">Dataset</data>
+      <data key="d5">COPA</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="cb">
+      <data key="d0">Dataset</data>
+      <data key="d5">CB</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="wic">
+      <data key="d0">Dataset</data>
+      <data key="d5">WiC</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="multirc">
+      <data key="d0">Dataset</data>
+      <data key="d5">MultiRC</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="commoncrawl">
+      <data key="d0">Dataset</data>
+      <data key="d5">CommonCrawl</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="cc_news">
+      <data key="d0">Dataset</data>
+      <data key="d5">CC-News</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="giga5">
+      <data key="d0">Dataset</data>
+      <data key="d5">Giga5</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="clueweb">
+      <data key="d0">Dataset</data>
+      <data key="d5">ClueWeb</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="glue_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d5">GLUE benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="superglue_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d5">SuperGLUE benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="mnli_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d5">MNLI benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="squad_v11_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d5">SQuAD v1.1 benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="squad_v20_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d5">SQuAD v2.0 benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="race_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d5">RACE benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="record_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d5">ReCoRD benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="swag_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d5">SWAG benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="conll_2003_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d5">CoNLL-2003 benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="wikitext_103_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d5">Wikitext-103 benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="natural_language_processing_nlp">
+      <data key="d0">Task</data>
+      <data key="d5">Natural Language Processing (NLP)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="natural_language_understanding_nlu">
+      <data key="d0">Task</data>
+      <data key="d5">Natural Language Understanding (NLU)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="natural_language_generation_nlg">
+      <data key="d0">Task</data>
+      <data key="d5">Natural Language Generation (NLG)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="auto_regressive_language_modeling_arlm">
+      <data key="d0">Task</data>
+      <data key="d5">Auto-regressive Language Modeling (ARLM)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="question_answering_qa">
+      <data key="d0">Task</data>
+      <data key="d5">Question Answering (QA)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="natural_language_inference_nli">
+      <data key="d0">Task</data>
+      <data key="d5">Natural Language Inference (NLI)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="named_entity_recognition_ner">
+      <data key="d0">Task</data>
+      <data key="d5">Named Entity Recognition (NER)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="linguistic_acceptability">
+      <data key="d0">Task</data>
+      <data key="d5">Linguistic Acceptability</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="sentiment_analysis">
+      <data key="d0">Task</data>
+      <data key="d5">Sentiment Analysis</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="text_similarity">
+      <data key="d0">Task</data>
+      <data key="d5">Text Similarity</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="paraphrase_detection">
+      <data key="d0">Task</data>
+      <data key="d5">Paraphrase Detection</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="coreference_resolution">
+      <data key="d0">Task</data>
+      <data key="d5">Coreference Resolution</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="word_sense_disambiguation_wsd">
+      <data key="d0">Task</data>
+      <data key="d5">Word Sense Disambiguation (WSD)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="machine_reading_comprehension_mrc">
+      <data key="d0">Task</data>
+      <data key="d5">Machine Reading Comprehension (MRC)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="commonsense_reasoning">
+      <data key="d0">Task</data>
+      <data key="d5">Commonsense Reasoning</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="text_classification">
+      <data key="d0">Task</data>
+      <data key="d5">Text Classification</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="accuracy_acc">
+      <data key="d0">Metric</data>
+      <data key="d5">Accuracy (Acc)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="f1_score_f1">
+      <data key="d0">Metric</data>
+      <data key="d5">F1 score (F1)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="exact_match_em">
+      <data key="d0">Metric</data>
+      <data key="d5">Exact Match (EM)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="matthews_correlation_coefficient_mcc">
+      <data key="d0">Metric</data>
+      <data key="d5">Matthews correlation coefficient (Mcc)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="pearson_correlation">
+      <data key="d0">Metric</data>
+      <data key="d5">Pearson correlation</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="spearman_correlation">
+      <data key="d0">Metric</data>
+      <data key="d5">Spearman correlation</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="perplexity_ppl">
+      <data key="d0">Metric</data>
+      <data key="d5">Perplexity (PPL)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="macro_average_score">
+      <data key="d0">Metric</data>
+      <data key="d5">Macro-average score</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="pre_trained_language_models_plms">
+      <data key="d0">Topic</data>
+      <data key="d5">Pre-trained Language Models (PLMs)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="transformer_architecture">
+      <data key="d0">Topic</data>
+      <data key="d5">Transformer architecture</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="self_attention">
+      <data key="d0">Topic</data>
+      <data key="d5">Self-attention</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="positional_encoding">
+      <data key="d0">Topic</data>
+      <data key="d5">Positional encoding</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="adversarial_training">
+      <data key="d0">Topic</data>
+      <data key="d5">Adversarial training</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="model_generalization">
+      <data key="d0">Topic</data>
+      <data key="d5">Model generalization</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="model_efficiency">
+      <data key="d0">Topic</data>
+      <data key="d5">Model efficiency</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="scaling_language_models">
+      <data key="d0">Topic</data>
+      <data key="d5">Scaling language models</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="compositional_generalization">
+      <data key="d0">Topic</data>
+      <data key="d5">Compositional generalization</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="neural_language_modeling">
+      <data key="d0">Topic</data>
+      <data key="d5">Neural language modeling</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="content_embedding">
+      <data key="d0">Topic</data>
+      <data key="d5">Content embedding</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="position_embedding">
+      <data key="d0">Topic</data>
+      <data key="d5">Position embedding</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="masked_token_prediction">
+      <data key="d0">Topic</data>
+      <data key="d5">Masked token prediction</data>
+      <data key="d4">{}</data>
+    </node>
+  </graph>
+</graphml>

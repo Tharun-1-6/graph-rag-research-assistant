@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="node" attr.name="name" attr.type="string" />
+  <key id="d4" for="node" attr.name="metadata" attr.type="string" />
+  <key id="d3" for="node" attr.name="conference" attr.type="string" />
+  <key id="d2" for="node" attr.name="year" attr.type="long" />
+  <key id="d1" for="node" attr.name="title" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="attention_is_all_you_need">
+      <data key="d0">Paper</data>
+      <data key="d1">Attention Is All You Need</data>
+      <data key="d2">2017</data>
+      <data key="d3">NIPS 2017</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="ashish_vaswani">
+      <data key="d0">Author</data>
+      <data key="d5">Ashish Vaswani</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="noam_shazeer">
+      <data key="d0">Author</data>
+      <data key="d5">Noam Shazeer</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="niki_parmar">
+      <data key="d0">Author</data>
+      <data key="d5">Niki Parmar</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="jakob_uszkoreit">
+      <data key="d0">Author</data>
+      <data key="d5">Jakob Uszkoreit</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="llion_jones">
+      <data key="d0">Author</data>
+      <data key="d5">Llion Jones</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="aidan_n_gomez">
+      <data key="d0">Author</data>
+      <data key="d5">Aidan N. Gomez</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="łukasz_kaiser">
+      <data key="d0">Author</data>
+      <data key="d5">Łukasz Kaiser</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="illia_polosukhin">
+      <data key="d0">Author</data>
+      <data key="d5">Illia Polosukhin</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="google_brain">
+      <data key="d0">Institution</data>
+      <data key="d5">Google Brain</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="google_research">
+      <data key="d0">Institution</data>
+      <data key="d5">Google Research</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="university_of_toronto">
+      <data key="d0">Institution</data>
+      <data key="d5">University of Toronto</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="attention_mechanism">
+      <data key="d0">Method</data>
+      <data key="d5">Attention mechanism</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="self_attention">
+      <data key="d0">Method</data>
+      <data key="d5">Self-attention</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="scaled_dot_product_attention">
+      <data key="d0">Method</data>
+      <data key="d5">Scaled Dot-Product Attention</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="multi_head_attention">
+      <data key="d0">Method</data>
+      <data key="d5">Multi-Head Attention</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="positional_encoding">
+      <data key="d0">Method</data>
+      <data key="d5">Positional Encoding</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="residual_connections">
+      <data key="d0">Method</data>
+      <data key="d5">Residual Connections</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="layer_normalization">
+      <data key="d0">Method</data>
+      <data key="d5">Layer Normalization</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="position_wise_feed_forward_networks">
+      <data key="d0">Method</data>
+      <data key="d5">Position-wise Feed-Forward Networks</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="learned_embeddings">
+      <data key="d0">Method</data>
+      <data key="d5">Learned Embeddings</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="softmax_function">
+      <data key="d0">Method</data>
+      <data key="d5">Softmax function</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="dropout">
+      <data key="d0">Method</data>
+      <data key="d5">Dropout</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="label_smoothing">
+      <data key="d0">Method</data>
+      <data key="d5">Label Smoothing</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="adam_optimizer">
+      <data key="d0">Method</data>
+      <data key="d5">Adam optimizer</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="byte_pair_encoding">
+      <data key="d0">Method</data>
+      <data key="d5">Byte-pair encoding</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="word_piece_vocabulary">
+      <data key="d0">Method</data>
+      <data key="d5">Word-piece vocabulary</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="beam_search">
+      <data key="d0">Method</data>
+      <data key="d5">Beam search</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="length_penalty">
+      <data key="d0">Method</data>
+      <data key="d5">Length penalty</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="additive_attention">
+      <data key="d0">Method</data>
+      <data key="d5">Additive attention</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="dot_product_attention">
+      <data key="d0">Method</data>
+      <data key="d5">Dot-product attention</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="transformer">
+      <data key="d0">Architecture</data>
+      <data key="d5">Transformer</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="encoder_decoder_architecture">
+      <data key="d0">Architecture</data>
+      <data key="d5">Encoder-Decoder architecture</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="recurrent_neural_networks_rnns">
+      <data key="d0">Architecture</data>
+      <data key="d5">Recurrent Neural Networks (RNNs)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="long_short_term_memory_lstm">
+      <data key="d0">Architecture</data>
+      <data key="d5">Long Short-Term Memory (LSTM)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="gated_recurrent_units_grus">
+      <data key="d0">Architecture</data>
+      <data key="d5">Gated Recurrent Units (GRUs)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="convolutional_neural_networks_cnns">
+      <data key="d0">Architecture</data>
+      <data key="d5">Convolutional Neural Networks (CNNs)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="extended_neural_gpu">
+      <data key="d0">Architecture</data>
+      <data key="d5">Extended Neural GPU</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bytenet">
+      <data key="d0">Architecture</data>
+      <data key="d5">ByteNet</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="convs2s">
+      <data key="d0">Architecture</data>
+      <data key="d5">ConvS2S</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="end_to_end_memory_networks">
+      <data key="d0">Architecture</data>
+      <data key="d5">End-to-end memory networks</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="deep_att_posunk">
+      <data key="d0">Architecture</data>
+      <data key="d5">Deep-Att + PosUnk</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="gnmt_rl">
+      <data key="d0">Architecture</data>
+      <data key="d5">GNMT + RL</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="moe">
+      <data key="d0">Architecture</data>
+      <data key="d5">MoE</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="wmt_2014_english_german_dataset">
+      <data key="d0">Dataset</data>
+      <data key="d5">WMT 2014 English-German dataset</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="wmt_2014_english_french_dataset">
+      <data key="d0">Dataset</data>
+      <data key="d5">WMT 2014 English-French dataset</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="newstest2014">
+      <data key="d0">Dataset</data>
+      <data key="d5">newstest2014</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="newstest2013">
+      <data key="d0">Dataset</data>
+      <data key="d5">newstest2013</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="wmt_2014_english_to_german_translation_task">
+      <data key="d0">Benchmark</data>
+      <data key="d5">WMT 2014 English-to-German translation task</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="wmt_2014_english_to_french_translation_task">
+      <data key="d0">Benchmark</data>
+      <data key="d5">WMT 2014 English-to-French translation task</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="sequence_transduction">
+      <data key="d0">Task</data>
+      <data key="d5">Sequence transduction</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="machine_translation">
+      <data key="d0">Task</data>
+      <data key="d5">Machine Translation</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="language_modeling">
+      <data key="d0">Task</data>
+      <data key="d5">Language Modeling</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="reading_comprehension">
+      <data key="d0">Task</data>
+      <data key="d5">Reading Comprehension</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="abstractive_summarization">
+      <data key="d0">Task</data>
+      <data key="d5">Abstractive Summarization</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="textual_entailment">
+      <data key="d0">Task</data>
+      <data key="d5">Textual Entailment</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="learning_task_independent_sentence_representations">
+      <data key="d0">Task</data>
+      <data key="d5">Learning task-independent sentence representations</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="simple_language_question_answering">
+      <data key="d0">Task</data>
+      <data key="d5">Simple-language question answering</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bleu_score">
+      <data key="d0">Metric</data>
+      <data key="d5">BLEU score</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="perplexity_ppl">
+      <data key="d0">Metric</data>
+      <data key="d5">Perplexity (PPL)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="training_cost_flops">
+      <data key="d0">Metric</data>
+      <data key="d5">Training Cost (FLOPs)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="training_time">
+      <data key="d0">Metric</data>
+      <data key="d5">Training Time</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="neural_machine_translation">
+      <data key="d0">Topic</data>
+      <data key="d5">Neural Machine Translation</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="attention_mechanisms">
+      <data key="d0">Topic</data>
+      <data key="d5">Attention Mechanisms</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="deep_learning_architectures">
+      <data key="d0">Topic</data>
+      <data key="d5">Deep Learning Architectures</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="sequence_modeling">
+      <data key="d0">Topic</data>
+      <data key="d5">Sequence Modeling</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="parallelization_in_deep_learning">
+      <data key="d0">Topic</data>
+      <data key="d5">Parallelization in Deep Learning</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="natural_language_processing">
+      <data key="d0">Topic</data>
+      <data key="d5">Natural Language Processing</data>
+      <data key="d4">{}</data>
+    </node>
+  </graph>
+</graphml>

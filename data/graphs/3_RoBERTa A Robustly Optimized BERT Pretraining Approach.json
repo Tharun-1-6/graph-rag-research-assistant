@@ -1,0 +1,826 @@
+{
+    "nodes": [
+        {
+            "id": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "type": "Paper",
+            "title": "ROBERTA: A ROBUSTLY OPTIMIZED BERT PRE-TRAINING APPROACH",
+            "year": 2020,
+            "conference": "ICLR 2020",
+            "abstract": null,
+            "metadata": {}
+        },
+        {
+            "id": "replication_study",
+            "type": "Method",
+            "name": "Replication study",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "hyperparameter_tuning",
+            "type": "Method",
+            "name": "Hyperparameter tuning",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "training_longer",
+            "type": "Method",
+            "name": "Training longer",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "training_with_bigger_batches",
+            "type": "Method",
+            "name": "Training with bigger batches",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "training_over_more_data",
+            "type": "Method",
+            "name": "Training over more data",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "removing_next_sentence_prediction_objective",
+            "type": "Method",
+            "name": "Removing Next Sentence Prediction objective",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "training_on_longer_sequences",
+            "type": "Method",
+            "name": "Training on longer sequences",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "dynamic_masking",
+            "type": "Method",
+            "name": "Dynamic Masking",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "masked_language_modeling_mlm",
+            "type": "Method",
+            "name": "Masked Language Modeling (MLM)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "mixed_precision_training",
+            "type": "Method",
+            "name": "Mixed precision training",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "byte_level_bpe",
+            "type": "Method",
+            "name": "Byte-level BPE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "finetuning",
+            "type": "Method",
+            "name": "Finetuning",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "single_task_finetuning",
+            "type": "Method",
+            "name": "Single-task finetuning",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "ensembling",
+            "type": "Method",
+            "name": "Ensembling",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "pairwise_ranking_formulation",
+            "type": "Method",
+            "name": "Pairwise ranking formulation",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "joint_classification_and_span_prediction",
+            "type": "Method",
+            "name": "Joint classification and span prediction",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "concatenation_of_candidate_answer_with_question_and_passage",
+            "type": "Method",
+            "name": "Concatenation of candidate answer with question and passage",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "noun_phrase_extraction",
+            "type": "Method",
+            "name": "Noun phrase extraction",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "cross_entropy_loss",
+            "type": "Method",
+            "name": "Cross-entropy loss",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "adamw_optimization",
+            "type": "Method",
+            "name": "AdamW optimization",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "linear_learning_rate_decay",
+            "type": "Method",
+            "name": "Linear learning rate decay",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "learning_rate_warmup",
+            "type": "Method",
+            "name": "Learning rate warmup",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "gradient_accumulation",
+            "type": "Method",
+            "name": "Gradient accumulation",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "full_sentences_input_format",
+            "type": "Method",
+            "name": "FULL-SENTENCES input format",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "doc_sentences_input_format",
+            "type": "Method",
+            "name": "DOC-SENTENCES input format",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "segment_pair_input_format",
+            "type": "Method",
+            "name": "SEGMENT-PAIR input format",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "sentence_pair_input_format",
+            "type": "Method",
+            "name": "SENTENCE-PAIR input format",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "static_masking",
+            "type": "Method",
+            "name": "Static Masking",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "bert",
+            "type": "Architecture",
+            "name": "BERT",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "roberta",
+            "type": "Architecture",
+            "name": "RoBERTa",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "transformer_architecture",
+            "type": "Architecture",
+            "name": "Transformer architecture",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "bertbase",
+            "type": "Architecture",
+            "name": "BERTBASE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "bertlarge",
+            "type": "Architecture",
+            "name": "BERTLARGE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "elmo",
+            "type": "Architecture",
+            "name": "ELMo",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "gpt",
+            "type": "Architecture",
+            "name": "GPT",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "xlm",
+            "type": "Architecture",
+            "name": "XLM",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "xlnet",
+            "type": "Architecture",
+            "name": "XLNet",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "alice",
+            "type": "Architecture",
+            "name": "ALICE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "mt_dnn",
+            "type": "Architecture",
+            "name": "MT-DNN",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "sg_net_verifier",
+            "type": "Architecture",
+            "name": "SG-Net Verifier",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "bookcorpus",
+            "type": "Dataset",
+            "name": "BOOKCORPUS",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "english_wikipedia",
+            "type": "Dataset",
+            "name": "English WIKIPEDIA",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "cc_news",
+            "type": "Dataset",
+            "name": "CC-NEWS",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "commoncrawl_news_dataset",
+            "type": "Dataset",
+            "name": "CommonCrawl News dataset",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "openwebtext",
+            "type": "Dataset",
+            "name": "OPENWEBTEXT",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "webtext_corpus",
+            "type": "Dataset",
+            "name": "WebText corpus",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "stories",
+            "type": "Dataset",
+            "name": "STORIES",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "squad_training_data",
+            "type": "Dataset",
+            "name": "SQuAD training data",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "commitmentbank_cb",
+            "type": "Dataset",
+            "name": "CommitmentBank (CB)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "multi_sentence_reading_comprehension_multirc",
+            "type": "Dataset",
+            "name": "Multi-Sentence Reading Comprehension (MultiRC)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "reading_comprehension_with_commonsense_reasoning_record",
+            "type": "Dataset",
+            "name": "Reading Comprehension with Commonsense Reasoning (ReCoRD)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "words_in_context_wic",
+            "type": "Dataset",
+            "name": "Words in Context (WiC)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "winograd_schema_challenge_wsc",
+            "type": "Dataset",
+            "name": "Winograd Schema Challenge (WSC)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "winogender_schema_diagnostics",
+            "type": "Dataset",
+            "name": "Winogender Schema Diagnostics",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "qnli_training_set",
+            "type": "Dataset",
+            "name": "QNLI training set",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "wnli_data_from_superglue",
+            "type": "Dataset",
+            "name": "WNLI data from SuperGLUE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "glue",
+            "type": "Benchmark",
+            "name": "GLUE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "squad_v11",
+            "type": "Benchmark",
+            "name": "SQuAD v1.1",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "squad_v20",
+            "type": "Benchmark",
+            "name": "SQuAD v2.0",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "race",
+            "type": "Benchmark",
+            "name": "RACE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "superglue",
+            "type": "Benchmark",
+            "name": "SuperGLUE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "xnli",
+            "type": "Benchmark",
+            "name": "XNLI",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "mnli",
+            "type": "Benchmark",
+            "name": "MNLI",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "sst_2",
+            "type": "Benchmark",
+            "name": "SST-2",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "qnli",
+            "type": "Benchmark",
+            "name": "QNLI",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "qqp",
+            "type": "Benchmark",
+            "name": "QQP",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "rte",
+            "type": "Benchmark",
+            "name": "RTE",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "mrpc",
+            "type": "Benchmark",
+            "name": "MRPC",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "cola",
+            "type": "Benchmark",
+            "name": "CoLA",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "sts",
+            "type": "Benchmark",
+            "name": "STS",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "wnli",
+            "type": "Benchmark",
+            "name": "WNLI",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "boolq",
+            "type": "Benchmark",
+            "name": "BoolQ",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "cb",
+            "type": "Benchmark",
+            "name": "CB",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "copa",
+            "type": "Benchmark",
+            "name": "COPA",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "multirc",
+            "type": "Benchmark",
+            "name": "MultiRC",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "record",
+            "type": "Benchmark",
+            "name": "ReCoRD",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "wic",
+            "type": "Benchmark",
+            "name": "WiC",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "wsc",
+            "type": "Benchmark",
+            "name": "WSC",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "language_model_pretraining",
+            "type": "Task",
+            "name": "Language Model Pretraining",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "natural_language_understanding",
+            "type": "Task",
+            "name": "Natural Language Understanding",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "masked_language_modeling",
+            "type": "Task",
+            "name": "Masked Language Modeling",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "next_sentence_prediction",
+            "type": "Task",
+            "name": "Next Sentence Prediction",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "single_sentence_classification",
+            "type": "Task",
+            "name": "Single-sentence classification",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "sentence_pair_classification",
+            "type": "Task",
+            "name": "Sentence-pair classification",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "question_answering",
+            "type": "Task",
+            "name": "Question Answering",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "reading_comprehension",
+            "type": "Task",
+            "name": "Reading Comprehension",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "natural_language_inference",
+            "type": "Task",
+            "name": "Natural Language Inference",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "sentiment_analysis",
+            "type": "Task",
+            "name": "Sentiment Analysis",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "paraphrase_detection",
+            "type": "Task",
+            "name": "Paraphrase Detection",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "textual_entailment",
+            "type": "Task",
+            "name": "Textual Entailment",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "semantic_textual_similarity",
+            "type": "Task",
+            "name": "Semantic Textual Similarity",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "linguistic_acceptability",
+            "type": "Task",
+            "name": "Linguistic Acceptability",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "coreference_resolution",
+            "type": "Task",
+            "name": "Coreference Resolution",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "commonsense_reasoning",
+            "type": "Task",
+            "name": "Commonsense Reasoning",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "word_sense_disambiguation",
+            "type": "Task",
+            "name": "Word Sense Disambiguation",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "cross_lingual_sentence_representations",
+            "type": "Task",
+            "name": "Cross-lingual sentence representations",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "binary_classification",
+            "type": "Task",
+            "name": "Binary classification",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "span_prediction",
+            "type": "Task",
+            "name": "Span prediction",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "f1",
+            "type": "Metric",
+            "name": "F1",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "accuracy",
+            "type": "Metric",
+            "name": "Accuracy",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "perplexity",
+            "type": "Metric",
+            "name": "Perplexity",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "exact_match_em",
+            "type": "Metric",
+            "name": "Exact Match (EM)",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "average_score",
+            "type": "Metric",
+            "name": "Average score",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "macro_averaged_accuracy",
+            "type": "Metric",
+            "name": "Macro-averaged accuracy",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "hyperparameter_optimization",
+            "type": "Topic",
+            "name": "Hyperparameter Optimization",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "replication_studies",
+            "type": "Topic",
+            "name": "Replication Studies",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "natural_language_processing",
+            "type": "Topic",
+            "name": "Natural Language Processing",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "deep_learning",
+            "type": "Topic",
+            "name": "Deep Learning",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "transformer_models",
+            "type": "Topic",
+            "name": "Transformer Models",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "self_supervised_learning",
+            "type": "Topic",
+            "name": "Self-supervised Learning",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "transfer_learning",
+            "type": "Topic",
+            "name": "Transfer Learning",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "computational_efficiency",
+            "type": "Topic",
+            "name": "Computational Efficiency",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "data_augmentation",
+            "type": "Topic",
+            "name": "Data Augmentation",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "masking_strategies",
+            "type": "Topic",
+            "name": "Masking Strategies",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "large_batch_training",
+            "type": "Topic",
+            "name": "Large Batch Training",
+            "description": null,
+            "metadata": {}
+        },
+        {
+            "id": "research_methodology",
+            "type": "Topic",
+            "name": "Research Methodology",
+            "description": null,
+            "metadata": {}
+        }
+    ],
+    "edges": []
+}

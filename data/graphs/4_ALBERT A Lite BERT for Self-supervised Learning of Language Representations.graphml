@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="node" attr.name="name" attr.type="string" />
+  <key id="d4" for="node" attr.name="metadata" attr.type="string" />
+  <key id="d3" for="node" attr.name="conference" attr.type="string" />
+  <key id="d2" for="node" attr.name="year" attr.type="long" />
+  <key id="d1" for="node" attr.name="title" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="albert_a_lite_bert_for_self_supervised_learning_of_language_representations">
+      <data key="d0">Paper</data>
+      <data key="d1">ALBERT: A LITE BERT FOR SELF-SUPERVISED LEARNING OF LANGUAGE REPRESENTATIONS</data>
+      <data key="d2">2020</data>
+      <data key="d3">ICLR 2020</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="zhenzhong_lan">
+      <data key="d0">Author</data>
+      <data key="d5">Zhenzhong Lan</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="mingda_chen">
+      <data key="d0">Author</data>
+      <data key="d5">Mingda Chen</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="sebastian_goodman">
+      <data key="d0">Author</data>
+      <data key="d5">Sebastian Goodman</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="kevin_gimpel">
+      <data key="d0">Author</data>
+      <data key="d5">Kevin Gimpel</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="piyush_sharma">
+      <data key="d0">Author</data>
+      <data key="d5">Piyush Sharma</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="radu_soricut">
+      <data key="d0">Author</data>
+      <data key="d5">Radu Soricut</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="google_research">
+      <data key="d0">Institution</data>
+      <data key="d5">Google Research</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="toyota_technological_institute_at_chicago">
+      <data key="d0">Institution</data>
+      <data key="d5">Toyota Technological Institute at Chicago</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="parameter_reduction_techniques">
+      <data key="d0">Method</data>
+      <data key="d5">Parameter-reduction techniques</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="factorized_embedding_parameterization">
+      <data key="d0">Method</data>
+      <data key="d5">Factorized embedding parameterization</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="cross_layer_parameter_sharing">
+      <data key="d0">Method</data>
+      <data key="d5">Cross-layer parameter sharing</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="sentence_order_prediction_sop_loss">
+      <data key="d0">Method</data>
+      <data key="d5">Sentence-order prediction (SOP) loss</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="masked_language_modeling_mlm">
+      <data key="d0">Method</data>
+      <data key="d5">Masked Language Modeling (MLM)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="full_network_pre_training">
+      <data key="d0">Method</data>
+      <data key="d5">Full network pre-training</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="task_specific_fine_tuning">
+      <data key="d0">Method</data>
+      <data key="d5">Task-specific fine-tuning</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="n_gram_masking">
+      <data key="d0">Method</data>
+      <data key="d5">N-gram masking</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="lamb_optimizer">
+      <data key="d0">Method</data>
+      <data key="d5">LAMB optimizer</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="early_stopping">
+      <data key="d0">Method</data>
+      <data key="d5">Early stopping</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="ensemble_modeling">
+      <data key="d0">Method</data>
+      <data key="d5">Ensemble modeling</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="removing_dropout">
+      <data key="d0">Method</data>
+      <data key="d5">Removing dropout</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="gradient_checkpointing">
+      <data key="d0">Method</data>
+      <data key="d5">Gradient checkpointing</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="memory_management">
+      <data key="d0">Method</data>
+      <data key="d5">Memory management</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="model_parallelization">
+      <data key="d0">Method</data>
+      <data key="d5">Model parallelization</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="warm_start_technique">
+      <data key="d0">Method</data>
+      <data key="d5">Warm-start technique</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="albert">
+      <data key="d0">Architecture</data>
+      <data key="d5">ALBERT</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bert">
+      <data key="d0">Architecture</data>
+      <data key="d5">BERT</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="transformer_encoder">
+      <data key="d0">Architecture</data>
+      <data key="d5">Transformer encoder</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="xlnet">
+      <data key="d0">Architecture</data>
+      <data key="d5">XLNet</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="roberta">
+      <data key="d0">Architecture</data>
+      <data key="d5">RoBERTa</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="universal_transformer_ut">
+      <data key="d0">Architecture</data>
+      <data key="d5">Universal Transformer (UT)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="deep_equilibrium_model_dqe">
+      <data key="d0">Architecture</data>
+      <data key="d5">Deep Equilibrium Model (DQE)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="skip_thought">
+      <data key="d0">Architecture</data>
+      <data key="d5">Skip-thought</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="fastsent">
+      <data key="d0">Architecture</data>
+      <data key="d5">FastSent</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="dcmn">
+      <data key="d0">Architecture</data>
+      <data key="d5">DCMN+</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="upm">
+      <data key="d0">Architecture</data>
+      <data key="d5">UPM</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="sg_net_verifier">
+      <data key="d0">Architecture</data>
+      <data key="d5">SG-Net Verifier++</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="daaf">
+      <data key="d0">Architecture</data>
+      <data key="d5">DAAF</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="mt_dnn">
+      <data key="d0">Architecture</data>
+      <data key="d5">MT-DNN</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="alice">
+      <data key="d0">Architecture</data>
+      <data key="d5">ALICE</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="adv_roberta">
+      <data key="d0">Architecture</data>
+      <data key="d5">Adv-RoBERTa</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bookcorpus">
+      <data key="d0">Dataset</data>
+      <data key="d5">BOOKCORPUS</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="english_wikipedia">
+      <data key="d0">Dataset</data>
+      <data key="d5">English Wikipedia</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="glue_benchmark">
+      <data key="d0">Dataset</data>
+      <data key="d5">GLUE benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="squad_v11">
+      <data key="d0">Dataset</data>
+      <data key="d5">SQuAD v1.1</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="squad_v20">
+      <data key="d0">Dataset</data>
+      <data key="d5">SQuAD v2.0</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="race_dataset">
+      <data key="d0">Dataset</data>
+      <data key="d5">RACE dataset</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="corpus_of_linguistic_acceptability_cola">
+      <data key="d0">Dataset</data>
+      <data key="d5">Corpus of Linguistic Acceptability (CoLA)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="stanford_sentiment_treebank_sst_2">
+      <data key="d0">Dataset</data>
+      <data key="d5">Stanford Sentiment Treebank (SST-2)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="microsoft_research_paraphrase_corpus_mrpc">
+      <data key="d0">Dataset</data>
+      <data key="d5">Microsoft Research Paraphrase Corpus (MRPC)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="semantic_textual_similarity_benchmark_sts">
+      <data key="d0">Dataset</data>
+      <data key="d5">Semantic Textual Similarity Benchmark (STS)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="quora_question_pairs_qqp">
+      <data key="d0">Dataset</data>
+      <data key="d5">Quora Question Pairs (QQP)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="multi_genre_nli_mnli">
+      <data key="d0">Dataset</data>
+      <data key="d5">Multi-Genre NLI (MNLI)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="question_nli_qnli">
+      <data key="d0">Dataset</data>
+      <data key="d5">Question NLI (QNLI)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="recognizing_textual_entailment_rte">
+      <data key="d0">Dataset</data>
+      <data key="d5">Recognizing Textual Entailment (RTE)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="winograd_nli_wnli">
+      <data key="d0">Dataset</data>
+      <data key="d5">Winograd NLI (WNLI)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="additional_training_data">
+      <data key="d0">Dataset</data>
+      <data key="d5">Additional training data</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="race_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d5">RACE benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="squad_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d5">SQuAD benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="self_supervised_learning">
+      <data key="d0">Task</data>
+      <data key="d5">Self-supervised learning</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="language_representation_learning">
+      <data key="d0">Task</data>
+      <data key="d5">Language representation learning</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="natural_language_understanding_nlu">
+      <data key="d0">Task</data>
+      <data key="d5">Natural Language Understanding (NLU)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="reading_comprehension">
+      <data key="d0">Task</data>
+      <data key="d5">Reading Comprehension</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="question_answering">
+      <data key="d0">Task</data>
+      <data key="d5">Question Answering</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="sentence_order_prediction_sop">
+      <data key="d0">Task</data>
+      <data key="d5">Sentence-order prediction (SOP)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="next_sentence_prediction_nsp">
+      <data key="d0">Task</data>
+      <data key="d5">Next-sentence prediction (NSP)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="natural_language_inference">
+      <data key="d0">Task</data>
+      <data key="d5">Natural Language Inference</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="text_classification">
+      <data key="d0">Task</data>
+      <data key="d5">Text classification</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="semantic_textual_similarity">
+      <data key="d0">Task</data>
+      <data key="d5">Semantic textual similarity</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="paraphrase_detection">
+      <data key="d0">Task</data>
+      <data key="d5">Paraphrase detection</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="textual_entailment">
+      <data key="d0">Task</data>
+      <data key="d5">Textual entailment</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="discourse_coherence_prediction">
+      <data key="d0">Task</data>
+      <data key="d5">Discourse coherence prediction</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="topic_prediction">
+      <data key="d0">Task</data>
+      <data key="d5">Topic prediction</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="accuracy">
+      <data key="d0">Metric</data>
+      <data key="d5">Accuracy</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="f1_score">
+      <data key="d0">Metric</data>
+      <data key="d5">F1 score</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="exact_match_em">
+      <data key="d0">Metric</data>
+      <data key="d5">Exact Match (EM)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="average_score_avg">
+      <data key="d0">Metric</data>
+      <data key="d5">Average score (Avg)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="l2_distance">
+      <data key="d0">Metric</data>
+      <data key="d5">L2 distance</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="cosine_similarity">
+      <data key="d0">Metric</data>
+      <data key="d5">Cosine similarity</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="parameters">
+      <data key="d0">Metric</data>
+      <data key="d5">Parameters</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="training_speed">
+      <data key="d0">Metric</data>
+      <data key="d5">Training speed</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="data_throughput">
+      <data key="d0">Metric</data>
+      <data key="d5">Data throughput</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="natural_language_processing_nlp">
+      <data key="d0">Topic</data>
+      <data key="d5">Natural Language Processing (NLP)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="deep_learning">
+      <data key="d0">Topic</data>
+      <data key="d5">Deep Learning</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="transformer_models">
+      <data key="d0">Topic</data>
+      <data key="d5">Transformer models</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="pre_training">
+      <data key="d0">Topic</data>
+      <data key="d5">Pre-training</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="language_representations">
+      <data key="d0">Topic</data>
+      <data key="d5">Language representations</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="model_efficiency">
+      <data key="d0">Topic</data>
+      <data key="d5">Model efficiency</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="parameter_reduction">
+      <data key="d0">Topic</data>
+      <data key="d5">Parameter reduction</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="memory_optimization">
+      <data key="d0">Topic</data>
+      <data key="d5">Memory optimization</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="computational_cost">
+      <data key="d0">Topic</data>
+      <data key="d5">Computational cost</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="regularization">
+      <data key="d0">Topic</data>
+      <data key="d5">Regularization</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="discourse_coherence">
+      <data key="d0">Topic</data>
+      <data key="d5">Discourse coherence</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="transfer_learning">
+      <data key="d0">Topic</data>
+      <data key="d5">Transfer learning</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="knowledge_distillation">
+      <data key="d0">Topic</data>
+      <data key="d5">Knowledge distillation</data>
+      <data key="d4">{}</data>
+    </node>
+  </graph>
+</graphml>

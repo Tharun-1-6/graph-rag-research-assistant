@@ -97,12 +97,14 @@ class QueryOrchestrator:
         """Register the Graph-RAG retrieval function/pipeline hook."""
         self.graph_rag_retriever = retriever
 
-    def _execute_retriever(self, name: str, retriever: Optional[Callable[[str], str]], query: str) -> str:
+    def _execute_retriever(self, name: str, retriever: Optional[Any], query: str) -> Any:
         """Executes a retriever safely, returning empty string or error info on failure."""
         if not retriever:
             logger.warning(f"{name} retriever is not registered.")
             return f"[{name} context unavailable: Retriever not registered]"
         try:
+            if retriever.__class__.__name__ == "GraphRetriever" and hasattr(retriever, "retrieve"):
+                return retriever.retrieve(query)
             return retriever(query)
         except Exception as e:
             logger.error(f"Error executing {name} retriever: {e}")
@@ -175,6 +177,7 @@ Answer:
                 "reasoning": The route decision reasoning.
                 "rag_context": Raw RAG context (if executed).
                 "graph_context": Raw Graph-RAG context (if executed).
+                "graph_result": Full RetrievalResult object (if executed).
                 "final_context": Synthesized and compared context built for the LLM.
                 "answer": The generated answer based on the context.
         """
@@ -184,6 +187,7 @@ Answer:
 
         rag_context = ""
         graph_context = ""
+        graph_result = None
         final_context = ""
 
         if route == "RAG":
@@ -191,7 +195,11 @@ Answer:
             final_context = rag_context
 
         elif route == "GRAPH_RAG":
-            graph_context = self._execute_retriever("GRAPH_RAG", self.graph_rag_retriever, query)
+            graph_result = self._execute_retriever("GRAPH_RAG", self.graph_rag_retriever, query)
+            if hasattr(graph_result, "context"):
+                graph_context = graph_result.context
+            else:
+                graph_context = str(graph_result)
             final_context = graph_context
 
         else:  # COMBINED
@@ -202,7 +210,12 @@ Answer:
                 
                 # Wait for both to complete
                 rag_context = rag_future.result()
-                graph_context = graph_future.result()
+                graph_result = graph_future.result()
+
+            if hasattr(graph_result, "context"):
+                graph_context = graph_result.context
+            else:
+                graph_context = str(graph_result)
 
             # Compare and consolidate the outputs
             final_context = self.consolidate_contexts(query, rag_context, graph_context)
@@ -216,6 +229,7 @@ Answer:
             "reasoning": reasoning,
             "rag_context": rag_context,
             "graph_context": graph_context,
+            "graph_result": graph_result,
             "final_context": final_context,
             "answer": answer
         }

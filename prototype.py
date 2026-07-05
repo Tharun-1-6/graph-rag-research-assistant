@@ -228,7 +228,14 @@ def main():
     # Initialize retrievers
     print("\nInitializing RAG search indices and loading Knowledge Graph...")
     rag_retriever = SimpleRAGRetriever(papers_dir)
-    graph_retriever = SimpleGraphRetriever(graphs_dir)
+    
+    # Load the real GraphRetriever
+    global_graph_path = graphs_dir / "global_graph.graphml"
+    if not global_graph_path.exists():
+        global_graph_path = graphs_dir
+        
+    from graph.retriever import GraphRetriever
+    graph_retriever = GraphRetriever(global_graph_path)
     
     # Initialize Query Orchestrator
     orchestrator = QueryOrchestrator(
@@ -259,6 +266,55 @@ def main():
             if response['route'] in ["GRAPH_RAG", "COMBINED"]:
                 print(f"\n--- Graph Retrieval Context (Entities & Edges) ---")
                 print(response['graph_context'][:500] + ("..." if len(response['graph_context']) > 500 else ""))
+                
+                # Check if we have the real GraphRetriever's result object
+                graph_result = response.get("graph_result")
+                if graph_result and hasattr(graph_result, "retrieval_trace"):
+                    trace = graph_result.retrieval_trace
+                    
+                    # Print Entity Resolution (matched seeds)
+                    print("\n--- ENTITY RESOLUTION ---")
+                    print("Resolved Entities / Seeds:")
+                    matched_seeds = trace.get("matched_seeds", {})
+                    if not matched_seeds:
+                        print("  None")
+                    else:
+                        for seed, score in matched_seeds.items():
+                            node_type = graph_result.subgraph.nodes[seed].get("type", "Entity") if graph_result.subgraph and seed in graph_result.subgraph else "Entity"
+                            print(f"  * {seed} (type: {node_type}, confidence: {score:.2f})")
+                            
+                    # Print Query Intent
+                    print("\n--- QUERY INTENT ---")
+                    print(f"Intent: {trace.get('detected_intent', 'Unknown')}")
+                    plan = trace.get("retrieval_plan", {})
+                    print(f"Allowed Relationships: {plan.get('allowed_relationships') or 'All'}")
+                    print(f"Traversal Depth: {plan.get('max_depth')} hops")
+                    
+                    # Print Traversal details
+                    print("\n--- TRAVERSAL ---")
+                    stats = trace.get("statistics", {})
+                    print(f"Visited Nodes: {stats.get('nodes_visited', 0)}")
+                    print(f"Retained Nodes: {stats.get('nodes_retained', 0)}")
+                    print(f"Retained Edges: {stats.get('edges_retained', 0)}")
+                    print(f"Traversal Latency: {stats.get('traversal_latency_ms', 0.0):.2f} ms")
+                    
+                    # Print Top Ranked Paths
+                    print("\nTop Ranked Nodes:")
+                    ranked = trace.get("ranked_nodes", [])
+                    if not ranked:
+                        print("  No paths discovered.")
+                    else:
+                        for idx, (node_id, score) in enumerate(ranked[:5], 1):
+                            print(f"  {idx}. {node_id} [score: {score:.2f}]")
+                            
+                    # Print JSON Retrieval Context
+                    print("\n--- JSON RETRIEVAL CONTEXT ---")
+                    import json
+                    if hasattr(graph_result, "retrieval_context"):
+                        print(json.dumps(graph_result.retrieval_context, indent=4, ensure_ascii=False))
+                    else:
+                        print(json.dumps(trace, indent=4, ensure_ascii=False))
+                    print("-" * 50)
                 
             print(f"\n====================== ANSWER ({orchestrator.llm_client.active_model}) ======================")
             print(response['answer'])

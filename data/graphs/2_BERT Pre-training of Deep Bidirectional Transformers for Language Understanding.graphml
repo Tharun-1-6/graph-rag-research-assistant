@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="node" attr.name="name" attr.type="string" />
+  <key id="d4" for="node" attr.name="metadata" attr.type="string" />
+  <key id="d3" for="node" attr.name="conference" attr.type="string" />
+  <key id="d2" for="node" attr.name="year" attr.type="long" />
+  <key id="d1" for="node" attr.name="title" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding">
+      <data key="d0">Paper</data>
+      <data key="d1">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</data>
+      <data key="d2">2019</data>
+      <data key="d3">NAACL-HLT 2019</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="jacob_devlin">
+      <data key="d0">Author</data>
+      <data key="d5">Jacob Devlin</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="ming_wei_chang">
+      <data key="d0">Author</data>
+      <data key="d5">Ming-Wei Chang</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="kenton_lee">
+      <data key="d0">Author</data>
+      <data key="d5">Kenton Lee</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="kristina_toutanova">
+      <data key="d0">Author</data>
+      <data key="d5">Kristina Toutanova</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="google_ai_language">
+      <data key="d0">Institution</data>
+      <data key="d5">Google AI Language</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="pre_training">
+      <data key="d0">Method</data>
+      <data key="d5">Pre-training</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="fine_tuning">
+      <data key="d0">Method</data>
+      <data key="d5">Fine-tuning</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="masked_language_model_mlm">
+      <data key="d0">Method</data>
+      <data key="d5">Masked Language Model (MLM)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="next_sentence_prediction_nsp">
+      <data key="d0">Method</data>
+      <data key="d5">Next Sentence Prediction (NSP)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="feature_based_approach">
+      <data key="d0">Method</data>
+      <data key="d5">Feature-based approach</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="transfer_learning">
+      <data key="d0">Method</data>
+      <data key="d5">Transfer Learning</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="self_attention_mechanism">
+      <data key="d0">Method</data>
+      <data key="d5">Self-attention mechanism</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="wordpiece_embeddings">
+      <data key="d0">Method</data>
+      <data key="d5">WordPiece embeddings</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="adam_optimizer">
+      <data key="d0">Method</data>
+      <data key="d5">Adam optimizer</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="gelu_activation">
+      <data key="d0">Method</data>
+      <data key="d5">Gelu activation</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="dropout">
+      <data key="d0">Method</data>
+      <data key="d5">Dropout</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="language_model_pre_training">
+      <data key="d0">Method</data>
+      <data key="d5">Language model pre-training</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="denoising_auto_encoder">
+      <data key="d0">Method</data>
+      <data key="d5">Denoising auto-encoder</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="cloze_task">
+      <data key="d0">Method</data>
+      <data key="d5">Cloze task</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bidirectional_conditioning">
+      <data key="d0">Method</data>
+      <data key="d5">Bidirectional conditioning</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bert">
+      <data key="d0">Architecture</data>
+      <data key="d5">BERT</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bertbase">
+      <data key="d0">Architecture</data>
+      <data key="d5">BERTBASE</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bertlarge">
+      <data key="d0">Architecture</data>
+      <data key="d5">BERTLARGE</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="transformer_encoder">
+      <data key="d0">Architecture</data>
+      <data key="d5">Transformer encoder</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="multi_layer_bidirectional_transformer_encoder">
+      <data key="d0">Architecture</data>
+      <data key="d5">Multi-layer bidirectional Transformer encoder</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="openai_gpt_generative_pre_trained_transformer">
+      <data key="d0">Architecture</data>
+      <data key="d5">OpenAI GPT (Generative Pre-trained Transformer)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="elmo_embeddings_from_language_models">
+      <data key="d0">Architecture</data>
+      <data key="d5">ELMo (Embeddings from Language Models)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bilstm">
+      <data key="d0">Architecture</data>
+      <data key="d5">BiLSTM</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="qanet">
+      <data key="d0">Architecture</data>
+      <data key="d5">QANet</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bidaf">
+      <data key="d0">Architecture</data>
+      <data key="d5">BiDAF</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="esim">
+      <data key="d0">Architecture</data>
+      <data key="d5">ESIM</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="u_net">
+      <data key="d0">Architecture</data>
+      <data key="d5">U-Net</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="slqa">
+      <data key="d0">Architecture</data>
+      <data key="d5">SLQA+</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="transformer">
+      <data key="d0">Architecture</data>
+      <data key="d5">Transformer</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bookscorpus">
+      <data key="d0">Dataset</data>
+      <data key="d5">BooksCorpus</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="english_wikipedia">
+      <data key="d0">Dataset</data>
+      <data key="d5">English Wikipedia</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="glue_benchmark">
+      <data key="d0">Dataset</data>
+      <data key="d5">GLUE benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="mnli">
+      <data key="d0">Dataset</data>
+      <data key="d5">MNLI</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="qqp">
+      <data key="d0">Dataset</data>
+      <data key="d5">QQP</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="qnli">
+      <data key="d0">Dataset</data>
+      <data key="d5">QNLI</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="sst_2">
+      <data key="d0">Dataset</data>
+      <data key="d5">SST-2</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="cola">
+      <data key="d0">Dataset</data>
+      <data key="d5">CoLA</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="sts_b">
+      <data key="d0">Dataset</data>
+      <data key="d5">STS-B</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="mrpc">
+      <data key="d0">Dataset</data>
+      <data key="d5">MRPC</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="rte">
+      <data key="d0">Dataset</data>
+      <data key="d5">RTE</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="wnli">
+      <data key="d0">Dataset</data>
+      <data key="d5">WNLI</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="squad_v11">
+      <data key="d0">Dataset</data>
+      <data key="d5">SQuAD v1.1</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="squad_v20">
+      <data key="d0">Dataset</data>
+      <data key="d5">SQuAD v2.0</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="swag">
+      <data key="d0">Dataset</data>
+      <data key="d5">SWAG</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="triviaqa">
+      <data key="d0">Dataset</data>
+      <data key="d5">TriviaQA</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="conll_2003_named_entity_recognition">
+      <data key="d0">Dataset</data>
+      <data key="d5">CoNLL-2003 Named Entity Recognition</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="billion_word_benchmark">
+      <data key="d0">Dataset</data>
+      <data key="d5">Billion Word Benchmark</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="imagenet">
+      <data key="d0">Dataset</data>
+      <data key="d5">ImageNet</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="language_understanding">
+      <data key="d0">Task</data>
+      <data key="d5">Language Understanding</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="question_answering">
+      <data key="d0">Task</data>
+      <data key="d5">Question Answering</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="natural_language_inference_nli">
+      <data key="d0">Task</data>
+      <data key="d5">Natural Language Inference (NLI)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="paraphrasing">
+      <data key="d0">Task</data>
+      <data key="d5">Paraphrasing</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="named_entity_recognition_ner">
+      <data key="d0">Task</data>
+      <data key="d5">Named Entity Recognition (NER)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="text_classification">
+      <data key="d0">Task</data>
+      <data key="d5">Text Classification</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="sequence_tagging">
+      <data key="d0">Task</data>
+      <data key="d5">Sequence Tagging</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="semantic_textual_similarity">
+      <data key="d0">Task</data>
+      <data key="d5">Semantic Textual Similarity</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="common_sense_inference">
+      <data key="d0">Task</data>
+      <data key="d5">Common-sense inference</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="machine_reading_comprehension">
+      <data key="d0">Task</data>
+      <data key="d5">Machine Reading Comprehension</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="sentiment_analysis">
+      <data key="d0">Task</data>
+      <data key="d5">Sentiment Analysis</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="glue_score">
+      <data key="d0">Metric</data>
+      <data key="d5">GLUE score</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="accuracy">
+      <data key="d0">Metric</data>
+      <data key="d5">Accuracy</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="f1_score">
+      <data key="d0">Metric</data>
+      <data key="d5">F1 score</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="spearman_correlations">
+      <data key="d0">Metric</data>
+      <data key="d5">Spearman correlations</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="exact_match_em">
+      <data key="d0">Metric</data>
+      <data key="d5">Exact Match (EM)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="perplexity">
+      <data key="d0">Metric</data>
+      <data key="d5">Perplexity</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="language_representation_models">
+      <data key="d0">Topic</data>
+      <data key="d5">Language Representation Models</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="bidirectional_representations">
+      <data key="d0">Topic</data>
+      <data key="d5">Bidirectional Representations</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="deep_learning">
+      <data key="d0">Topic</data>
+      <data key="d5">Deep Learning</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="natural_language_processing_nlp">
+      <data key="d0">Topic</data>
+      <data key="d5">Natural Language Processing (NLP)</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="contextual_word_embeddings">
+      <data key="d0">Topic</data>
+      <data key="d5">Contextual Word Embeddings</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="self_attention">
+      <data key="d0">Topic</data>
+      <data key="d5">Self-attention</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="masked_language_modeling">
+      <data key="d0">Topic</data>
+      <data key="d5">Masked Language Modeling</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="next_sentence_prediction">
+      <data key="d0">Topic</data>
+      <data key="d5">Next Sentence Prediction</data>
+      <data key="d4">{}</data>
+    </node>
+    <node id="unsupervised_learning">
+      <data key="d0">Topic</data>
+      <data key="d5">Unsupervised Learning</data>
+      <data key="d4">{}</data>
+    </node>
+  </graph>
+</graphml>

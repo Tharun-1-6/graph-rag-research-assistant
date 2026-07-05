@@ -14,9 +14,9 @@ from .gemini import GeminiProvider
 
 from .gemini import GeminiProvider
 
-def get_provider(name: str = None):
+def get_provider(name: str = None, model: str = None):
     """
-    Returns the configured LLM provider (supports gemini and groq).
+    Returns the configured LLM provider (supports gemini and groq with custom models).
     """
     import os
     provider_name = (name or LLM_PROVIDER).lower()
@@ -27,7 +27,7 @@ def get_provider(name: str = None):
             raise ValueError("GEMINI_API_KEY not configured.")
         return GeminiProvider(
             api_key=api_key,
-            model=LLM_MODEL or "gemini-2.5-flash",
+            model=model or LLM_MODEL or "gemini-2.5-flash",
         )
 
     elif provider_name == "groq":
@@ -37,7 +37,7 @@ def get_provider(name: str = None):
         from .groq import GroqProvider
         return GroqProvider(
             api_key=api_key,
-            model="llama-3.3-70b-versatile"
+            model=model or "llama-3.3-70b-versatile"
         )
 
     raise ValueError(f"Unsupported provider: {provider_name}")

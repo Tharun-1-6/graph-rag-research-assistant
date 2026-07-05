@@ -13,71 +13,8 @@ from graph.graph_builder.builder import GraphBuilder
 from graph.graph_builder.serializer import GraphSerializer
 from query_processor.router import QueryOrchestrator
 
-
-class SimpleRAGRetriever:
-    """
-    Simple keyword/phrase relevance retriever over sliding text chunks of PDF papers.
-    """
-    def __init__(self, papers_dir: Path):
-        self.papers_dir = papers_dir
-        self.chunks = []
-        self.loader = PDFLoader()
-        self.cleaner = TextCleaner()
-        self._load_and_chunk_papers()
-
-    def _load_and_chunk_papers(self):
-        pdf_files = list(self.papers_dir.glob("*.pdf"))
-        print(f"Indexing RAG text chunks from {len(pdf_files)} PDF papers...")
-        for pdf_path in pdf_files:
-            try:
-                doc = self.loader.load(pdf_path)
-                doc = self.cleaner.clean(doc)
-                text = doc.text
-                
-                # Split text into paragraphs
-                paragraphs = re.split(r'\n\s*\n', text)
-                for idx, para in enumerate(paragraphs):
-                    para = para.strip()
-                    # Keep reasonably sized paragraphs
-                    if len(para) > 80:
-                        self.chunks.append({
-                            "paper_title": doc.metadata.get("title", doc.filename),
-                            "chunk_id": idx,
-                            "text": para
-                        })
-            except Exception as e:
-                print(f"Warning: Failed to index text for {pdf_path.name}: {e}")
-
-    def __call__(self, query: str) -> str:
-        # Rank chunks by simple word match overlap
-        query_words = [w.lower() for w in re.findall(r'\w+', query) if len(w) > 2]
-        if not query_words:
-            return "No valid search keywords in query."
-            
-        scored_chunks = []
-        for chunk in self.chunks:
-            score = 0
-            text_lower = chunk["text"].lower()
-            for word in query_words:
-                if word in text_lower:
-                    # Direct occurrence score
-                    score += text_lower.count(word)
-            if score > 0:
-                scored_chunks.append((score, chunk))
-                
-        scored_chunks.sort(key=lambda x: x[0], reverse=True)
-        top_chunks = scored_chunks[:4]  # Retrieve top 4 chunks
-        
-        if not top_chunks:
-            return "No matching text snippets found in the documents."
-            
-        context_parts = []
-        for score, chunk in top_chunks:
-            context_parts.append(
-                f"Source: {chunk['paper_title']} (Paragraph {chunk['chunk_id']})\n"
-                f"Content: {chunk['text']}"
-            )
-        return "\n\n---\n\n".join(context_parts)
+from ingestion.ingest import IngestionPipeline
+from retrieval.retrieve import RetrievalPipeline
 
 
 class SimpleGraphRetriever:
@@ -227,7 +164,13 @@ def main():
         
     # Initialize retrievers
     print("\nInitializing RAG search indices and loading Knowledge Graph...")
-    rag_retriever = SimpleRAGRetriever(papers_dir)
+    
+    # Ingest documents if index is empty
+    ingestion_pipeline = IngestionPipeline()
+    rag_retriever = RetrievalPipeline()
+    if not rag_retriever.index_exists():
+        print("Vector database index not found. Running ingestion pipeline...")
+        ingestion_pipeline.run()
     
     # Load the real GraphRetriever
     global_graph_path = graphs_dir / "global_graph.graphml"

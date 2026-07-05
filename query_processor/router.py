@@ -103,9 +103,30 @@ class QueryOrchestrator:
             logger.warning(f"{name} retriever is not registered.")
             return f"[{name} context unavailable: Retriever not registered]"
         try:
+            # 1. Handle GraphRetriever (upgraded v3 Graph RAG)
             if retriever.__class__.__name__ == "GraphRetriever" and hasattr(retriever, "retrieve"):
                 return retriever.retrieve(query)
-            return retriever(query)
+                
+            # 2. Execute RAG / general callable
+            result = retriever(query) if callable(retriever) else retriever.run(query)
+            
+            # 3. Format LangChain/FAISS dictionary output if returned
+            if isinstance(result, dict) and "retrieved_chunks" in result:
+                # Import context builder dynamically to apply deduplication and character budgets
+                from context_builder import build_context
+                llm_context_data = build_context(result)
+                
+                # Format into a clean Markdown block for LLM consumption
+                formatted_snippets = []
+                for idx, item in enumerate(llm_context_data.get("context", []), 1):
+                    source = item.get("source", "Unknown Document")
+                    page = f", Page {item.get('page')}" if item.get("page") is not None else ""
+                    content = item.get("content", "").strip()
+                    formatted_snippets.append(f"[{idx}] Source: {source}{page}\n{content}")
+                    
+                return "\n\n---\n\n".join(formatted_snippets)
+                
+            return str(result)
         except Exception as e:
             logger.error(f"Error executing {name} retriever: {e}")
             return f"[{name} context retrieval error: {str(e)}]"

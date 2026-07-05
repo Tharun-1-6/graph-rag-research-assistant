@@ -5,7 +5,8 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 from query_processor.router import QueryOrchestrator
-from prototype import SimpleRAGRetriever
+from ingestion.ingest import IngestionPipeline
+from retrieval.retrieve import RetrievalPipeline
 from graph.retriever import GraphRetriever
 
 def main():
@@ -20,7 +21,12 @@ def main():
 
     # 1. Initialize retrievers
     print("\nInitializing RAG search indices and loading Upgraded Knowledge Graph...")
-    rag_retriever = SimpleRAGRetriever(papers_dir)
+    ingestion_pipeline = IngestionPipeline()
+    rag_retriever = RetrievalPipeline()
+    if not rag_retriever.index_exists():
+        print("Vector database index not found. Running ingestion pipeline...")
+        ingestion_pipeline.run()
+        
     graph_retriever = GraphRetriever(global_graph_path)
 
     # 2. Initialize Query Orchestrator

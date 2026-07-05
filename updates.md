@@ -66,3 +66,28 @@ All core modules are **100% functional** and verified through integration testin
 8. **Evidence Traces & Diversity Budgets**: Added category diversity budgets to formatting logic to prevent single types from dominating, and implemented debug-mode evidence logging displaying score, depth, and paths.
 9. **Trace Logging & Evaluator**: Created `evaluator.py` to calculate precision, recall, average path hops, and latency, returning them alongside execution traces in `GraphRetriever.retrieve()`.
 10. **Validation Test suite**: Updated `tests/test_retrieval_engine.py` to benchmark all 12 query pathways and budget constraints. All tests completed successfully.
+
+---
+
+## 4. Phase 3: Hybrid Integration (Vector RAG & Graph RAG)
+
+In this phase, we connected the teammate's upgraded Graph RAG pipeline and the LangChain/FAISS Vector RAG pipeline with your query routing and LLM response layer.
+
+### A. Query Routing & Orchestration (`query_processor/router.py`)
+* **Routing Layer**: Evaluates natural language user queries and routes them to `RAG`, `GRAPH_RAG`, or `COMBINED`.
+* **Orchestrator**: Executes `RetrievalPipeline` (Vector RAG) and `GraphRetriever` (Graph RAG) in parallel, formats their contexts, and sends them to the LLM response generator.
+* **Vector RAG Integration**: Supports structured dictionary outputs from LangChain/FAISS, automatically processing them through `context_builder.py` (deduplication, page merging, and character budgeting) to compile clean Markdown snippets for LLM prompting.
+
+### B. LangChain/FAISS Vector RAG Pipeline (`ingestion/` & `retrieval/`)
+* **Ingestion (`ingestion/ingest.py`)**: Uses LangChain `RecursiveCharacterTextSplitter` and `sentence-transformers/all-MiniLM-L6-v2` to split PDF text documents and index them in a local FAISS vector database inside `db/`.
+* **Retrieval (`retrieval/retrieve.py`)**: Queries the local FAISS index, returning matching text chunks, page numbers, and cosine similarity distances.
+
+### C. Unified Prototype CLI (`prototype.py`)
+* Replaced the mock retriever placeholders with the fully integrated `RetrievalPipeline` and `GraphRetriever`.
+* Checks for local FAISS index files on startup, running `IngestionPipeline` automatically if they are missing.
+* Displays rich **Graph Retrieval traces** for any query routed through `GRAPH_RAG` or `COMBINED`:
+  * **Entity Resolution**: Seed entities matched in the query with confidence scores.
+  * **Query Intent**: Detected query category and active relationship filters.
+  * **Traversal Metrics**: Traversal latency, visited nodes, and retained nodes/edges.
+  * **JSON Retrieval Context**: Raw JSON metadata returned to the orchestrator.
+* Displays the active LLM response provider (with silent fallback to Groq Llama-3.3 if Gemini quota/API errors occur).

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Databases & local outputs
+db/
+*.faiss
+*.pkl
+retrieved_chunks.json
+llm_context.json
+
+# Nested Git repositories / libraries
+graph-rag-research-assistant/

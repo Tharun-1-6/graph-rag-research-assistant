@@ -1,0 +1,3772 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d8" for="edge" attr.name="confidence" attr.type="double" />
+  <key id="d7" for="edge" attr.name="relationship" attr.type="string" />
+  <key id="d6" for="node" attr.name="paper_count" attr.type="long" />
+  <key id="d5" for="node" attr.name="paper_ids" attr.type="string" />
+  <key id="d4" for="node" attr.name="name" attr.type="string" />
+  <key id="d3" for="node" attr.name="conference" attr.type="string" />
+  <key id="d2" for="node" attr.name="year" attr.type="long" />
+  <key id="d1" for="node" attr.name="title" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="attention_is_all_you_need">
+      <data key="d0">Paper</data>
+      <data key="d1">Attention Is All You Need</data>
+      <data key="d2">2017</data>
+      <data key="d3">NIPS 2017</data>
+    </node>
+    <node id="ashish_vaswani">
+      <data key="d0">Author</data>
+      <data key="d4">Ashish Vaswani</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="noam_shazeer">
+      <data key="d0">Author</data>
+      <data key="d4">Noam Shazeer</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="niki_parmar">
+      <data key="d0">Author</data>
+      <data key="d4">Niki Parmar</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="jakob_uszkoreit">
+      <data key="d0">Author</data>
+      <data key="d4">Jakob Uszkoreit</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="llion_jones">
+      <data key="d0">Author</data>
+      <data key="d4">Llion Jones</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="aidan_n_gomez">
+      <data key="d0">Author</data>
+      <data key="d4">Aidan N. Gomez</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="łukasz_kaiser">
+      <data key="d0">Author</data>
+      <data key="d4">Łukasz Kaiser</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="illia_polosukhin">
+      <data key="d0">Author</data>
+      <data key="d4">Illia Polosukhin</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="google_brain">
+      <data key="d0">Institution</data>
+      <data key="d4">Google Brain</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="google_research">
+      <data key="d0">Institution</data>
+      <data key="d4">Google Research</data>
+      <data key="d5">attention_is_all_you_need,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="university_of_toronto">
+      <data key="d0">Institution</data>
+      <data key="d4">University of Toronto</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="transformer">
+      <data key="d0">Method</data>
+      <data key="d4">Transformer</data>
+      <data key="d5">attention_is_all_you_need,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="attention_mechanism">
+      <data key="d0">Method</data>
+      <data key="d4">Attention mechanism</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="self_attention">
+      <data key="d0">Method</data>
+      <data key="d4">Self-attention</data>
+      <data key="d5">attention_is_all_you_need,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="multi_head_attention">
+      <data key="d0">Method</data>
+      <data key="d4">Multi-Head Attention</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="scaled_dot_product_attention">
+      <data key="d0">Method</data>
+      <data key="d4">Scaled Dot-Product Attention</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="positional_encoding">
+      <data key="d0">Method</data>
+      <data key="d4">Positional Encoding</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="encoder_decoder_architecture">
+      <data key="d0">Method</data>
+      <data key="d4">Encoder-Decoder Architecture</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="residual_connections">
+      <data key="d0">Method</data>
+      <data key="d4">Residual Connections</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="layer_normalization">
+      <data key="d0">Method</data>
+      <data key="d4">Layer Normalization</data>
+      <data key="d5">attention_is_all_you_need,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="position_wise_feed_forward_networks">
+      <data key="d0">Method</data>
+      <data key="d4">Position-wise Feed-Forward Networks</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="embeddings">
+      <data key="d0">Method</data>
+      <data key="d4">Embeddings</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="softmax">
+      <data key="d0">Method</data>
+      <data key="d4">Softmax</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="adam_optimizer">
+      <data key="d0">Method</data>
+      <data key="d4">Adam optimizer</data>
+      <data key="d5">attention_is_all_you_need,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="residual_dropout">
+      <data key="d0">Method</data>
+      <data key="d4">Residual Dropout</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="label_smoothing">
+      <data key="d0">Method</data>
+      <data key="d4">Label Smoothing</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="beam_search">
+      <data key="d0">Method</data>
+      <data key="d4">Beam search</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="length_penalty">
+      <data key="d0">Method</data>
+      <data key="d4">Length penalty</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="byte_pair_encoding">
+      <data key="d0">Method</data>
+      <data key="d4">Byte-pair encoding</data>
+      <data key="d5">attention_is_all_you_need,roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="word_piece_vocabulary">
+      <data key="d0">Method</data>
+      <data key="d4">Word-piece vocabulary</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="recurrent_neural_networks">
+      <data key="d0">Architecture</data>
+      <data key="d4">Recurrent Neural Networks</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="long_short_term_memory">
+      <data key="d0">Architecture</data>
+      <data key="d4">Long Short-Term Memory</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="gated_recurrent_neural_networks">
+      <data key="d0">Architecture</data>
+      <data key="d4">Gated Recurrent Neural Networks</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="convolutional_neural_networks">
+      <data key="d0">Architecture</data>
+      <data key="d4">Convolutional Neural Networks</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="extended_neural_gpu">
+      <data key="d0">Architecture</data>
+      <data key="d4">Extended Neural GPU</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="bytenet">
+      <data key="d0">Architecture</data>
+      <data key="d4">ByteNet</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="convs2s">
+      <data key="d0">Architecture</data>
+      <data key="d4">ConvS2S</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="deep_att_posunk">
+      <data key="d0">Architecture</data>
+      <data key="d4">Deep-Att + PosUnk</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="gnmt_rl">
+      <data key="d0">Architecture</data>
+      <data key="d4">GNMT + RL</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="moe">
+      <data key="d0">Architecture</data>
+      <data key="d4">MoE</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="end_to_end_memory_networks">
+      <data key="d0">Architecture</data>
+      <data key="d4">End-to-end memory networks</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="wmt_2014_english_german_dataset">
+      <data key="d0">Dataset</data>
+      <data key="d4">WMT 2014 English-German dataset</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="wmt_2014_english_french_dataset">
+      <data key="d0">Dataset</data>
+      <data key="d4">WMT 2014 English-French dataset</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="newstest2014">
+      <data key="d0">Dataset</data>
+      <data key="d4">newstest2014</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="newstest2013">
+      <data key="d0">Dataset</data>
+      <data key="d4">newstest2013</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="wmt_2014_english_to_german_translation_task">
+      <data key="d0">Benchmark</data>
+      <data key="d4">WMT 2014 English-to-German translation task</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="wmt_2014_english_to_french_translation_task">
+      <data key="d0">Benchmark</data>
+      <data key="d4">WMT 2014 English-to-French translation task</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="sequence_transduction">
+      <data key="d0">Task</data>
+      <data key="d4">Sequence transduction</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="machine_translation">
+      <data key="d0">Task</data>
+      <data key="d4">Machine translation</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="language_modeling">
+      <data key="d0">Task</data>
+      <data key="d4">Language modeling</data>
+      <data key="d5">attention_is_all_you_need,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="reading_comprehension">
+      <data key="d0">Task</data>
+      <data key="d4">Reading comprehension</data>
+      <data key="d5">attention_is_all_you_need,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="abstractive_summarization">
+      <data key="d0">Task</data>
+      <data key="d4">Abstractive summarization</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="textual_entailment">
+      <data key="d0">Task</data>
+      <data key="d4">Textual entailment</data>
+      <data key="d5">attention_is_all_you_need,roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="learning_task_independent_sentence_representations">
+      <data key="d0">Task</data>
+      <data key="d4">Learning task-independent sentence representations</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="simple_language_question_answering">
+      <data key="d0">Task</data>
+      <data key="d4">Simple-language question answering</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="sequence_modeling">
+      <data key="d0">Task</data>
+      <data key="d4">Sequence modeling</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="bleu_score">
+      <data key="d0">Metric</data>
+      <data key="d4">BLEU score</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="perplexity">
+      <data key="d0">Metric</data>
+      <data key="d4">Perplexity</data>
+      <data key="d5">attention_is_all_you_need,roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="training_cost_flops">
+      <data key="d0">Metric</data>
+      <data key="d4">Training Cost (FLOPs)</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="neural_machine_translation">
+      <data key="d0">Topic</data>
+      <data key="d4">Neural Machine Translation</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="attention_mechanisms">
+      <data key="d0">Topic</data>
+      <data key="d4">Attention Mechanisms</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="deep_learning_architectures">
+      <data key="d0">Topic</data>
+      <data key="d4">Deep Learning Architectures</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="parallelization_in_neural_networks">
+      <data key="d0">Topic</data>
+      <data key="d4">Parallelization in Neural Networks</data>
+      <data key="d5">attention_is_all_you_need</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="nips_2017">
+      <data key="d0">Conference</data>
+      <data key="d4">NIPS 2017</data>
+    </node>
+    <node id="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding">
+      <data key="d0">Paper</data>
+      <data key="d1">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</data>
+      <data key="d2">2019</data>
+      <data key="d3">NAACL-HLT 2019</data>
+    </node>
+    <node id="jacob_devlin">
+      <data key="d0">Author</data>
+      <data key="d4">Jacob Devlin</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="ming_wei_chang">
+      <data key="d0">Author</data>
+      <data key="d4">Ming-Wei Chang</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="kenton_lee">
+      <data key="d0">Author</data>
+      <data key="d4">Kenton Lee</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="kristina_toutanova">
+      <data key="d0">Author</data>
+      <data key="d4">Kristina Toutanova</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="google_ai_language">
+      <data key="d0">Institution</data>
+      <data key="d4">Google AI Language</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="bert">
+      <data key="d0">Method</data>
+      <data key="d4">BERT</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="pre_training">
+      <data key="d0">Method</data>
+      <data key="d4">Pre-training</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="fine_tuning">
+      <data key="d0">Method</data>
+      <data key="d4">Fine-tuning</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="masked_language_model_mlm">
+      <data key="d0">Method</data>
+      <data key="d4">Masked Language Model (MLM)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="next_sentence_prediction_nsp">
+      <data key="d0">Method</data>
+      <data key="d4">Next Sentence Prediction (NSP)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="feature_based_approach">
+      <data key="d0">Method</data>
+      <data key="d4">Feature-based approach</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="fine_tuning_approach">
+      <data key="d0">Method</data>
+      <data key="d4">Fine-tuning approach</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="wordpiece_embeddings">
+      <data key="d0">Method</data>
+      <data key="d4">WordPiece embeddings</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="bidirectional_self_attention">
+      <data key="d0">Method</data>
+      <data key="d4">Bidirectional self-attention</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="left_to_right_ltr_language_modeling">
+      <data key="d0">Method</data>
+      <data key="d4">Left-to-Right (LTR) language modeling</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="right_to_left_rtl_language_modeling">
+      <data key="d0">Method</data>
+      <data key="d4">Right-to-Left (RTL) language modeling</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="adam">
+      <data key="d0">Method</data>
+      <data key="d4">Adam</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="learning_rate_warmup">
+      <data key="d0">Method</data>
+      <data key="d4">Learning rate warmup</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="linear_decay_of_learning_rate">
+      <data key="d0">Method</data>
+      <data key="d4">Linear decay of learning rate</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="dropout">
+      <data key="d0">Method</data>
+      <data key="d4">Dropout</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="gelu_activation">
+      <data key="d0">Method</data>
+      <data key="d4">GELU activation</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="cloze_task">
+      <data key="d0">Method</data>
+      <data key="d4">Cloze task</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="transformer_encoder">
+      <data key="d0">Architecture</data>
+      <data key="d4">Transformer encoder</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="bertbase">
+      <data key="d0">Architecture</data>
+      <data key="d4">BERTBASE</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="bertlarge">
+      <data key="d0">Architecture</data>
+      <data key="d4">BERTLARGE</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="openai_gpt">
+      <data key="d0">Architecture</data>
+      <data key="d4">OpenAI GPT</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="elmo">
+      <data key="d0">Architecture</data>
+      <data key="d4">ELMo</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="bilstm">
+      <data key="d0">Architecture</data>
+      <data key="d4">BiLSTM</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="qanet">
+      <data key="d0">Architecture</data>
+      <data key="d4">QANet</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="bidaf">
+      <data key="d0">Architecture</data>
+      <data key="d4">BiDAF</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="rm_reader">
+      <data key="d0">Architecture</data>
+      <data key="d4">R.M. Reader</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="unet">
+      <data key="d0">Architecture</data>
+      <data key="d4">unet</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="slqa">
+      <data key="d0">Architecture</data>
+      <data key="d4">SLQA+</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="esim">
+      <data key="d0">Architecture</data>
+      <data key="d4">ESIM</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="cvt">
+      <data key="d0">Architecture</data>
+      <data key="d4">CVT</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="cse">
+      <data key="d0">Architecture</data>
+      <data key="d4">CSE</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="bookscorpus">
+      <data key="d0">Dataset</data>
+      <data key="d4">BooksCorpus</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="english_wikipedia">
+      <data key="d0">Dataset</data>
+      <data key="d4">English Wikipedia</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="triviaqa">
+      <data key="d0">Dataset</data>
+      <data key="d4">TriviaQA</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="glue">
+      <data key="d0">Dataset</data>
+      <data key="d4">GLUE</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="multinli_mnli">
+      <data key="d0">Dataset</data>
+      <data key="d4">MultiNLI (MNLI)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="quora_question_pairs_qqp">
+      <data key="d0">Dataset</data>
+      <data key="d4">Quora Question Pairs (QQP)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="question_natural_language_inference_qnli">
+      <data key="d0">Dataset</data>
+      <data key="d4">Question Natural Language Inference (QNLI)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="stanford_sentiment_treebank_sst_2">
+      <data key="d0">Dataset</data>
+      <data key="d4">Stanford Sentiment Treebank (SST-2)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="corpus_of_linguistic_acceptability_cola">
+      <data key="d0">Dataset</data>
+      <data key="d4">Corpus of Linguistic Acceptability (CoLA)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="semantic_textual_similarity_benchmark_sts_b">
+      <data key="d0">Dataset</data>
+      <data key="d4">Semantic Textual Similarity Benchmark (STS-B)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="microsoft_research_paraphrase_corpus_mrpc">
+      <data key="d0">Dataset</data>
+      <data key="d4">Microsoft Research Paraphrase Corpus (MRPC)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="recognizing_textual_entailment_rte">
+      <data key="d0">Dataset</data>
+      <data key="d4">Recognizing Textual Entailment (RTE)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="winograd_nli_wnli">
+      <data key="d0">Dataset</data>
+      <data key="d4">Winograd NLI (WNLI)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="swag">
+      <data key="d0">Dataset</data>
+      <data key="d4">SWAG</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="conll_2003_named_entity_recognition">
+      <data key="d0">Dataset</data>
+      <data key="d4">CoNLL-2003 Named Entity Recognition</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="glue_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d4">GLUE benchmark</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="squad_v11_leaderboard">
+      <data key="d0">Benchmark</data>
+      <data key="d4">SQuAD v1.1 leaderboard</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="squad_v20_leaderboard">
+      <data key="d0">Benchmark</data>
+      <data key="d4">SQuAD v2.0 leaderboard</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="language_understanding">
+      <data key="d0">Task</data>
+      <data key="d4">Language Understanding</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="question_answering_qa">
+      <data key="d0">Task</data>
+      <data key="d4">Question Answering (QA)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="natural_language_inference_nli">
+      <data key="d0">Task</data>
+      <data key="d4">Natural Language Inference (NLI)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="named_entity_recognition_ner">
+      <data key="d0">Task</data>
+      <data key="d4">Named Entity Recognition (NER)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="paraphrasing">
+      <data key="d0">Task</data>
+      <data key="d4">Paraphrasing</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="text_classification">
+      <data key="d0">Task</data>
+      <data key="d4">Text classification</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="sequence_tagging">
+      <data key="d0">Task</data>
+      <data key="d4">Sequence tagging</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="semantic_textual_similarity_sts">
+      <data key="d0">Task</data>
+      <data key="d4">Semantic Textual Similarity (STS)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="linguistic_acceptability">
+      <data key="d0">Task</data>
+      <data key="d4">Linguistic Acceptability</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="commonsense_inference">
+      <data key="d0">Task</data>
+      <data key="d4">Commonsense inference</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="glue_score">
+      <data key="d0">Metric</data>
+      <data key="d4">GLUE score</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="accuracy">
+      <data key="d0">Metric</data>
+      <data key="d4">Accuracy</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="f1">
+      <data key="d0">Metric</data>
+      <data key="d4">F1</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="spearman_correlations">
+      <data key="d0">Metric</data>
+      <data key="d4">Spearman correlations</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="exact_match_em">
+      <data key="d0">Metric</data>
+      <data key="d4">Exact Match (EM)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="perplexity_lm_ppl">
+      <data key="d0">Metric</data>
+      <data key="d4">Perplexity (LM ppl)</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="language_representation_models">
+      <data key="d0">Topic</data>
+      <data key="d4">Language Representation Models</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="transfer_learning">
+      <data key="d0">Topic</data>
+      <data key="d4">Transfer Learning</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="deep_learning">
+      <data key="d0">Topic</data>
+      <data key="d4">Deep Learning</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="natural_language_processing">
+      <data key="d0">Topic</data>
+      <data key="d4">Natural Language Processing</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="transformers">
+      <data key="d0">Topic</data>
+      <data key="d4">Transformers</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="bidirectional_context">
+      <data key="d0">Topic</data>
+      <data key="d4">Bidirectional Context</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="unsupervised_learning">
+      <data key="d0">Topic</data>
+      <data key="d4">Unsupervised Learning</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="contextual_embeddings">
+      <data key="d0">Topic</data>
+      <data key="d4">Contextual Embeddings</data>
+      <data key="d5">bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="naacl_hlt_2019">
+      <data key="d0">Conference</data>
+      <data key="d4">NAACL-HLT 2019</data>
+    </node>
+    <node id="roberta_a_robustly_optimized_bert_pre_training_approach">
+      <data key="d0">Paper</data>
+      <data key="d1">ROBERTA: A ROBUSTLY OPTIMIZED BERT PRE-TRAINING APPROACH</data>
+      <data key="d2">2020</data>
+      <data key="d3">ICLR 2020</data>
+    </node>
+    <node id="anonymous_authors">
+      <data key="d0">Author</data>
+      <data key="d4">Anonymous authors</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="language_model_pretraining">
+      <data key="d0">Method</data>
+      <data key="d4">Language model pretraining</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="bert_pretraining">
+      <data key="d0">Method</data>
+      <data key="d4">BERT pretraining</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="roberta">
+      <data key="d0">Method</data>
+      <data key="d4">RoBERTa</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="dynamic_masking">
+      <data key="d0">Method</data>
+      <data key="d4">Dynamic masking</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="static_masking">
+      <data key="d0">Method</data>
+      <data key="d4">Static masking</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="training_with_large_batches">
+      <data key="d0">Method</data>
+      <data key="d4">Training with large batches</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="byte_pair_encoding_bpe">
+      <data key="d0">Method</data>
+      <data key="d4">Byte-Pair Encoding (BPE)</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="character_level_bpe">
+      <data key="d0">Method</data>
+      <data key="d4">Character-level BPE</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="byte_level_bpe">
+      <data key="d0">Method</data>
+      <data key="d4">Byte-level BPE</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="self_training_methods">
+      <data key="d0">Method</data>
+      <data key="d4">Self-training methods</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="gradient_accumulation">
+      <data key="d0">Method</data>
+      <data key="d4">Gradient accumulation</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="mixed_precision_floating_point_arithmetic">
+      <data key="d0">Method</data>
+      <data key="d4">Mixed precision floating point arithmetic</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="finetuning">
+      <data key="d0">Method</data>
+      <data key="d4">Finetuning</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="single_task_finetuning">
+      <data key="d0">Method</data>
+      <data key="d4">Single-task finetuning</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="multi_task_finetuning">
+      <data key="d0">Method</data>
+      <data key="d4">Multi-task finetuning</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="pairwise_ranking_formulation">
+      <data key="d0">Method</data>
+      <data key="d4">Pairwise ranking formulation</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="span_prediction">
+      <data key="d0">Method</data>
+      <data key="d4">Span prediction</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="classifier">
+      <data key="d0">Method</data>
+      <data key="d4">Classifier</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="margin_ranking_loss">
+      <data key="d0">Method</data>
+      <data key="d4">Margin ranking loss</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="cross_entropy_loss">
+      <data key="d0">Method</data>
+      <data key="d4">Cross entropy loss</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="autoregressive_pretraining">
+      <data key="d0">Method</data>
+      <data key="d4">Autoregressive pretraining</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="perturbed_autoregressive_language_modeling">
+      <data key="d0">Method</data>
+      <data key="d4">Perturbed autoregressive language modeling</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="multi_task_deep_neural_networks">
+      <data key="d0">Method</data>
+      <data key="d4">Multi-task deep neural networks</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="knowledge_distillation">
+      <data key="d0">Method</data>
+      <data key="d4">Knowledge distillation</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="universal_language_model_fine_tuning">
+      <data key="d0">Method</data>
+      <data key="d4">Universal language model fine-tuning</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="cloze_driven_pretraining">
+      <data key="d0">Method</data>
+      <data key="d4">Cloze-driven pretraining</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="generative_insertion_based_modeling">
+      <data key="d0">Method</data>
+      <data key="d4">Generative insertion-based modeling</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="masked_sequence_to_sequence_pre_training">
+      <data key="d0">Method</data>
+      <data key="d4">Masked sequence to sequence pre-training</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="enhanced_representation_through_knowledge_integration">
+      <data key="d0">Method</data>
+      <data key="d4">Enhanced representation through knowledge integration</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="spanbert">
+      <data key="d0">Method</data>
+      <data key="d4">SpanBERT</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="segment_pairnsp">
+      <data key="d0">Method</data>
+      <data key="d4">SEGMENT-PAIR+NSP</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="sentence_pairnsp">
+      <data key="d0">Method</data>
+      <data key="d4">SENTENCE-PAIR+NSP</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="full_sentences">
+      <data key="d0">Method</data>
+      <data key="d4">FULL-SENTENCES</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="doc_sentences">
+      <data key="d0">Method</data>
+      <data key="d4">DOC-SENTENCES</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="gpt">
+      <data key="d0">Architecture</data>
+      <data key="d4">GPT</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="xlm">
+      <data key="d0">Architecture</data>
+      <data key="d4">XLM</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="xlnet">
+      <data key="d0">Architecture</data>
+      <data key="d4">XLNet</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="transformer_architecture">
+      <data key="d0">Architecture</data>
+      <data key="d4">Transformer architecture</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="xlnetbase">
+      <data key="d0">Architecture</data>
+      <data key="d4">XLNetBASE</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="xlnetlarge">
+      <data key="d0">Architecture</data>
+      <data key="d4">XLNetLARGE</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="bookcorpus">
+      <data key="d0">Dataset</data>
+      <data key="d4">BOOKCORPUS</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="cc_news">
+      <data key="d0">Dataset</data>
+      <data key="d4">CC-NEWS</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="commoncrawl_news_dataset">
+      <data key="d0">Dataset</data>
+      <data key="d4">CommonCrawl News dataset</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="openwebtext">
+      <data key="d0">Dataset</data>
+      <data key="d4">OPENWEBTEXT</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="webtext_corpus">
+      <data key="d0">Dataset</data>
+      <data key="d4">WebText corpus</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="stories">
+      <data key="d0">Dataset</data>
+      <data key="d4">STORIES</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="realnews_dataset">
+      <data key="d0">Dataset</data>
+      <data key="d4">REALNEWS dataset</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="squad_training_data">
+      <data key="d0">Dataset</data>
+      <data key="d4">SQuAD training data</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="qa_datasets">
+      <data key="d0">Dataset</data>
+      <data key="d4">QA datasets</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="wnli_data_from_superglue">
+      <data key="d0">Dataset</data>
+      <data key="d4">WNLI data from SuperGLUE</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="commitmentbank_cb">
+      <data key="d0">Dataset</data>
+      <data key="d4">CommitmentBank (CB)</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="multi_sentence_reading_comprehension_multirc">
+      <data key="d0">Dataset</data>
+      <data key="d4">Multi-Sentence Reading Comprehension (MultiRC)</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="reading_comprehension_with_commonsense_reasoning_record">
+      <data key="d0">Dataset</data>
+      <data key="d4">Reading Comprehension with Commonsense Reasoning (ReCoRD)</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="words_in_context_wic">
+      <data key="d0">Dataset</data>
+      <data key="d4">Words in Context (WiC)</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="winogender_schema_diagnostics">
+      <data key="d0">Dataset</data>
+      <data key="d4">Winogender Schema Diagnostics</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="cola">
+      <data key="d0">Dataset</data>
+      <data key="d4">CoLA</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="stanford_sentiment_treebank_sst">
+      <data key="d0">Dataset</data>
+      <data key="d4">Stanford Sentiment Treebank (SST)</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="microsoft_research_paragraph_corpus_mrpc">
+      <data key="d0">Dataset</data>
+      <data key="d4">Microsoft Research Paragraph Corpus (MRPC)</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="semantic_textual_similarity_benchmark_sts">
+      <data key="d0">Dataset</data>
+      <data key="d4">Semantic Textual Similarity Benchmark (STS)</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="multi_genre_nli_mnli">
+      <data key="d0">Dataset</data>
+      <data key="d4">Multi-Genre NLI (MNLI)</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="question_nli_qnli">
+      <data key="d0">Dataset</data>
+      <data key="d4">Question NLI (QNLI)</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="boolq">
+      <data key="d0">Dataset</data>
+      <data key="d4">BoolQ</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="choice_of_plausible_alternatives_copa">
+      <data key="d0">Dataset</data>
+      <data key="d4">Choice of Plausible Alternatives (COPA)</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="winograd_schema_challenge_wsc">
+      <data key="d0">Dataset</data>
+      <data key="d4">Winograd Schema Challenge (WSC)</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="xnli">
+      <data key="d0">Dataset</data>
+      <data key="d4">XNLI</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="additional_data">
+      <data key="d0">Dataset</data>
+      <data key="d4">additional data</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="squad">
+      <data key="d0">Benchmark</data>
+      <data key="d4">SQuAD</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="race">
+      <data key="d0">Benchmark</data>
+      <data key="d4">RACE</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="superglue">
+      <data key="d0">Benchmark</data>
+      <data key="d4">SuperGLUE</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="squad_v11">
+      <data key="d0">Benchmark</data>
+      <data key="d4">SQuAD V1.1</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="squad_v20">
+      <data key="d0">Benchmark</data>
+      <data key="d4">SQuAD V2.0</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="single_sentence_classification">
+      <data key="d0">Task</data>
+      <data key="d4">Single-sentence classification</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="sentence_pair_classification">
+      <data key="d0">Task</data>
+      <data key="d4">Sentence-pair classification</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="commonsense_reasoning">
+      <data key="d0">Task</data>
+      <data key="d4">Commonsense reasoning</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="pronoun_disambiguation">
+      <data key="d0">Task</data>
+      <data key="d4">Pronoun disambiguation</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="natural_language_understanding_and_generation">
+      <data key="d0">Task</data>
+      <data key="d4">Natural language understanding and generation</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="semantic_compositionality">
+      <data key="d0">Task</data>
+      <data key="d4">Semantic compositionality</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="word_in_context_evaluation">
+      <data key="d0">Task</data>
+      <data key="d4">Word-in-context evaluation</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="winograd_schema_challenge">
+      <data key="d0">Task</data>
+      <data key="d4">Winograd Schema Challenge</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="f1_score">
+      <data key="d0">Metric</data>
+      <data key="d4">F1 score</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="em">
+      <data key="d0">Metric</data>
+      <data key="d4">EM</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="macro_averaged_accuracy">
+      <data key="d0">Metric</data>
+      <data key="d4">Macro-averaged accuracy</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="hyperparameter_tuning">
+      <data key="d0">Topic</data>
+      <data key="d4">Hyperparameter Tuning</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="data_size_effects">
+      <data key="d0">Topic</data>
+      <data key="d4">Data Size Effects</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="replication_study">
+      <data key="d0">Topic</data>
+      <data key="d4">Replication Study</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="robust_optimization">
+      <data key="d0">Topic</data>
+      <data key="d4">Robust Optimization</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="masked_language_modeling">
+      <data key="d0">Topic</data>
+      <data key="d4">Masked Language Modeling</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="next_sentence_prediction">
+      <data key="d0">Topic</data>
+      <data key="d4">Next Sentence Prediction</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="large_batch_training">
+      <data key="d0">Topic</data>
+      <data key="d4">Large Batch Training</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="subword_units">
+      <data key="d0">Topic</data>
+      <data key="d4">Subword Units</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="natural_language_understanding">
+      <data key="d0">Topic</data>
+      <data key="d4">Natural Language Understanding</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="question_answering">
+      <data key="d0">Topic</data>
+      <data key="d4">Question Answering</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="cross_lingual_sentence_representations">
+      <data key="d0">Topic</data>
+      <data key="d4">Cross-lingual Sentence Representations</data>
+      <data key="d5">roberta_a_robustly_optimized_bert_pre_training_approach</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="iclr_2020">
+      <data key="d0">Conference</data>
+      <data key="d4">ICLR 2020</data>
+    </node>
+    <node id="albert_a_lite_bert_for_self_supervised_learning_of_language_representations">
+      <data key="d0">Paper</data>
+      <data key="d1">ALBERT: A LITE BERT FOR SELF-SUPERVISED LEARNING OF LANGUAGE REPRESENTATIONS</data>
+      <data key="d2">2020</data>
+      <data key="d3">ICLR 2020</data>
+    </node>
+    <node id="zhenzhong_lan">
+      <data key="d0">Author</data>
+      <data key="d4">Zhenzhong Lan</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="mingda_chen">
+      <data key="d0">Author</data>
+      <data key="d4">Mingda Chen</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="sebastian_goodman">
+      <data key="d0">Author</data>
+      <data key="d4">Sebastian Goodman</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="kevin_gimpel">
+      <data key="d0">Author</data>
+      <data key="d4">Kevin Gimpel</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="piyush_sharma">
+      <data key="d0">Author</data>
+      <data key="d4">Piyush Sharma</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="radu_soricut">
+      <data key="d0">Author</data>
+      <data key="d4">Radu Soricut</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="toyota_technological_institute_at_chicago">
+      <data key="d0">Institution</data>
+      <data key="d4">Toyota Technological Institute at Chicago</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="factorized_embedding_parameterization">
+      <data key="d0">Method</data>
+      <data key="d4">Factorized embedding parameterization</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="cross_layer_parameter_sharing">
+      <data key="d0">Method</data>
+      <data key="d4">Cross-layer parameter sharing</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="sentence_order_prediction_sop_loss">
+      <data key="d0">Method</data>
+      <data key="d4">Sentence-order prediction (SOP) loss</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="masked_language_modeling_mlm_loss">
+      <data key="d0">Method</data>
+      <data key="d4">Masked language modeling (MLM) loss</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="n_gram_masking">
+      <data key="d0">Method</data>
+      <data key="d4">n-gram masking</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="lamb_optimizer">
+      <data key="d0">Method</data>
+      <data key="d4">LAMB optimizer</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="gradient_checkpointing">
+      <data key="d0">Method</data>
+      <data key="d4">Gradient checkpointing</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="reversible_residual_network">
+      <data key="d0">Method</data>
+      <data key="d4">Reversible residual network</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="model_parallelization">
+      <data key="d0">Method</data>
+      <data key="d4">Model parallelization</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="sentencepiece">
+      <data key="d0">Method</data>
+      <data key="d4">SentencePiece</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="gelu_nonlinearities">
+      <data key="d0">Method</data>
+      <data key="d4">GELU nonlinearities</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="full_network_pre_training">
+      <data key="d0">Method</data>
+      <data key="d4">Full network pre-training</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="albert">
+      <data key="d0">Architecture</data>
+      <data key="d4">ALBERT</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="universal_transformer_ut">
+      <data key="d0">Architecture</data>
+      <data key="d4">Universal Transformer (UT)</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="deep_equilibrium_model_dqe">
+      <data key="d0">Architecture</data>
+      <data key="d4">Deep Equilibrium Model (DQE)</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="skip_thought">
+      <data key="d0">Architecture</data>
+      <data key="d4">Skip-thought</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="fastsent">
+      <data key="d0">Architecture</data>
+      <data key="d4">FastSent</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="transformer_xl">
+      <data key="d0">Architecture</data>
+      <data key="d4">Transformer-XL</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="megatron_lm">
+      <data key="d0">Architecture</data>
+      <data key="d4">Megatron-LM</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="structbert">
+      <data key="d0">Architecture</data>
+      <data key="d4">StructBERT</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="dcmn">
+      <data key="d0">Architecture</data>
+      <data key="d4">DCMN+</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="upm">
+      <data key="d0">Architecture</data>
+      <data key="d4">UPM</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="adv_roberta">
+      <data key="d0">Architecture</data>
+      <data key="d4">Adv-RoBERTa</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="mt_dnn">
+      <data key="d0">Architecture</data>
+      <data key="d4">MT-DNN</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="alice">
+      <data key="d0">Architecture</data>
+      <data key="d4">ALICE</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="sst_2">
+      <data key="d0">Dataset</data>
+      <data key="d4">SST-2</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="race_dataset">
+      <data key="d0">Dataset</data>
+      <data key="d4">RACE dataset</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="race_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d4">RACE benchmark</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="squad_benchmark">
+      <data key="d0">Benchmark</data>
+      <data key="d4">SQuAD benchmark</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="self_supervised_learning_of_language_representations">
+      <data key="d0">Task</data>
+      <data key="d4">Self-supervised learning of language representations</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="natural_language_understanding_nlu">
+      <data key="d0">Task</data>
+      <data key="d4">Natural language understanding (NLU)</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="subject_verb_agreement">
+      <data key="d0">Task</data>
+      <data key="d4">Subject-verb agreement</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="sentence_ordering_prediction_sop">
+      <data key="d0">Task</data>
+      <data key="d4">Sentence ordering prediction (SOP)</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="masked_language_modeling_mlm">
+      <data key="d0">Task</data>
+      <data key="d4">Masked language modeling (MLM)</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="natural_language_inference">
+      <data key="d0">Task</data>
+      <data key="d4">Natural language inference</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="semantic_textual_similarity">
+      <data key="d0">Task</data>
+      <data key="d4">Semantic textual similarity</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="paraphrase_detection">
+      <data key="d0">Task</data>
+      <data key="d4">Paraphrase detection</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="discourse_coherence_prediction">
+      <data key="d0">Task</data>
+      <data key="d4">Discourse coherence prediction</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="topic_prediction">
+      <data key="d0">Task</data>
+      <data key="d4">Topic prediction</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="span_extraction">
+      <data key="d0">Task</data>
+      <data key="d4">Span extraction</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="answerability_prediction">
+      <data key="d0">Task</data>
+      <data key="d4">Answerability prediction</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="l2_distance">
+      <data key="d0">Metric</data>
+      <data key="d4">L2 distance</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="cosine_similarity">
+      <data key="d0">Metric</data>
+      <data key="d4">Cosine similarity</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="natural_language_processing_nlp">
+      <data key="d0">Topic</data>
+      <data key="d4">Natural Language Processing (NLP)</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="language_representation_learning">
+      <data key="d0">Topic</data>
+      <data key="d4">Language Representation Learning</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="self_supervised_learning">
+      <data key="d0">Topic</data>
+      <data key="d4">Self-supervised Learning</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="model_compression">
+      <data key="d0">Topic</data>
+      <data key="d4">Model Compression</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="parameter_efficiency">
+      <data key="d0">Topic</data>
+      <data key="d4">Parameter Efficiency</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="discourse_coherence">
+      <data key="d0">Topic</data>
+      <data key="d4">Discourse Coherence</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="model_scaling">
+      <data key="d0">Topic</data>
+      <data key="d4">Model Scaling</data>
+      <data key="d5">albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="deberta_decoding_enhanced_bert_with_dis_entangled_attention">
+      <data key="d0">Paper</data>
+      <data key="d1">DEBERTA: DECODING-ENHANCED BERT WITH DIS-ENTANGLED ATTENTION</data>
+      <data key="d2">2021</data>
+      <data key="d3">ICLR 2021</data>
+    </node>
+    <node id="pengcheng_he">
+      <data key="d0">Author</data>
+      <data key="d4">Pengcheng He</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="xiaodong_liu">
+      <data key="d0">Author</data>
+      <data key="d4">Xiaodong Liu</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="jianfeng_gao">
+      <data key="d0">Author</data>
+      <data key="d4">Jianfeng Gao</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="weizhu_chen">
+      <data key="d0">Author</data>
+      <data key="d4">Weizhu Chen</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="microsoft_dynamics_365_ai">
+      <data key="d0">Institution</data>
+      <data key="d4">Microsoft Dynamics 365 AI</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="microsoft_research">
+      <data key="d0">Institution</data>
+      <data key="d4">Microsoft Research</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="disentangled_attention_mechanism">
+      <data key="d0">Method</data>
+      <data key="d4">disentangled attention mechanism</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="enhanced_mask_decoder_emd">
+      <data key="d0">Method</data>
+      <data key="d4">enhanced mask decoder (EMD)</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="virtual_adversarial_training">
+      <data key="d0">Method</data>
+      <data key="d4">virtual adversarial training</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="scale_invariant_fine_tuning_sift">
+      <data key="d0">Method</data>
+      <data key="d4">Scale-invariant-Fine-Tuning (SiFT)</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="span_masking">
+      <data key="d0">Method</data>
+      <data key="d4">span masking</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="dynamic_data_batching">
+      <data key="d0">Method</data>
+      <data key="d4">dynamic data batching</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="weight_decay">
+      <data key="d0">Method</data>
+      <data key="d4">weight decay</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="gradient_clipping">
+      <data key="d0">Method</data>
+      <data key="d4">gradient clipping</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="relative_position_encoding">
+      <data key="d0">Method</data>
+      <data key="d4">relative position encoding</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="absolute_position_embedding">
+      <data key="d0">Method</data>
+      <data key="d4">absolute position embedding</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="auto_regressive_language_model_arlm">
+      <data key="d0">Method</data>
+      <data key="d4">auto-regressive language model (ARLM)</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="replaced_token_detection_rtd">
+      <data key="d0">Method</data>
+      <data key="d4">replaced token detection (RTD)</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="projection_matrix_sharing">
+      <data key="d0">Method</data>
+      <data key="d4">projection matrix sharing</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="convolution_layer">
+      <data key="d0">Method</data>
+      <data key="d4">convolution layer</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="deberta">
+      <data key="d0">Architecture</data>
+      <data key="d4">DeBERTa</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="unilm">
+      <data key="d0">Architecture</data>
+      <data key="d4">UniLM</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="electra">
+      <data key="d0">Architecture</data>
+      <data key="d4">ELECTRA</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="t5">
+      <data key="d0">Architecture</data>
+      <data key="d4">T5</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="alum">
+      <data key="d0">Architecture</data>
+      <data key="d4">ALUM</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="ernie">
+      <data key="d0">Architecture</data>
+      <data key="d4">ERNIE</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="longformer">
+      <data key="d0">Architecture</data>
+      <data key="d4">Longformer</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="reformer">
+      <data key="d0">Architecture</data>
+      <data key="d4">Reformer</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="megatron">
+      <data key="d0">Architecture</data>
+      <data key="d4">Megatron</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="gpt_2">
+      <data key="d0">Architecture</data>
+      <data key="d4">GPT-2</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="nexha_plus">
+      <data key="d0">Architecture</data>
+      <data key="d4">NEXHA-Plus</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="meena">
+      <data key="d0">Architecture</data>
+      <data key="d4">Meena</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="deberta_ap">
+      <data key="d0">Architecture</data>
+      <data key="d4">DeBERTa-AP</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="deberta_mt">
+      <data key="d0">Architecture</data>
+      <data key="d4">DeBERTa-MT</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="debertart_d">
+      <data key="d0">Architecture</data>
+      <data key="d4">DeBERTaRT D</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="deberta15b">
+      <data key="d0">Architecture</data>
+      <data key="d4">DeBERTa1.5B</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="deberta900m">
+      <data key="d0">Architecture</data>
+      <data key="d4">DeBERTa900M</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="debertaensemble">
+      <data key="d0">Architecture</data>
+      <data key="d4">DeBERTaEnsemble</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="debertart_dsmall">
+      <data key="d0">Architecture</data>
+      <data key="d4">DeBERTaRT Dsmall</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="debertart_dbase">
+      <data key="d0">Architecture</data>
+      <data key="d4">DeBERTaRT Dbase</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="debertart_dlarge">
+      <data key="d0">Architecture</data>
+      <data key="d4">DeBERTaRT Dlarge</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="wikipedia">
+      <data key="d0">Dataset</data>
+      <data key="d4">Wikipedia</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="wikitext_103">
+      <data key="d0">Dataset</data>
+      <data key="d4">Wikitext-103</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="commoncrawl">
+      <data key="d0">Dataset</data>
+      <data key="d4">CommonCrawl</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="giga5">
+      <data key="d0">Dataset</data>
+      <data key="d4">Giga5</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="clueweb">
+      <data key="d0">Dataset</data>
+      <data key="d4">ClueWeb</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="record">
+      <data key="d0">Benchmark</data>
+      <data key="d4">ReCoRD</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="conll_2003">
+      <data key="d0">Benchmark</data>
+      <data key="d4">CoNLL-2003</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="qqp">
+      <data key="d0">Benchmark</data>
+      <data key="d4">QQP</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="mnli">
+      <data key="d0">Benchmark</data>
+      <data key="d4">MNLI</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="sts_b">
+      <data key="d0">Benchmark</data>
+      <data key="d4">STS-B</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="qnli">
+      <data key="d0">Benchmark</data>
+      <data key="d4">QNLI</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="rte">
+      <data key="d0">Benchmark</data>
+      <data key="d4">RTE</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="mrpc">
+      <data key="d0">Benchmark</data>
+      <data key="d4">MRPC</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="wsc">
+      <data key="d0">Benchmark</data>
+      <data key="d4">WSC</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="copa">
+      <data key="d0">Benchmark</data>
+      <data key="d4">COPA</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="cb">
+      <data key="d0">Benchmark</data>
+      <data key="d4">CB</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="wic">
+      <data key="d0">Benchmark</data>
+      <data key="d4">WiC</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="multirc">
+      <data key="d0">Benchmark</data>
+      <data key="d4">MultiRC</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="natural_language_understand_nlu">
+      <data key="d0">Task</data>
+      <data key="d4">natural language understand (NLU)</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="natural_language_generation_nlg">
+      <data key="d0">Task</data>
+      <data key="d4">natural language generation (NLG)</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="machine_reading_comprehension_mrc">
+      <data key="d0">Task</data>
+      <data key="d4">machine reading comprehension (MRC)</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="sentiment_analysis">
+      <data key="d0">Task</data>
+      <data key="d4">sentiment analysis</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="text_similarity">
+      <data key="d0">Task</data>
+      <data key="d4">text similarity</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="coreference_resolution">
+      <data key="d0">Task</data>
+      <data key="d4">coreference resolution</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="word_sense_disambiguation_wsd">
+      <data key="d0">Task</data>
+      <data key="d4">word sense disambiguation (WSD)</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="exact_match">
+      <data key="d0">Metric</data>
+      <data key="d4">Exact Match</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="matthews_correlation_coefficient">
+      <data key="d0">Metric</data>
+      <data key="d4">Matthews correlation coefficient</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="pearson_correlation">
+      <data key="d0">Metric</data>
+      <data key="d4">Pearson correlation</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="spearman_correlation">
+      <data key="d0">Metric</data>
+      <data key="d4">Spearman correlation</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="macro_average_score">
+      <data key="d0">Metric</data>
+      <data key="d4">macro-average score</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="pre_trained_neural_language_models_plms">
+      <data key="d0">Topic</data>
+      <data key="d4">pre-trained neural language models (PLMs)</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="transformer_based_models">
+      <data key="d0">Topic</data>
+      <data key="d4">Transformer-based models</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="contextual_word_representations">
+      <data key="d0">Topic</data>
+      <data key="d4">contextual word representations</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="adversarial_training">
+      <data key="d0">Topic</data>
+      <data key="d4">adversarial training</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="model_generalization">
+      <data key="d0">Topic</data>
+      <data key="d4">model generalization</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="model_pre_training_efficiency">
+      <data key="d0">Topic</data>
+      <data key="d4">model pre-training efficiency</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="human_performance_baseline">
+      <data key="d0">Topic</data>
+      <data key="d4">human performance baseline</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="compositional_generalization">
+      <data key="d0">Topic</data>
+      <data key="d4">compositional generalization</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="general_ai">
+      <data key="d0">Topic</data>
+      <data key="d4">general AI</data>
+      <data key="d5">deberta_decoding_enhanced_bert_with_dis_entangled_attention</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="iclr_2021">
+      <data key="d0">Conference</data>
+      <data key="d4">ICLR 2021</data>
+    </node>
+    <edge source="attention_is_all_you_need" target="ashish_vaswani" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="noam_shazeer" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="niki_parmar" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="jakob_uszkoreit" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="llion_jones" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="aidan_n_gomez" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="łukasz_kaiser" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="illia_polosukhin" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="transformer" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="attention_mechanism" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="self_attention" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="multi_head_attention" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="scaled_dot_product_attention" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="positional_encoding" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="encoder_decoder_architecture" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="residual_connections" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="layer_normalization" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="position_wise_feed_forward_networks" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="embeddings" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="softmax" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="adam_optimizer" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="residual_dropout" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="label_smoothing" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="beam_search" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="length_penalty" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="byte_pair_encoding" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="word_piece_vocabulary" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="recurrent_neural_networks" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="long_short_term_memory" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="gated_recurrent_neural_networks" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="convolutional_neural_networks" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="extended_neural_gpu" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="bytenet" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="convs2s" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="deep_att_posunk" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="gnmt_rl" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="moe" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="end_to_end_memory_networks" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_is_all_you_need" target="nips_2017" id="0">
+      <data key="d7">PUBLISHED_AT</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="ashish_vaswani" target="google_brain" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="noam_shazeer" target="google_brain" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="niki_parmar" target="google_research" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="jakob_uszkoreit" target="google_research" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="llion_jones" target="google_research" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="aidan_n_gomez" target="university_of_toronto" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="aidan_n_gomez" target="google_brain" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="łukasz_kaiser" target="google_brain" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="illia_polosukhin" target="google_research" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="transformer" target="wmt_2014_english_to_german_translation_task" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="transformer" target="wmt_2014_english_to_french_translation_task" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="transformer" target="machine_translation" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_mechanism" target="recurrent_neural_networks" id="0">
+      <data key="d7">RELATED_TO</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="attention_mechanism" target="convolutional_neural_networks" id="0">
+      <data key="d7">RELATED_TO</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="self_attention" target="reading_comprehension" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="self_attention" target="abstractive_summarization" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="self_attention" target="textual_entailment" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="self_attention" target="learning_task_independent_sentence_representations" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="encoder_decoder_architecture" target="recurrent_neural_networks" id="0">
+      <data key="d7">RELATED_TO</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="encoder_decoder_architecture" target="convolutional_neural_networks" id="0">
+      <data key="d7">RELATED_TO</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="recurrent_neural_networks" target="sequence_modeling" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="recurrent_neural_networks" target="language_modeling" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="recurrent_neural_networks" target="machine_translation" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="end_to_end_memory_networks" target="simple_language_question_answering" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="end_to_end_memory_networks" target="language_modeling" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="jacob_devlin" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="ming_wei_chang" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="kenton_lee" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="kristina_toutanova" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="bert" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="pre_training" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="fine_tuning" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="masked_language_model_mlm" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="next_sentence_prediction_nsp" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="feature_based_approach" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="fine_tuning_approach" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="wordpiece_embeddings" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="bidirectional_self_attention" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="left_to_right_ltr_language_modeling" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="right_to_left_rtl_language_modeling" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="adam" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="learning_rate_warmup" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="linear_decay_of_learning_rate" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="dropout" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="gelu_activation" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="cloze_task" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="transformer_encoder" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="bertbase" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="bertlarge" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="openai_gpt" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="elmo" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="bilstm" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="qanet" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="bidaf" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="rm_reader" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="unet" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="slqa" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="esim" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="cvt" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="cse" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding" target="naacl_hlt_2019" id="0">
+      <data key="d7">PUBLISHED_AT</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="jacob_devlin" target="google_ai_language" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="ming_wei_chang" target="google_ai_language" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="kenton_lee" target="google_ai_language" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="kristina_toutanova" target="google_ai_language" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="bookscorpus" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="english_wikipedia" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="triviaqa" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="glue_benchmark" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="language_understanding" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="question_answering_qa" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="natural_language_inference_nli" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="named_entity_recognition_ner" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="paraphrasing" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="text_classification" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="sequence_tagging" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="semantic_textual_similarity_sts" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="linguistic_acceptability" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="commonsense_inference" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="bookcorpus" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="glue" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="squad" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="race" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert" target="superglue" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="openai_gpt" target="glue_benchmark" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="elmo" target="glue_benchmark" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="anonymous_authors" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="language_model_pretraining" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="bert_pretraining" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="roberta" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="masked_language_model_mlm" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="next_sentence_prediction_nsp" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="dynamic_masking" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="static_masking" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="training_with_large_batches" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="byte_pair_encoding_bpe" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="character_level_bpe" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="byte_level_bpe" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="self_training_methods" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="gradient_accumulation" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="mixed_precision_floating_point_arithmetic" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="finetuning" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="single_task_finetuning" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="multi_task_finetuning" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="pairwise_ranking_formulation" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="span_prediction" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="classifier" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="margin_ranking_loss" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="cross_entropy_loss" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="autoregressive_pretraining" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="perturbed_autoregressive_language_modeling" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="multi_task_deep_neural_networks" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="knowledge_distillation" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="universal_language_model_fine_tuning" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="cloze_driven_pretraining" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="generative_insertion_based_modeling" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="masked_sequence_to_sequence_pre_training" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="enhanced_representation_through_knowledge_integration" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="spanbert" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="segment_pairnsp" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="sentence_pairnsp" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="full_sentences" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="doc_sentences" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="bert" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="elmo" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="gpt" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="xlm" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="xlnet" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="transformer_architecture" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="bertbase" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="bertlarge" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="xlnetbase" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="xlnetlarge" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta_a_robustly_optimized_bert_pre_training_approach" target="iclr_2020" id="0">
+      <data key="d7">PUBLISHED_AT</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pretraining" target="bookcorpus" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pretraining" target="english_wikipedia" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pretraining" target="glue" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pretraining" target="squad" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pretraining" target="race" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="bert_pretraining" target="superglue" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="bookcorpus" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="english_wikipedia" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="cc_news" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="openwebtext" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="stories" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="glue" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="race" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="squad" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="superglue" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="language_understanding" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="question_answering_qa" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="reading_comprehension" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="natural_language_inference_nli" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="single_sentence_classification" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="text_classification" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="commonsense_reasoning" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="pronoun_disambiguation" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="word_in_context_evaluation" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="winograd_schema_challenge" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="roberta" target="additional_data" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="dynamic_masking" target="static_masking" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="byte_level_bpe" target="character_level_bpe" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="full_sentences" target="segment_pairnsp" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="doc_sentences" target="segment_pairnsp" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="doc_sentences" target="full_sentences" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="xlnet" target="bookcorpus" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="xlnet" target="english_wikipedia" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="xlnet" target="additional_data" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="xlnet" target="glue" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="xlnet" target="squad" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="xlnet" target="race" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="xlnet" target="superglue" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="cross_lingual_sentence_representations" target="cross_lingual_sentence_representations" id="0">
+      <data key="d7">RELATED_TO</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="zhenzhong_lan" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="mingda_chen" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="sebastian_goodman" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="kevin_gimpel" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="piyush_sharma" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="radu_soricut" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="factorized_embedding_parameterization" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="cross_layer_parameter_sharing" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="sentence_order_prediction_sop_loss" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="masked_language_modeling_mlm_loss" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="n_gram_masking" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="lamb_optimizer" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="gradient_checkpointing" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="reversible_residual_network" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="model_parallelization" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="knowledge_distillation" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="dropout" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="sentencepiece" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="gelu_nonlinearities" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="full_network_pre_training" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="albert" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="bert" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="transformer_encoder" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="xlnet" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="roberta" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="universal_transformer_ut" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="deep_equilibrium_model_dqe" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="skip_thought" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="fastsent" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="transformer_xl" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="spanbert" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="megatron_lm" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="structbert" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="dcmn" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="upm" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="adv_roberta" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="mt_dnn" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="alice" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert_a_lite_bert_for_self_supervised_learning_of_language_representations" target="iclr_2020" id="0">
+      <data key="d7">PUBLISHED_AT</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="zhenzhong_lan" target="google_research" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="mingda_chen" target="toyota_technological_institute_at_chicago" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="sebastian_goodman" target="google_research" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="kevin_gimpel" target="toyota_technological_institute_at_chicago" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="piyush_sharma" target="google_research" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="radu_soricut" target="google_research" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="sentence_order_prediction_sop_loss" target="discourse_coherence_prediction" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="masked_language_modeling_mlm_loss" target="language_modeling" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="bookcorpus" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="english_wikipedia" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="additional_data" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="glue_benchmark" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="race_benchmark" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="squad_benchmark" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="self_supervised_learning_of_language_representations" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="natural_language_understanding_nlu" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="reading_comprehension" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="question_answering" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="natural_language_inference" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="text_classification" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="semantic_textual_similarity" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="paraphrase_detection" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="discourse_coherence_prediction" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="albert" target="bert" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="parameter_efficiency" target="transformer_based_models" id="0">
+      <data key="d7">RELATED_TO</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="pengcheng_he" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="xiaodong_liu" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="jianfeng_gao" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="weizhu_chen" id="0">
+      <data key="d7">AUTHORED</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="disentangled_attention_mechanism" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="enhanced_mask_decoder_emd" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="virtual_adversarial_training" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="scale_invariant_fine_tuning_sift" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="masked_language_modeling_mlm" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="span_masking" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="dynamic_data_batching" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="adam_optimizer" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="weight_decay" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="gradient_clipping" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="layer_normalization" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="relative_position_encoding" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="absolute_position_embedding" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="auto_regressive_language_model_arlm" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="replaced_token_detection_rtd" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="projection_matrix_sharing" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="convolution_layer" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="deberta" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="bert" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="roberta" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="transformer" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="gpt" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="xlnet" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="unilm" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="electra" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="t5" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="alum" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="structbert" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="ernie" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="longformer" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="reformer" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="megatron" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="albert" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="gpt_2" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="transformer_xl" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="nexha_plus" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="meena" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="deberta_ap" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="deberta_mt" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="debertart_d" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="deberta15b" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="deberta900m" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="debertaensemble" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="debertart_dsmall" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="debertart_dbase" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="debertart_dlarge" id="0">
+      <data key="d7">PROPOSES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta_decoding_enhanced_bert_with_dis_entangled_attention" target="iclr_2021" id="0">
+      <data key="d7">PUBLISHED_AT</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="pengcheng_he" target="microsoft_dynamics_365_ai" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="xiaodong_liu" target="microsoft_research" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="jianfeng_gao" target="microsoft_research" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="weizhu_chen" target="microsoft_dynamics_365_ai" id="0">
+      <data key="d7">AFFILIATED_WITH</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="disentangled_attention_mechanism" target="relative_position_encoding" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="enhanced_mask_decoder_emd" target="absolute_position_embedding" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="scale_invariant_fine_tuning_sift" target="virtual_adversarial_training" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="replaced_token_detection_rtd" target="masked_language_modeling_mlm" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="bert" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="roberta" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="glue" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="superglue" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="squad_v20" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="squad_v11" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="race" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="record" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="swag" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="conll_2003" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="natural_language_understand_nlu" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="natural_language_generation_nlg" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="question_answering_qa" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="natural_language_inference_nli" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="named_entity_recognition_ner" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="machine_reading_comprehension_mrc" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="linguistic_acceptability" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="sentiment_analysis" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="text_similarity" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="paraphrase_detection" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="coreference_resolution" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="word_sense_disambiguation_wsd" id="0">
+      <data key="d7">PERFORMS</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="wikipedia" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="bookcorpus" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="openwebtext" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta" target="stories" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="debertart_d" target="deberta" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="debertart_d" target="mnli" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="debertart_d" target="squad_v20" id="0">
+      <data key="d7">EVALUATED_ON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta15b" target="commoncrawl" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta15b" target="cc_news" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta15b" target="giga5" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="deberta15b" target="clueweb" id="0">
+      <data key="d7">USES</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="debertart_dsmall" target="bert" id="0">
+      <data key="d7">IMPROVES_UPON</data>
+      <data key="d8">1.0</data>
+    </edge>
+    <edge source="compositional_generalization" target="general_ai" id="0">
+      <data key="d7">RELATED_TO</data>
+      <data key="d8">1.0</data>
+    </edge>
+  </graph>
+</graphml>

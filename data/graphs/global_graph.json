@@ -1,0 +1,4885 @@
+{
+    "nodes": [
+        {
+            "id": "attention_is_all_you_need",
+            "type": "Paper",
+            "title": "Attention Is All You Need",
+            "year": 2017,
+            "conference": "NIPS 2017"
+        },
+        {
+            "id": "ashish_vaswani",
+            "type": "Author",
+            "name": "Ashish Vaswani",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "noam_shazeer",
+            "type": "Author",
+            "name": "Noam Shazeer",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "niki_parmar",
+            "type": "Author",
+            "name": "Niki Parmar",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "jakob_uszkoreit",
+            "type": "Author",
+            "name": "Jakob Uszkoreit",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "llion_jones",
+            "type": "Author",
+            "name": "Llion Jones",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "aidan_n_gomez",
+            "type": "Author",
+            "name": "Aidan N. Gomez",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "łukasz_kaiser",
+            "type": "Author",
+            "name": "Łukasz Kaiser",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "illia_polosukhin",
+            "type": "Author",
+            "name": "Illia Polosukhin",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "google_brain",
+            "type": "Institution",
+            "name": "Google Brain",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "google_research",
+            "type": "Institution",
+            "name": "Google Research",
+            "paper_ids": "attention_is_all_you_need,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "university_of_toronto",
+            "type": "Institution",
+            "name": "University of Toronto",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "transformer",
+            "type": "Method",
+            "name": "Transformer",
+            "paper_ids": "attention_is_all_you_need,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "attention_mechanism",
+            "type": "Method",
+            "name": "Attention mechanism",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "self_attention",
+            "type": "Method",
+            "name": "Self-attention",
+            "paper_ids": "attention_is_all_you_need,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "multi_head_attention",
+            "type": "Method",
+            "name": "Multi-Head Attention",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "scaled_dot_product_attention",
+            "type": "Method",
+            "name": "Scaled Dot-Product Attention",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "positional_encoding",
+            "type": "Method",
+            "name": "Positional Encoding",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "encoder_decoder_architecture",
+            "type": "Method",
+            "name": "Encoder-Decoder Architecture",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "residual_connections",
+            "type": "Method",
+            "name": "Residual Connections",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "layer_normalization",
+            "type": "Method",
+            "name": "Layer Normalization",
+            "paper_ids": "attention_is_all_you_need,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "position_wise_feed_forward_networks",
+            "type": "Method",
+            "name": "Position-wise Feed-Forward Networks",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "embeddings",
+            "type": "Method",
+            "name": "Embeddings",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "softmax",
+            "type": "Method",
+            "name": "Softmax",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "adam_optimizer",
+            "type": "Method",
+            "name": "Adam optimizer",
+            "paper_ids": "attention_is_all_you_need,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "residual_dropout",
+            "type": "Method",
+            "name": "Residual Dropout",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "label_smoothing",
+            "type": "Method",
+            "name": "Label Smoothing",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "beam_search",
+            "type": "Method",
+            "name": "Beam search",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "length_penalty",
+            "type": "Method",
+            "name": "Length penalty",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "byte_pair_encoding",
+            "type": "Method",
+            "name": "Byte-pair encoding",
+            "paper_ids": "attention_is_all_you_need,roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 2
+        },
+        {
+            "id": "word_piece_vocabulary",
+            "type": "Method",
+            "name": "Word-piece vocabulary",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "recurrent_neural_networks",
+            "type": "Architecture",
+            "name": "Recurrent Neural Networks",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "long_short_term_memory",
+            "type": "Architecture",
+            "name": "Long Short-Term Memory",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "gated_recurrent_neural_networks",
+            "type": "Architecture",
+            "name": "Gated Recurrent Neural Networks",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "convolutional_neural_networks",
+            "type": "Architecture",
+            "name": "Convolutional Neural Networks",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "extended_neural_gpu",
+            "type": "Architecture",
+            "name": "Extended Neural GPU",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "bytenet",
+            "type": "Architecture",
+            "name": "ByteNet",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "convs2s",
+            "type": "Architecture",
+            "name": "ConvS2S",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "deep_att_posunk",
+            "type": "Architecture",
+            "name": "Deep-Att + PosUnk",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "gnmt_rl",
+            "type": "Architecture",
+            "name": "GNMT + RL",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "moe",
+            "type": "Architecture",
+            "name": "MoE",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "end_to_end_memory_networks",
+            "type": "Architecture",
+            "name": "End-to-end memory networks",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "wmt_2014_english_german_dataset",
+            "type": "Dataset",
+            "name": "WMT 2014 English-German dataset",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "wmt_2014_english_french_dataset",
+            "type": "Dataset",
+            "name": "WMT 2014 English-French dataset",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "newstest2014",
+            "type": "Dataset",
+            "name": "newstest2014",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "newstest2013",
+            "type": "Dataset",
+            "name": "newstest2013",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "wmt_2014_english_to_german_translation_task",
+            "type": "Benchmark",
+            "name": "WMT 2014 English-to-German translation task",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "wmt_2014_english_to_french_translation_task",
+            "type": "Benchmark",
+            "name": "WMT 2014 English-to-French translation task",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "sequence_transduction",
+            "type": "Task",
+            "name": "Sequence transduction",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "machine_translation",
+            "type": "Task",
+            "name": "Machine translation",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "language_modeling",
+            "type": "Task",
+            "name": "Language modeling",
+            "paper_ids": "attention_is_all_you_need,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "reading_comprehension",
+            "type": "Task",
+            "name": "Reading comprehension",
+            "paper_ids": "attention_is_all_you_need,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 3
+        },
+        {
+            "id": "abstractive_summarization",
+            "type": "Task",
+            "name": "Abstractive summarization",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "textual_entailment",
+            "type": "Task",
+            "name": "Textual entailment",
+            "paper_ids": "attention_is_all_you_need,roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 2
+        },
+        {
+            "id": "learning_task_independent_sentence_representations",
+            "type": "Task",
+            "name": "Learning task-independent sentence representations",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "simple_language_question_answering",
+            "type": "Task",
+            "name": "Simple-language question answering",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "sequence_modeling",
+            "type": "Task",
+            "name": "Sequence modeling",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "bleu_score",
+            "type": "Metric",
+            "name": "BLEU score",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "perplexity",
+            "type": "Metric",
+            "name": "Perplexity",
+            "paper_ids": "attention_is_all_you_need,roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 3
+        },
+        {
+            "id": "training_cost_flops",
+            "type": "Metric",
+            "name": "Training Cost (FLOPs)",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "neural_machine_translation",
+            "type": "Topic",
+            "name": "Neural Machine Translation",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "attention_mechanisms",
+            "type": "Topic",
+            "name": "Attention Mechanisms",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "deep_learning_architectures",
+            "type": "Topic",
+            "name": "Deep Learning Architectures",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "parallelization_in_neural_networks",
+            "type": "Topic",
+            "name": "Parallelization in Neural Networks",
+            "paper_ids": "attention_is_all_you_need",
+            "paper_count": 1
+        },
+        {
+            "id": "nips_2017",
+            "type": "Conference",
+            "name": "NIPS 2017"
+        },
+        {
+            "id": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "type": "Paper",
+            "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+            "year": 2019,
+            "conference": "NAACL-HLT 2019"
+        },
+        {
+            "id": "jacob_devlin",
+            "type": "Author",
+            "name": "Jacob Devlin",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "ming_wei_chang",
+            "type": "Author",
+            "name": "Ming-Wei Chang",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "kenton_lee",
+            "type": "Author",
+            "name": "Kenton Lee",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "kristina_toutanova",
+            "type": "Author",
+            "name": "Kristina Toutanova",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "google_ai_language",
+            "type": "Institution",
+            "name": "Google AI Language",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "bert",
+            "type": "Method",
+            "name": "BERT",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 4
+        },
+        {
+            "id": "pre_training",
+            "type": "Method",
+            "name": "Pre-training",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "fine_tuning",
+            "type": "Method",
+            "name": "Fine-tuning",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "masked_language_model_mlm",
+            "type": "Method",
+            "name": "Masked Language Model (MLM)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 2
+        },
+        {
+            "id": "next_sentence_prediction_nsp",
+            "type": "Method",
+            "name": "Next Sentence Prediction (NSP)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 3
+        },
+        {
+            "id": "feature_based_approach",
+            "type": "Method",
+            "name": "Feature-based approach",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "fine_tuning_approach",
+            "type": "Method",
+            "name": "Fine-tuning approach",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "wordpiece_embeddings",
+            "type": "Method",
+            "name": "WordPiece embeddings",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "bidirectional_self_attention",
+            "type": "Method",
+            "name": "Bidirectional self-attention",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "left_to_right_ltr_language_modeling",
+            "type": "Method",
+            "name": "Left-to-Right (LTR) language modeling",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "right_to_left_rtl_language_modeling",
+            "type": "Method",
+            "name": "Right-to-Left (RTL) language modeling",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "adam",
+            "type": "Method",
+            "name": "Adam",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "learning_rate_warmup",
+            "type": "Method",
+            "name": "Learning rate warmup",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "linear_decay_of_learning_rate",
+            "type": "Method",
+            "name": "Linear decay of learning rate",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "dropout",
+            "type": "Method",
+            "name": "Dropout",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "gelu_activation",
+            "type": "Method",
+            "name": "GELU activation",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "cloze_task",
+            "type": "Method",
+            "name": "Cloze task",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "transformer_encoder",
+            "type": "Architecture",
+            "name": "Transformer encoder",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "bertbase",
+            "type": "Architecture",
+            "name": "BERTBASE",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 2
+        },
+        {
+            "id": "bertlarge",
+            "type": "Architecture",
+            "name": "BERTLARGE",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 2
+        },
+        {
+            "id": "openai_gpt",
+            "type": "Architecture",
+            "name": "OpenAI GPT",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "elmo",
+            "type": "Architecture",
+            "name": "ELMo",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 2
+        },
+        {
+            "id": "bilstm",
+            "type": "Architecture",
+            "name": "BiLSTM",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "qanet",
+            "type": "Architecture",
+            "name": "QANet",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "bidaf",
+            "type": "Architecture",
+            "name": "BiDAF",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "rm_reader",
+            "type": "Architecture",
+            "name": "R.M. Reader",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "unet",
+            "type": "Architecture",
+            "name": "unet",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "slqa",
+            "type": "Architecture",
+            "name": "SLQA+",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "esim",
+            "type": "Architecture",
+            "name": "ESIM",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "cvt",
+            "type": "Architecture",
+            "name": "CVT",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "cse",
+            "type": "Architecture",
+            "name": "CSE",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "bookscorpus",
+            "type": "Dataset",
+            "name": "BooksCorpus",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "english_wikipedia",
+            "type": "Dataset",
+            "name": "English Wikipedia",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 3
+        },
+        {
+            "id": "triviaqa",
+            "type": "Dataset",
+            "name": "TriviaQA",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "glue",
+            "type": "Dataset",
+            "name": "GLUE",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 3
+        },
+        {
+            "id": "multinli_mnli",
+            "type": "Dataset",
+            "name": "MultiNLI (MNLI)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "quora_question_pairs_qqp",
+            "type": "Dataset",
+            "name": "Quora Question Pairs (QQP)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 3
+        },
+        {
+            "id": "question_natural_language_inference_qnli",
+            "type": "Dataset",
+            "name": "Question Natural Language Inference (QNLI)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "stanford_sentiment_treebank_sst_2",
+            "type": "Dataset",
+            "name": "Stanford Sentiment Treebank (SST-2)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "corpus_of_linguistic_acceptability_cola",
+            "type": "Dataset",
+            "name": "Corpus of Linguistic Acceptability (CoLA)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "semantic_textual_similarity_benchmark_sts_b",
+            "type": "Dataset",
+            "name": "Semantic Textual Similarity Benchmark (STS-B)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "microsoft_research_paraphrase_corpus_mrpc",
+            "type": "Dataset",
+            "name": "Microsoft Research Paraphrase Corpus (MRPC)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "recognizing_textual_entailment_rte",
+            "type": "Dataset",
+            "name": "Recognizing Textual Entailment (RTE)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 3
+        },
+        {
+            "id": "winograd_nli_wnli",
+            "type": "Dataset",
+            "name": "Winograd NLI (WNLI)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 3
+        },
+        {
+            "id": "swag",
+            "type": "Dataset",
+            "name": "SWAG",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "conll_2003_named_entity_recognition",
+            "type": "Dataset",
+            "name": "CoNLL-2003 Named Entity Recognition",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "glue_benchmark",
+            "type": "Benchmark",
+            "name": "GLUE benchmark",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "squad_v11_leaderboard",
+            "type": "Benchmark",
+            "name": "SQuAD v1.1 leaderboard",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "squad_v20_leaderboard",
+            "type": "Benchmark",
+            "name": "SQuAD v2.0 leaderboard",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "language_understanding",
+            "type": "Task",
+            "name": "Language Understanding",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 2
+        },
+        {
+            "id": "question_answering_qa",
+            "type": "Task",
+            "name": "Question Answering (QA)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 3
+        },
+        {
+            "id": "natural_language_inference_nli",
+            "type": "Task",
+            "name": "Natural Language Inference (NLI)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 3
+        },
+        {
+            "id": "named_entity_recognition_ner",
+            "type": "Task",
+            "name": "Named Entity Recognition (NER)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "paraphrasing",
+            "type": "Task",
+            "name": "Paraphrasing",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "text_classification",
+            "type": "Task",
+            "name": "Text classification",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 3
+        },
+        {
+            "id": "sequence_tagging",
+            "type": "Task",
+            "name": "Sequence tagging",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "semantic_textual_similarity_sts",
+            "type": "Task",
+            "name": "Semantic Textual Similarity (STS)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "linguistic_acceptability",
+            "type": "Task",
+            "name": "Linguistic Acceptability",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "commonsense_inference",
+            "type": "Task",
+            "name": "Commonsense inference",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "glue_score",
+            "type": "Metric",
+            "name": "GLUE score",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "accuracy",
+            "type": "Metric",
+            "name": "Accuracy",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 4
+        },
+        {
+            "id": "f1",
+            "type": "Metric",
+            "name": "F1",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "spearman_correlations",
+            "type": "Metric",
+            "name": "Spearman correlations",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "exact_match_em",
+            "type": "Metric",
+            "name": "Exact Match (EM)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "perplexity_lm_ppl",
+            "type": "Metric",
+            "name": "Perplexity (LM ppl)",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "language_representation_models",
+            "type": "Topic",
+            "name": "Language Representation Models",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "transfer_learning",
+            "type": "Topic",
+            "name": "Transfer Learning",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "deep_learning",
+            "type": "Topic",
+            "name": "Deep Learning",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "natural_language_processing",
+            "type": "Topic",
+            "name": "Natural Language Processing",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "transformers",
+            "type": "Topic",
+            "name": "Transformers",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "bidirectional_context",
+            "type": "Topic",
+            "name": "Bidirectional Context",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "unsupervised_learning",
+            "type": "Topic",
+            "name": "Unsupervised Learning",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "contextual_embeddings",
+            "type": "Topic",
+            "name": "Contextual Embeddings",
+            "paper_ids": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "paper_count": 1
+        },
+        {
+            "id": "naacl_hlt_2019",
+            "type": "Conference",
+            "name": "NAACL-HLT 2019"
+        },
+        {
+            "id": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "type": "Paper",
+            "title": "ROBERTA: A ROBUSTLY OPTIMIZED BERT PRE-TRAINING APPROACH",
+            "year": 2020,
+            "conference": "ICLR 2020"
+        },
+        {
+            "id": "anonymous_authors",
+            "type": "Author",
+            "name": "Anonymous authors",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "language_model_pretraining",
+            "type": "Method",
+            "name": "Language model pretraining",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "bert_pretraining",
+            "type": "Method",
+            "name": "BERT pretraining",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "roberta",
+            "type": "Method",
+            "name": "RoBERTa",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 3
+        },
+        {
+            "id": "dynamic_masking",
+            "type": "Method",
+            "name": "Dynamic masking",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "static_masking",
+            "type": "Method",
+            "name": "Static masking",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "training_with_large_batches",
+            "type": "Method",
+            "name": "Training with large batches",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "byte_pair_encoding_bpe",
+            "type": "Method",
+            "name": "Byte-Pair Encoding (BPE)",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "character_level_bpe",
+            "type": "Method",
+            "name": "Character-level BPE",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "byte_level_bpe",
+            "type": "Method",
+            "name": "Byte-level BPE",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "self_training_methods",
+            "type": "Method",
+            "name": "Self-training methods",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "gradient_accumulation",
+            "type": "Method",
+            "name": "Gradient accumulation",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "mixed_precision_floating_point_arithmetic",
+            "type": "Method",
+            "name": "Mixed precision floating point arithmetic",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "finetuning",
+            "type": "Method",
+            "name": "Finetuning",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "single_task_finetuning",
+            "type": "Method",
+            "name": "Single-task finetuning",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "multi_task_finetuning",
+            "type": "Method",
+            "name": "Multi-task finetuning",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "pairwise_ranking_formulation",
+            "type": "Method",
+            "name": "Pairwise ranking formulation",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "span_prediction",
+            "type": "Method",
+            "name": "Span prediction",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "classifier",
+            "type": "Method",
+            "name": "Classifier",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "margin_ranking_loss",
+            "type": "Method",
+            "name": "Margin ranking loss",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "cross_entropy_loss",
+            "type": "Method",
+            "name": "Cross entropy loss",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "autoregressive_pretraining",
+            "type": "Method",
+            "name": "Autoregressive pretraining",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "perturbed_autoregressive_language_modeling",
+            "type": "Method",
+            "name": "Perturbed autoregressive language modeling",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "multi_task_deep_neural_networks",
+            "type": "Method",
+            "name": "Multi-task deep neural networks",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "knowledge_distillation",
+            "type": "Method",
+            "name": "Knowledge distillation",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "universal_language_model_fine_tuning",
+            "type": "Method",
+            "name": "Universal language model fine-tuning",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "cloze_driven_pretraining",
+            "type": "Method",
+            "name": "Cloze-driven pretraining",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "generative_insertion_based_modeling",
+            "type": "Method",
+            "name": "Generative insertion-based modeling",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "masked_sequence_to_sequence_pre_training",
+            "type": "Method",
+            "name": "Masked sequence to sequence pre-training",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "enhanced_representation_through_knowledge_integration",
+            "type": "Method",
+            "name": "Enhanced representation through knowledge integration",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "spanbert",
+            "type": "Method",
+            "name": "SpanBERT",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "segment_pairnsp",
+            "type": "Method",
+            "name": "SEGMENT-PAIR+NSP",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "sentence_pairnsp",
+            "type": "Method",
+            "name": "SENTENCE-PAIR+NSP",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "full_sentences",
+            "type": "Method",
+            "name": "FULL-SENTENCES",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "doc_sentences",
+            "type": "Method",
+            "name": "DOC-SENTENCES",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "gpt",
+            "type": "Architecture",
+            "name": "GPT",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "xlm",
+            "type": "Architecture",
+            "name": "XLM",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "xlnet",
+            "type": "Architecture",
+            "name": "XLNet",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 3
+        },
+        {
+            "id": "transformer_architecture",
+            "type": "Architecture",
+            "name": "Transformer architecture",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "xlnetbase",
+            "type": "Architecture",
+            "name": "XLNetBASE",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "xlnetlarge",
+            "type": "Architecture",
+            "name": "XLNetLARGE",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "bookcorpus",
+            "type": "Dataset",
+            "name": "BOOKCORPUS",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 3
+        },
+        {
+            "id": "cc_news",
+            "type": "Dataset",
+            "name": "CC-NEWS",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "commoncrawl_news_dataset",
+            "type": "Dataset",
+            "name": "CommonCrawl News dataset",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "openwebtext",
+            "type": "Dataset",
+            "name": "OPENWEBTEXT",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "webtext_corpus",
+            "type": "Dataset",
+            "name": "WebText corpus",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "stories",
+            "type": "Dataset",
+            "name": "STORIES",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "realnews_dataset",
+            "type": "Dataset",
+            "name": "REALNEWS dataset",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "squad_training_data",
+            "type": "Dataset",
+            "name": "SQuAD training data",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "qa_datasets",
+            "type": "Dataset",
+            "name": "QA datasets",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "wnli_data_from_superglue",
+            "type": "Dataset",
+            "name": "WNLI data from SuperGLUE",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "commitmentbank_cb",
+            "type": "Dataset",
+            "name": "CommitmentBank (CB)",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "multi_sentence_reading_comprehension_multirc",
+            "type": "Dataset",
+            "name": "Multi-Sentence Reading Comprehension (MultiRC)",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "reading_comprehension_with_commonsense_reasoning_record",
+            "type": "Dataset",
+            "name": "Reading Comprehension with Commonsense Reasoning (ReCoRD)",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "words_in_context_wic",
+            "type": "Dataset",
+            "name": "Words in Context (WiC)",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "winogender_schema_diagnostics",
+            "type": "Dataset",
+            "name": "Winogender Schema Diagnostics",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "cola",
+            "type": "Dataset",
+            "name": "CoLA",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "stanford_sentiment_treebank_sst",
+            "type": "Dataset",
+            "name": "Stanford Sentiment Treebank (SST)",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "microsoft_research_paragraph_corpus_mrpc",
+            "type": "Dataset",
+            "name": "Microsoft Research Paragraph Corpus (MRPC)",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "semantic_textual_similarity_benchmark_sts",
+            "type": "Dataset",
+            "name": "Semantic Textual Similarity Benchmark (STS)",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "multi_genre_nli_mnli",
+            "type": "Dataset",
+            "name": "Multi-Genre NLI (MNLI)",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "question_nli_qnli",
+            "type": "Dataset",
+            "name": "Question NLI (QNLI)",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "boolq",
+            "type": "Dataset",
+            "name": "BoolQ",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "choice_of_plausible_alternatives_copa",
+            "type": "Dataset",
+            "name": "Choice of Plausible Alternatives (COPA)",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "winograd_schema_challenge_wsc",
+            "type": "Dataset",
+            "name": "Winograd Schema Challenge (WSC)",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "xnli",
+            "type": "Dataset",
+            "name": "XNLI",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "additional_data",
+            "type": "Dataset",
+            "name": "additional data",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "squad",
+            "type": "Benchmark",
+            "name": "SQuAD",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "race",
+            "type": "Benchmark",
+            "name": "RACE",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "superglue",
+            "type": "Benchmark",
+            "name": "SuperGLUE",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "squad_v11",
+            "type": "Benchmark",
+            "name": "SQuAD V1.1",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 3
+        },
+        {
+            "id": "squad_v20",
+            "type": "Benchmark",
+            "name": "SQuAD V2.0",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 3
+        },
+        {
+            "id": "single_sentence_classification",
+            "type": "Task",
+            "name": "Single-sentence classification",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "sentence_pair_classification",
+            "type": "Task",
+            "name": "Sentence-pair classification",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "commonsense_reasoning",
+            "type": "Task",
+            "name": "Commonsense reasoning",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "pronoun_disambiguation",
+            "type": "Task",
+            "name": "Pronoun disambiguation",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "natural_language_understanding_and_generation",
+            "type": "Task",
+            "name": "Natural language understanding and generation",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "semantic_compositionality",
+            "type": "Task",
+            "name": "Semantic compositionality",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "word_in_context_evaluation",
+            "type": "Task",
+            "name": "Word-in-context evaluation",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "winograd_schema_challenge",
+            "type": "Task",
+            "name": "Winograd Schema Challenge",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "f1_score",
+            "type": "Metric",
+            "name": "F1 score",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 3
+        },
+        {
+            "id": "em",
+            "type": "Metric",
+            "name": "EM",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "macro_averaged_accuracy",
+            "type": "Metric",
+            "name": "Macro-averaged accuracy",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "hyperparameter_tuning",
+            "type": "Topic",
+            "name": "Hyperparameter Tuning",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "data_size_effects",
+            "type": "Topic",
+            "name": "Data Size Effects",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "replication_study",
+            "type": "Topic",
+            "name": "Replication Study",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "robust_optimization",
+            "type": "Topic",
+            "name": "Robust Optimization",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "masked_language_modeling",
+            "type": "Topic",
+            "name": "Masked Language Modeling",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "next_sentence_prediction",
+            "type": "Topic",
+            "name": "Next Sentence Prediction",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "large_batch_training",
+            "type": "Topic",
+            "name": "Large Batch Training",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "subword_units",
+            "type": "Topic",
+            "name": "Subword Units",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "natural_language_understanding",
+            "type": "Topic",
+            "name": "Natural Language Understanding",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "question_answering",
+            "type": "Topic",
+            "name": "Question Answering",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach,albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 2
+        },
+        {
+            "id": "cross_lingual_sentence_representations",
+            "type": "Topic",
+            "name": "Cross-lingual Sentence Representations",
+            "paper_ids": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "paper_count": 1
+        },
+        {
+            "id": "iclr_2020",
+            "type": "Conference",
+            "name": "ICLR 2020"
+        },
+        {
+            "id": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "type": "Paper",
+            "title": "ALBERT: A LITE BERT FOR SELF-SUPERVISED LEARNING OF LANGUAGE REPRESENTATIONS",
+            "year": 2020,
+            "conference": "ICLR 2020"
+        },
+        {
+            "id": "zhenzhong_lan",
+            "type": "Author",
+            "name": "Zhenzhong Lan",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "mingda_chen",
+            "type": "Author",
+            "name": "Mingda Chen",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "sebastian_goodman",
+            "type": "Author",
+            "name": "Sebastian Goodman",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "kevin_gimpel",
+            "type": "Author",
+            "name": "Kevin Gimpel",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "piyush_sharma",
+            "type": "Author",
+            "name": "Piyush Sharma",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "radu_soricut",
+            "type": "Author",
+            "name": "Radu Soricut",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "toyota_technological_institute_at_chicago",
+            "type": "Institution",
+            "name": "Toyota Technological Institute at Chicago",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "factorized_embedding_parameterization",
+            "type": "Method",
+            "name": "Factorized embedding parameterization",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "cross_layer_parameter_sharing",
+            "type": "Method",
+            "name": "Cross-layer parameter sharing",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "sentence_order_prediction_sop_loss",
+            "type": "Method",
+            "name": "Sentence-order prediction (SOP) loss",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "masked_language_modeling_mlm_loss",
+            "type": "Method",
+            "name": "Masked language modeling (MLM) loss",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "n_gram_masking",
+            "type": "Method",
+            "name": "n-gram masking",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "lamb_optimizer",
+            "type": "Method",
+            "name": "LAMB optimizer",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "gradient_checkpointing",
+            "type": "Method",
+            "name": "Gradient checkpointing",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "reversible_residual_network",
+            "type": "Method",
+            "name": "Reversible residual network",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "model_parallelization",
+            "type": "Method",
+            "name": "Model parallelization",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "sentencepiece",
+            "type": "Method",
+            "name": "SentencePiece",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "gelu_nonlinearities",
+            "type": "Method",
+            "name": "GELU nonlinearities",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "full_network_pre_training",
+            "type": "Method",
+            "name": "Full network pre-training",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "albert",
+            "type": "Architecture",
+            "name": "ALBERT",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "universal_transformer_ut",
+            "type": "Architecture",
+            "name": "Universal Transformer (UT)",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "deep_equilibrium_model_dqe",
+            "type": "Architecture",
+            "name": "Deep Equilibrium Model (DQE)",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "skip_thought",
+            "type": "Architecture",
+            "name": "Skip-thought",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "fastsent",
+            "type": "Architecture",
+            "name": "FastSent",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "transformer_xl",
+            "type": "Architecture",
+            "name": "Transformer-XL",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "megatron_lm",
+            "type": "Architecture",
+            "name": "Megatron-LM",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "structbert",
+            "type": "Architecture",
+            "name": "StructBERT",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "dcmn",
+            "type": "Architecture",
+            "name": "DCMN+",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "upm",
+            "type": "Architecture",
+            "name": "UPM",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "adv_roberta",
+            "type": "Architecture",
+            "name": "Adv-RoBERTa",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "mt_dnn",
+            "type": "Architecture",
+            "name": "MT-DNN",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "alice",
+            "type": "Architecture",
+            "name": "ALICE",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "sst_2",
+            "type": "Dataset",
+            "name": "SST-2",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "race_dataset",
+            "type": "Dataset",
+            "name": "RACE dataset",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "race_benchmark",
+            "type": "Benchmark",
+            "name": "RACE benchmark",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "squad_benchmark",
+            "type": "Benchmark",
+            "name": "SQuAD benchmark",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "self_supervised_learning_of_language_representations",
+            "type": "Task",
+            "name": "Self-supervised learning of language representations",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "natural_language_understanding_nlu",
+            "type": "Task",
+            "name": "Natural language understanding (NLU)",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "subject_verb_agreement",
+            "type": "Task",
+            "name": "Subject-verb agreement",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "sentence_ordering_prediction_sop",
+            "type": "Task",
+            "name": "Sentence ordering prediction (SOP)",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "masked_language_modeling_mlm",
+            "type": "Task",
+            "name": "Masked language modeling (MLM)",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "natural_language_inference",
+            "type": "Task",
+            "name": "Natural language inference",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "semantic_textual_similarity",
+            "type": "Task",
+            "name": "Semantic textual similarity",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "paraphrase_detection",
+            "type": "Task",
+            "name": "Paraphrase detection",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "discourse_coherence_prediction",
+            "type": "Task",
+            "name": "Discourse coherence prediction",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "topic_prediction",
+            "type": "Task",
+            "name": "Topic prediction",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "span_extraction",
+            "type": "Task",
+            "name": "Span extraction",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "answerability_prediction",
+            "type": "Task",
+            "name": "Answerability prediction",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "l2_distance",
+            "type": "Metric",
+            "name": "L2 distance",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "cosine_similarity",
+            "type": "Metric",
+            "name": "Cosine similarity",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "natural_language_processing_nlp",
+            "type": "Topic",
+            "name": "Natural Language Processing (NLP)",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "language_representation_learning",
+            "type": "Topic",
+            "name": "Language Representation Learning",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "self_supervised_learning",
+            "type": "Topic",
+            "name": "Self-supervised Learning",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "model_compression",
+            "type": "Topic",
+            "name": "Model Compression",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "parameter_efficiency",
+            "type": "Topic",
+            "name": "Parameter Efficiency",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "discourse_coherence",
+            "type": "Topic",
+            "name": "Discourse Coherence",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "paper_count": 1
+        },
+        {
+            "id": "model_scaling",
+            "type": "Topic",
+            "name": "Model Scaling",
+            "paper_ids": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations,deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 2
+        },
+        {
+            "id": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "type": "Paper",
+            "title": "DEBERTA: DECODING-ENHANCED BERT WITH DIS-ENTANGLED ATTENTION",
+            "year": 2021,
+            "conference": "ICLR 2021"
+        },
+        {
+            "id": "pengcheng_he",
+            "type": "Author",
+            "name": "Pengcheng He",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "xiaodong_liu",
+            "type": "Author",
+            "name": "Xiaodong Liu",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "jianfeng_gao",
+            "type": "Author",
+            "name": "Jianfeng Gao",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "weizhu_chen",
+            "type": "Author",
+            "name": "Weizhu Chen",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "microsoft_dynamics_365_ai",
+            "type": "Institution",
+            "name": "Microsoft Dynamics 365 AI",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "microsoft_research",
+            "type": "Institution",
+            "name": "Microsoft Research",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "disentangled_attention_mechanism",
+            "type": "Method",
+            "name": "disentangled attention mechanism",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "enhanced_mask_decoder_emd",
+            "type": "Method",
+            "name": "enhanced mask decoder (EMD)",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "virtual_adversarial_training",
+            "type": "Method",
+            "name": "virtual adversarial training",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "scale_invariant_fine_tuning_sift",
+            "type": "Method",
+            "name": "Scale-invariant-Fine-Tuning (SiFT)",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "span_masking",
+            "type": "Method",
+            "name": "span masking",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "dynamic_data_batching",
+            "type": "Method",
+            "name": "dynamic data batching",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "weight_decay",
+            "type": "Method",
+            "name": "weight decay",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "gradient_clipping",
+            "type": "Method",
+            "name": "gradient clipping",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "relative_position_encoding",
+            "type": "Method",
+            "name": "relative position encoding",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "absolute_position_embedding",
+            "type": "Method",
+            "name": "absolute position embedding",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "auto_regressive_language_model_arlm",
+            "type": "Method",
+            "name": "auto-regressive language model (ARLM)",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "replaced_token_detection_rtd",
+            "type": "Method",
+            "name": "replaced token detection (RTD)",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "projection_matrix_sharing",
+            "type": "Method",
+            "name": "projection matrix sharing",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "convolution_layer",
+            "type": "Method",
+            "name": "convolution layer",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "deberta",
+            "type": "Architecture",
+            "name": "DeBERTa",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "unilm",
+            "type": "Architecture",
+            "name": "UniLM",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "electra",
+            "type": "Architecture",
+            "name": "ELECTRA",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "t5",
+            "type": "Architecture",
+            "name": "T5",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "alum",
+            "type": "Architecture",
+            "name": "ALUM",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "ernie",
+            "type": "Architecture",
+            "name": "ERNIE",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "longformer",
+            "type": "Architecture",
+            "name": "Longformer",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "reformer",
+            "type": "Architecture",
+            "name": "Reformer",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "megatron",
+            "type": "Architecture",
+            "name": "Megatron",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "gpt_2",
+            "type": "Architecture",
+            "name": "GPT-2",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "nexha_plus",
+            "type": "Architecture",
+            "name": "NEXHA-Plus",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "meena",
+            "type": "Architecture",
+            "name": "Meena",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "deberta_ap",
+            "type": "Architecture",
+            "name": "DeBERTa-AP",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "deberta_mt",
+            "type": "Architecture",
+            "name": "DeBERTa-MT",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "debertart_d",
+            "type": "Architecture",
+            "name": "DeBERTaRT D",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "deberta15b",
+            "type": "Architecture",
+            "name": "DeBERTa1.5B",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "deberta900m",
+            "type": "Architecture",
+            "name": "DeBERTa900M",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "debertaensemble",
+            "type": "Architecture",
+            "name": "DeBERTaEnsemble",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "debertart_dsmall",
+            "type": "Architecture",
+            "name": "DeBERTaRT Dsmall",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "debertart_dbase",
+            "type": "Architecture",
+            "name": "DeBERTaRT Dbase",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "debertart_dlarge",
+            "type": "Architecture",
+            "name": "DeBERTaRT Dlarge",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "wikipedia",
+            "type": "Dataset",
+            "name": "Wikipedia",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "wikitext_103",
+            "type": "Dataset",
+            "name": "Wikitext-103",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "commoncrawl",
+            "type": "Dataset",
+            "name": "CommonCrawl",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "giga5",
+            "type": "Dataset",
+            "name": "Giga5",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "clueweb",
+            "type": "Dataset",
+            "name": "ClueWeb",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "record",
+            "type": "Benchmark",
+            "name": "ReCoRD",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "conll_2003",
+            "type": "Benchmark",
+            "name": "CoNLL-2003",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "qqp",
+            "type": "Benchmark",
+            "name": "QQP",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "mnli",
+            "type": "Benchmark",
+            "name": "MNLI",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "sts_b",
+            "type": "Benchmark",
+            "name": "STS-B",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "qnli",
+            "type": "Benchmark",
+            "name": "QNLI",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "rte",
+            "type": "Benchmark",
+            "name": "RTE",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "mrpc",
+            "type": "Benchmark",
+            "name": "MRPC",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "wsc",
+            "type": "Benchmark",
+            "name": "WSC",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "copa",
+            "type": "Benchmark",
+            "name": "COPA",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "cb",
+            "type": "Benchmark",
+            "name": "CB",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "wic",
+            "type": "Benchmark",
+            "name": "WiC",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "multirc",
+            "type": "Benchmark",
+            "name": "MultiRC",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "natural_language_understand_nlu",
+            "type": "Task",
+            "name": "natural language understand (NLU)",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "natural_language_generation_nlg",
+            "type": "Task",
+            "name": "natural language generation (NLG)",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "machine_reading_comprehension_mrc",
+            "type": "Task",
+            "name": "machine reading comprehension (MRC)",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "sentiment_analysis",
+            "type": "Task",
+            "name": "sentiment analysis",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "text_similarity",
+            "type": "Task",
+            "name": "text similarity",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "coreference_resolution",
+            "type": "Task",
+            "name": "coreference resolution",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "word_sense_disambiguation_wsd",
+            "type": "Task",
+            "name": "word sense disambiguation (WSD)",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "exact_match",
+            "type": "Metric",
+            "name": "Exact Match",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "matthews_correlation_coefficient",
+            "type": "Metric",
+            "name": "Matthews correlation coefficient",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "pearson_correlation",
+            "type": "Metric",
+            "name": "Pearson correlation",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "spearman_correlation",
+            "type": "Metric",
+            "name": "Spearman correlation",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "macro_average_score",
+            "type": "Metric",
+            "name": "macro-average score",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "pre_trained_neural_language_models_plms",
+            "type": "Topic",
+            "name": "pre-trained neural language models (PLMs)",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "transformer_based_models",
+            "type": "Topic",
+            "name": "Transformer-based models",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "contextual_word_representations",
+            "type": "Topic",
+            "name": "contextual word representations",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "adversarial_training",
+            "type": "Topic",
+            "name": "adversarial training",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "model_generalization",
+            "type": "Topic",
+            "name": "model generalization",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "model_pre_training_efficiency",
+            "type": "Topic",
+            "name": "model pre-training efficiency",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "human_performance_baseline",
+            "type": "Topic",
+            "name": "human performance baseline",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "compositional_generalization",
+            "type": "Topic",
+            "name": "compositional generalization",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "general_ai",
+            "type": "Topic",
+            "name": "general AI",
+            "paper_ids": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "paper_count": 1
+        },
+        {
+            "id": "iclr_2021",
+            "type": "Conference",
+            "name": "ICLR 2021"
+        }
+    ],
+    "edges": [
+        {
+            "source": "attention_is_all_you_need",
+            "target": "ashish_vaswani",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "noam_shazeer",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "niki_parmar",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "jakob_uszkoreit",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "llion_jones",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "aidan_n_gomez",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "łukasz_kaiser",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "illia_polosukhin",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "transformer",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "attention_mechanism",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "self_attention",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "multi_head_attention",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "scaled_dot_product_attention",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "positional_encoding",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "encoder_decoder_architecture",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "residual_connections",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "layer_normalization",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "position_wise_feed_forward_networks",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "embeddings",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "softmax",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "adam_optimizer",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "residual_dropout",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "label_smoothing",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "beam_search",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "length_penalty",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "byte_pair_encoding",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "word_piece_vocabulary",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "recurrent_neural_networks",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "long_short_term_memory",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "gated_recurrent_neural_networks",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "convolutional_neural_networks",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "extended_neural_gpu",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "bytenet",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "convs2s",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "deep_att_posunk",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "gnmt_rl",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "moe",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "end_to_end_memory_networks",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_is_all_you_need",
+            "target": "nips_2017",
+            "relationship": "PUBLISHED_AT",
+            "confidence": 1.0
+        },
+        {
+            "source": "ashish_vaswani",
+            "target": "google_brain",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "noam_shazeer",
+            "target": "google_brain",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "niki_parmar",
+            "target": "google_research",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "jakob_uszkoreit",
+            "target": "google_research",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "llion_jones",
+            "target": "google_research",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "aidan_n_gomez",
+            "target": "university_of_toronto",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "aidan_n_gomez",
+            "target": "google_brain",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "łukasz_kaiser",
+            "target": "google_brain",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "illia_polosukhin",
+            "target": "google_research",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "transformer",
+            "target": "wmt_2014_english_to_german_translation_task",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "transformer",
+            "target": "wmt_2014_english_to_french_translation_task",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "transformer",
+            "target": "machine_translation",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_mechanism",
+            "target": "recurrent_neural_networks",
+            "relationship": "RELATED_TO",
+            "confidence": 1.0
+        },
+        {
+            "source": "attention_mechanism",
+            "target": "convolutional_neural_networks",
+            "relationship": "RELATED_TO",
+            "confidence": 1.0
+        },
+        {
+            "source": "self_attention",
+            "target": "reading_comprehension",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "self_attention",
+            "target": "abstractive_summarization",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "self_attention",
+            "target": "textual_entailment",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "self_attention",
+            "target": "learning_task_independent_sentence_representations",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "encoder_decoder_architecture",
+            "target": "recurrent_neural_networks",
+            "relationship": "RELATED_TO",
+            "confidence": 1.0
+        },
+        {
+            "source": "encoder_decoder_architecture",
+            "target": "convolutional_neural_networks",
+            "relationship": "RELATED_TO",
+            "confidence": 1.0
+        },
+        {
+            "source": "recurrent_neural_networks",
+            "target": "sequence_modeling",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "recurrent_neural_networks",
+            "target": "language_modeling",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "recurrent_neural_networks",
+            "target": "machine_translation",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "end_to_end_memory_networks",
+            "target": "simple_language_question_answering",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "end_to_end_memory_networks",
+            "target": "language_modeling",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "jacob_devlin",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "ming_wei_chang",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "kenton_lee",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "kristina_toutanova",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "bert",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "pre_training",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "fine_tuning",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "masked_language_model_mlm",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "next_sentence_prediction_nsp",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "feature_based_approach",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "fine_tuning_approach",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "wordpiece_embeddings",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "bidirectional_self_attention",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "left_to_right_ltr_language_modeling",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "right_to_left_rtl_language_modeling",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "adam",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "learning_rate_warmup",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "linear_decay_of_learning_rate",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "dropout",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "gelu_activation",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "cloze_task",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "transformer_encoder",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "bertbase",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "bertlarge",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "openai_gpt",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "elmo",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "bilstm",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "qanet",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "bidaf",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "rm_reader",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "unet",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "slqa",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "esim",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "cvt",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "cse",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pre_training_of_deep_bidirectional_transformers_for_language_understanding",
+            "target": "naacl_hlt_2019",
+            "relationship": "PUBLISHED_AT",
+            "confidence": 1.0
+        },
+        {
+            "source": "jacob_devlin",
+            "target": "google_ai_language",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "ming_wei_chang",
+            "target": "google_ai_language",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "kenton_lee",
+            "target": "google_ai_language",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "kristina_toutanova",
+            "target": "google_ai_language",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "bookscorpus",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "english_wikipedia",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "triviaqa",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "glue_benchmark",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "language_understanding",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "question_answering_qa",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "natural_language_inference_nli",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "named_entity_recognition_ner",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "paraphrasing",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "text_classification",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "sequence_tagging",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "semantic_textual_similarity_sts",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "linguistic_acceptability",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "commonsense_inference",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "bookcorpus",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "glue",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "squad",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "race",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert",
+            "target": "superglue",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "openai_gpt",
+            "target": "glue_benchmark",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "elmo",
+            "target": "glue_benchmark",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "anonymous_authors",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "language_model_pretraining",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "bert_pretraining",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "roberta",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "masked_language_model_mlm",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "next_sentence_prediction_nsp",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "dynamic_masking",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "static_masking",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "training_with_large_batches",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "byte_pair_encoding_bpe",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "character_level_bpe",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "byte_level_bpe",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "self_training_methods",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "gradient_accumulation",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "mixed_precision_floating_point_arithmetic",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "finetuning",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "single_task_finetuning",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "multi_task_finetuning",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "pairwise_ranking_formulation",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "span_prediction",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "classifier",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "margin_ranking_loss",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "cross_entropy_loss",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "autoregressive_pretraining",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "perturbed_autoregressive_language_modeling",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "multi_task_deep_neural_networks",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "knowledge_distillation",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "universal_language_model_fine_tuning",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "cloze_driven_pretraining",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "generative_insertion_based_modeling",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "masked_sequence_to_sequence_pre_training",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "enhanced_representation_through_knowledge_integration",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "spanbert",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "segment_pairnsp",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "sentence_pairnsp",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "full_sentences",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "doc_sentences",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "bert",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "elmo",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "gpt",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "xlm",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "xlnet",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "transformer_architecture",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "bertbase",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "bertlarge",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "xlnetbase",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "xlnetlarge",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta_a_robustly_optimized_bert_pre_training_approach",
+            "target": "iclr_2020",
+            "relationship": "PUBLISHED_AT",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pretraining",
+            "target": "bookcorpus",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pretraining",
+            "target": "english_wikipedia",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pretraining",
+            "target": "glue",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pretraining",
+            "target": "squad",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pretraining",
+            "target": "race",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "bert_pretraining",
+            "target": "superglue",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "bookcorpus",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "english_wikipedia",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "cc_news",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "openwebtext",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "stories",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "glue",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "race",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "squad",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "superglue",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "language_understanding",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "question_answering_qa",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "reading_comprehension",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "natural_language_inference_nli",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "single_sentence_classification",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "text_classification",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "commonsense_reasoning",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "pronoun_disambiguation",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "word_in_context_evaluation",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "winograd_schema_challenge",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "roberta",
+            "target": "additional_data",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "dynamic_masking",
+            "target": "static_masking",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "byte_level_bpe",
+            "target": "character_level_bpe",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "full_sentences",
+            "target": "segment_pairnsp",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "doc_sentences",
+            "target": "segment_pairnsp",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "doc_sentences",
+            "target": "full_sentences",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "xlnet",
+            "target": "bookcorpus",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "xlnet",
+            "target": "english_wikipedia",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "xlnet",
+            "target": "additional_data",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "xlnet",
+            "target": "glue",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "xlnet",
+            "target": "squad",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "xlnet",
+            "target": "race",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "xlnet",
+            "target": "superglue",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "cross_lingual_sentence_representations",
+            "target": "cross_lingual_sentence_representations",
+            "relationship": "RELATED_TO",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "zhenzhong_lan",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "mingda_chen",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "sebastian_goodman",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "kevin_gimpel",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "piyush_sharma",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "radu_soricut",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "factorized_embedding_parameterization",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "cross_layer_parameter_sharing",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "sentence_order_prediction_sop_loss",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "masked_language_modeling_mlm_loss",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "n_gram_masking",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "lamb_optimizer",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "gradient_checkpointing",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "reversible_residual_network",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "model_parallelization",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "knowledge_distillation",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "dropout",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "sentencepiece",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "gelu_nonlinearities",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "full_network_pre_training",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "albert",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "bert",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "transformer_encoder",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "xlnet",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "roberta",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "universal_transformer_ut",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "deep_equilibrium_model_dqe",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "skip_thought",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "fastsent",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "transformer_xl",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "spanbert",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "megatron_lm",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "structbert",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "dcmn",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "upm",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "adv_roberta",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "mt_dnn",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "alice",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert_a_lite_bert_for_self_supervised_learning_of_language_representations",
+            "target": "iclr_2020",
+            "relationship": "PUBLISHED_AT",
+            "confidence": 1.0
+        },
+        {
+            "source": "zhenzhong_lan",
+            "target": "google_research",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "mingda_chen",
+            "target": "toyota_technological_institute_at_chicago",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "sebastian_goodman",
+            "target": "google_research",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "kevin_gimpel",
+            "target": "toyota_technological_institute_at_chicago",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "piyush_sharma",
+            "target": "google_research",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "radu_soricut",
+            "target": "google_research",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "sentence_order_prediction_sop_loss",
+            "target": "discourse_coherence_prediction",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "masked_language_modeling_mlm_loss",
+            "target": "language_modeling",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "bookcorpus",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "english_wikipedia",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "additional_data",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "glue_benchmark",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "race_benchmark",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "squad_benchmark",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "self_supervised_learning_of_language_representations",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "natural_language_understanding_nlu",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "reading_comprehension",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "question_answering",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "natural_language_inference",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "text_classification",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "semantic_textual_similarity",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "paraphrase_detection",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "discourse_coherence_prediction",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "albert",
+            "target": "bert",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "parameter_efficiency",
+            "target": "transformer_based_models",
+            "relationship": "RELATED_TO",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "pengcheng_he",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "xiaodong_liu",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "jianfeng_gao",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "weizhu_chen",
+            "relationship": "AUTHORED",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "disentangled_attention_mechanism",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "enhanced_mask_decoder_emd",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "virtual_adversarial_training",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "scale_invariant_fine_tuning_sift",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "masked_language_modeling_mlm",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "span_masking",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "dynamic_data_batching",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "adam_optimizer",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "weight_decay",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "gradient_clipping",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "layer_normalization",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "relative_position_encoding",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "absolute_position_embedding",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "auto_regressive_language_model_arlm",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "replaced_token_detection_rtd",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "projection_matrix_sharing",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "convolution_layer",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "deberta",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "bert",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "roberta",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "transformer",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "gpt",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "xlnet",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "unilm",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "electra",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "t5",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "alum",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "structbert",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "ernie",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "longformer",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "reformer",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "megatron",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "albert",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "gpt_2",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "transformer_xl",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "nexha_plus",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "meena",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "deberta_ap",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "deberta_mt",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "debertart_d",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "deberta15b",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "deberta900m",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "debertaensemble",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "debertart_dsmall",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "debertart_dbase",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "debertart_dlarge",
+            "relationship": "PROPOSES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta_decoding_enhanced_bert_with_dis_entangled_attention",
+            "target": "iclr_2021",
+            "relationship": "PUBLISHED_AT",
+            "confidence": 1.0
+        },
+        {
+            "source": "pengcheng_he",
+            "target": "microsoft_dynamics_365_ai",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "xiaodong_liu",
+            "target": "microsoft_research",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "jianfeng_gao",
+            "target": "microsoft_research",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "weizhu_chen",
+            "target": "microsoft_dynamics_365_ai",
+            "relationship": "AFFILIATED_WITH",
+            "confidence": 1.0
+        },
+        {
+            "source": "disentangled_attention_mechanism",
+            "target": "relative_position_encoding",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "enhanced_mask_decoder_emd",
+            "target": "absolute_position_embedding",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "scale_invariant_fine_tuning_sift",
+            "target": "virtual_adversarial_training",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "replaced_token_detection_rtd",
+            "target": "masked_language_modeling_mlm",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "bert",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "roberta",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "glue",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "superglue",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "squad_v20",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "squad_v11",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "race",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "record",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "swag",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "conll_2003",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "natural_language_understand_nlu",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "natural_language_generation_nlg",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "question_answering_qa",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "natural_language_inference_nli",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "named_entity_recognition_ner",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "machine_reading_comprehension_mrc",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "linguistic_acceptability",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "sentiment_analysis",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "text_similarity",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "paraphrase_detection",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "coreference_resolution",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "word_sense_disambiguation_wsd",
+            "relationship": "PERFORMS",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "wikipedia",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "bookcorpus",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "openwebtext",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta",
+            "target": "stories",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "debertart_d",
+            "target": "deberta",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "debertart_d",
+            "target": "mnli",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "debertart_d",
+            "target": "squad_v20",
+            "relationship": "EVALUATED_ON",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta15b",
+            "target": "commoncrawl",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta15b",
+            "target": "cc_news",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta15b",
+            "target": "giga5",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "deberta15b",
+            "target": "clueweb",
+            "relationship": "USES",
+            "confidence": 1.0
+        },
+        {
+            "source": "debertart_dsmall",
+            "target": "bert",
+            "relationship": "IMPROVES_UPON",
+            "confidence": 1.0
+        },
+        {
+            "source": "compositional_generalization",
+            "target": "general_ai",
+            "relationship": "RELATED_TO",
+            "confidence": 1.0
+        }
+    ]
+}

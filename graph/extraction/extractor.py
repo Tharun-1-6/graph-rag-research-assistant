@@ -91,12 +91,34 @@ class GraphExtractor:
         -------
         ExtractionResult
         """
+        import re
+        import json
+        from pathlib import Path
 
         if not document.text.strip():
-
             raise ValueError(
                 "Document contains no text."
             )
+
+        # -------------------------------------------------
+        # Caching logic
+        # -------------------------------------------------
+        paper_ref = getattr(document, "paper_id", None) or getattr(document, "filename", None) or "unknown"
+        safe_ref = re.sub(r"[^\w\s-]", "", str(paper_ref)).strip().lower()
+        safe_ref = re.sub(r"[-\s]+", "_", safe_ref)
+        
+        cache_dir = Path("data/processed/extractions")
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        cache_file = cache_dir / f"{safe_ref}_extracted.json"
+
+        if cache_file.exists():
+            try:
+                with open(cache_file, "r", encoding="utf-8") as f:
+                    cached_data = json.load(f)
+                return ExtractionResult.model_validate(cached_data)
+            except Exception:
+                # If cache is corrupt, proceed to call LLM
+                pass
 
         # -------------------------------------------------
         # Build Prompt
@@ -127,6 +149,15 @@ class GraphExtractor:
         # -------------------------------------------------
 
         result = self.normalizer.normalize(result)
+
+        # -------------------------------------------------
+        # Save to cache
+        # -------------------------------------------------
+        try:
+            with open(cache_file, "w", encoding="utf-8") as f:
+                json.dump(result.model_dump(), f, indent=4, ensure_ascii=False)
+        except Exception:
+            pass
 
         return result
 

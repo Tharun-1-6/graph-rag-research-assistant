@@ -27,8 +27,8 @@ import networkx as nx
 
 from graph.extraction.models import Entity, Relationship, ExtractionResult
 
-from .node_factory import create_node
-from .edge_factory import create_edge
+from .node_factory import NodeFactory
+from .edge_factory import EdgeFactory
 
 
 class GraphManager:
@@ -38,6 +38,8 @@ class GraphManager:
 
     def __init__(self):
         self.graph = nx.MultiDiGraph()
+        self.node_factory = NodeFactory(self.graph)
+        self.edge_factory = EdgeFactory(self.graph)
 
     # =====================================================
     # Node Operations
@@ -47,19 +49,13 @@ class GraphManager:
         """
         Add a single entity node.
         """
-
-        node_id, attributes = create_node(entity)
-
-        if not self.graph.has_node(node_id):
-            self.graph.add_node(node_id, **attributes)
+        self.node_factory.add_entity(entity)
 
     def add_entities(self, entities: List[Entity]):
         """
         Add multiple entity nodes.
         """
-
-        for entity in entities:
-            self.add_entity(entity)
+        self.node_factory.add_entities(entities)
 
     # =====================================================
     # Edge Operations
@@ -69,14 +65,7 @@ class GraphManager:
         """
         Add a graph edge.
         """
-
-        source, target, attributes = create_edge(relationship)
-
-        self.graph.add_edge(
-            source,
-            target,
-            **attributes,
-        )
+        self.edge_factory.add_relationship(relationship)
 
     def add_relationships(
         self,
@@ -98,38 +87,96 @@ class GraphManager:
         result: ExtractionResult,
     ):
         """
-        Adds an entire extraction result to the graph.
+        Adds an entire extraction result to the graph, merging nodes and edges.
         """
+        import re
 
         # ---------------------------
-        # Paper node
+        # 1. Paper node
         # ---------------------------
-
         paper = result.paper
+        paper_attrs = {
+            "type": "Paper",
+            "title": paper.title,
+            "year": paper.year,
+            "conference": paper.conference,
+            "abstract": paper.abstract,
+        }
+        paper_attrs = {k: v for k, v in paper_attrs.items() if v is not None}
 
         if not self.graph.has_node(paper.id):
-
-            self.graph.add_node(
-                paper.id,
-                type="Paper",
-                title=paper.title,
-                year=paper.year,
-                conference=paper.conference,
-                abstract=paper.abstract,
-                metadata=paper.metadata,
-            )
+            self.graph.add_node(paper.id, **paper_attrs)
+        else:
+            # Update paper attributes if new fields are provided
+            for k, v in paper_attrs.items():
+                if v is not None:
+                    self.graph.nodes[paper.id][k] = v
 
         # ---------------------------
-        # Entity nodes
+        # 2. Entity nodes with paper tracking
         # ---------------------------
-
-        self.add_entities(result.entities)
+        for entity in result.entities:
+            if self.graph.has_node(entity.id):
+                # Update attributes: description (prefer longer/richer)
+                curr_desc = self.graph.nodes[entity.id].get("description", "")
+                new_desc = entity.description or ""
+                if len(new_desc) > len(curr_desc):
+                    self.graph.nodes[entity.id]["description"] = new_desc
+                
+                # Merge paper_ids list
+                papers_str = self.graph.nodes[entity.id].get("paper_ids", "")
+                papers = [p.strip() for p in papers_str.split(",") if p.strip()]
+                if paper.id not in papers:
+                    papers.append(paper.id)
+                self.graph.nodes[entity.id]["paper_ids"] = ",".join(papers)
+                self.graph.nodes[entity.id]["paper_count"] = len(papers)
+            else:
+                self.add_entity(entity)
+                self.graph.nodes[entity.id]["paper_ids"] = paper.id
+                self.graph.nodes[entity.id]["paper_count"] = 1
 
         # ---------------------------
-        # Relationships
+        # 3. Relationships (deduplicated internally)
         # ---------------------------
-
         self.add_relationships(result.relationships)
+
+        # ---------------------------
+        # 4. Automatic Paper Connections
+        # ---------------------------
+        for entity in result.entities:
+            if entity.type == "Author":
+                self.add_relationship(Relationship(
+                    source=paper.id,
+                    target=entity.id,
+                    relationship="AUTHORED",
+                    confidence=1.0,
+                ))
+            elif entity.type in ("Method", "Architecture"):
+                self.add_relationship(Relationship(
+                    source=paper.id,
+                    target=entity.id,
+                    relationship="PROPOSES",
+                    confidence=1.0,
+                ))
+
+        if paper.conference:
+            conf_id = paper.conference.lower()
+            conf_id = re.sub(r"[^\w\s-]", "", conf_id)
+            conf_id = re.sub(r"[-\s]+", "_", conf_id).strip("_")
+
+            if not self.graph.has_node(conf_id):
+                self.graph.add_node(
+                    conf_id,
+                    type="Conference",
+                    name=paper.conference,
+                )
+
+            self.add_relationship(Relationship(
+                source=paper.id,
+                target=conf_id,
+                relationship="PUBLISHED_AT",
+                confidence=1.0,
+            ))
 
     # =====================================================
     # Query Methods
@@ -224,6 +271,8 @@ class GraphManager:
         """
 
         self.graph = nx.read_graphml(path)
+        self.node_factory.graph = self.graph
+        self.edge_factory.graph = self.graph
 
     # =====================================================
     # Utilities

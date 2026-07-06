@@ -1,0 +1,10 @@
+can this project run on my laptop :
+intel i9 12th gen
+32 gb ram
+integrated gpu 
+
+also what all do 
+
+result_json is the varible that is storing the chunks and its related information
+
+llm_context in app.py is the final one that store the chunk information

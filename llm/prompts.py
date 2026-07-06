@@ -61,23 +61,28 @@ The JSON MUST follow this schema:
 Relationship format:
 
 {{
-    "source": "",
-    "relationship": "",
-    "target": ""
+    "source": "Exact Name of Source Entity",
+    "relationship": "ALLOWED_RELATIONSHIP_TYPE",
+    "target": "Exact Name of Target Entity"
 }}
+
+Relationship Rules:
+1. The "source" and "target" values MUST match exactly one of the entity strings you extracted in the lists (e.g. authors, institutions, methods, datasets, etc.) or the paper's title.
+2. Create all valid relationships described in the paper. For example, connect authors to institutions (AFFILIATED_WITH), papers to proposed methods (PROPOSES), methods to datasets (USES), etc.
+3. Only use the allowed relationship types below.
 
 Allowed relationship types:
 
 AUTHORED
+AFFILIATED_WITH
+PUBLISHED_AT
 PROPOSES
 USES
 EVALUATED_ON
 PERFORMS
-BASED_ON
 IMPROVES_UPON
 BELONGS_TO
-AFFILIATED_WITH
-PUBLISHED_AT
+RELATED_TO
 
 Research Paper
 ==============

@@ -48,26 +48,44 @@ class GeminiProvider(BaseLLMProvider):
         temperature: float = 0.2,
     ) -> str:
         """
-        Generate a normal text response.
+        Generate a normal text response with retry logic.
         """
+        import time
+        import logging
 
-        try:
+        logger = logging.getLogger(__name__)
+        max_retries = 5
+        base_delay = 5.0
 
-            response = self.client.models.generate_content(
-                model=self.model,
-                contents=prompt,
-                config={
-                    "temperature": temperature,
-                },
-            )
+        for attempt in range(max_retries):
+            try:
+                response = self.client.models.generate_content(
+                    model=self.model,
+                    contents=prompt,
+                    config={
+                        "temperature": temperature,
+                    },
+                )
+                return response.text
+            except Exception as e:
+                err_str = str(e)
+                is_retryable = any(code in err_str for code in ["503", "429", "RESOURCE_EXHAUSTED", "UNAVAILABLE"]) or "demand" in err_str.lower()
+                
+                if is_retryable and attempt < max_retries - 1:
+                    delay = base_delay * (2 ** attempt)
+                    logger.warning(
+                        f"Gemini API unavailable or overloaded (attempt {attempt + 1}/{max_retries}). "
+                        f"Retrying in {delay} seconds. Error: {err_str}"
+                    )
+                    time.sleep(delay)
+                else:
+                    raise RuntimeError(
+                        f"Gemini generation failed: {e}"
+                    )
 
-            return response.text
-
-        except Exception as e:
-
-            raise RuntimeError(
-                f"Gemini generation failed: {e}"
-            )
+        raise RuntimeError(
+            "Gemini generation failed: exceeded maximum retries due to service unavailability."
+        )
 
     # -------------------------------------------------
 
@@ -77,24 +95,42 @@ class GeminiProvider(BaseLLMProvider):
         temperature: float = 0.0,
     ) -> str:
         """
-        Generate JSON output.
+        Generate JSON output with retry logic for high demand/rate limits.
         """
+        import time
+        import logging
 
-        try:
+        logger = logging.getLogger(__name__)
+        max_retries = 5
+        base_delay = 5.0
 
-            response = self.client.models.generate_content(
-                model=self.model,
-                contents=prompt,
-                config={
-                    "temperature": temperature,
-                    "response_mime_type": "application/json",
-                },
-            )
+        for attempt in range(max_retries):
+            try:
+                response = self.client.models.generate_content(
+                    model=self.model,
+                    contents=prompt,
+                    config={
+                        "temperature": temperature,
+                        "response_mime_type": "application/json",
+                    },
+                )
+                return response.text
+            except Exception as e:
+                err_str = str(e)
+                is_retryable = any(code in err_str for code in ["503", "429", "RESOURCE_EXHAUSTED", "UNAVAILABLE"]) or "demand" in err_str.lower()
+                
+                if is_retryable and attempt < max_retries - 1:
+                    delay = base_delay * (2 ** attempt)
+                    logger.warning(
+                        f"Gemini API unavailable or overloaded (attempt {attempt + 1}/{max_retries}). "
+                        f"Retrying in {delay} seconds. Error: {err_str}"
+                    )
+                    time.sleep(delay)
+                else:
+                    raise RuntimeError(
+                        f"Gemini JSON generation failed: {e}"
+                    )
 
-            return response.text
-
-        except Exception as e:
-
-            raise RuntimeError(
-                f"Gemini JSON generation failed: {e}"
-            )
+        raise RuntimeError(
+            "Gemini JSON generation failed: exceeded maximum retries due to service unavailability."
+        )

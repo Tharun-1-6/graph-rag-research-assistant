@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphRAG Research Assistant</title>
+    <meta name="description" content="Intelligent RAG assistant combining Knowledge Graph structures and semantic search vector databases.">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Marked JS for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Vis.js Network for interactive graph rendering -->
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+    <!-- Toast Notification Overlay -->
+    <div class="toast-notification" id="toast-notification" style="display: none;">
+        <span class="toast-icon">✨</span>
+        <span class="toast-message" id="toast-message"></span>
+    </div>
+
+    <!-- Glowing Background Network BG -->
+    <div class="network-bg">
+        <div class="glowing-node node-1"></div>
+        <div class="glowing-node node-2"></div>
+        <div class="glowing-node node-3"></div>
+        <div class="glowing-line line-1"></div>
+    </div>
+
+    <!-- Layout Switcher Tabs -->
+    <div class="layout-toggle-container">
+        <button class="toggle-tab active" id="tab-chat">💬 Chat Interface</button>
+        <button class="toggle-tab" id="tab-graph">🕸️ Knowledge Graph Explorer</button>
+    </div>
+
+    <!-- Main Central Container -->
+    <main class="chat-wrapper">
+        <!-- Panel 1: Chat interface -->
+        <div class="chat-container" id="panel-chat">
+            <!-- Header bar -->
+            <header class="chat-header">
+                <div class="brand-group">
+                    <span class="brand-bullet"></span>
+                    <div class="brand-text">
+                        <h1 class="brand-title">GraphRAG <span class="accent-text">Assistant</span></h1>
+                        <span class="brand-status">Research Assistant Active</span>
+                    </div>
+                    <div class="model-selector">
+                        <select id="model-select" class="model-select-dropdown">
+                            <option value="llama-3.3-70b-versatile" selected>⚡ Llama 3.3 70B</option>
+                            <option value="gemini">🤖 Gemini 2.5 Flash</option>
+                            <option value="llama-3.1-8b-instant">⚡ Llama 3.1 8B</option>
+                            <option value="qwen/qwen3-32b">⚡ Qwen 3 32B</option>
+                            <option value="openai/gpt-oss-120b">⚡ GPT OSS 120B</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="action-btn" id="clear-chat-btn" title="Clear Chat History">
+                        <svg viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Chat message log viewport -->
+            <div class="chat-viewport" id="chat-viewport">
+                <!-- Welcome screen shown when empty -->
+                <div class="welcome-screen" id="welcome-screen">
+                    <div class="welcome-icon">🧠</div>
+                    <h2 class="welcome-title">Ask GraphRAG</h2>
+                    <p class="welcome-subtitle">Ask questions about your uploaded scientific papers. The orchestrator will dynamically route your query using hybrid Vector and Knowledge Graph indexes.</p>
+                </div>
+            </div>
+
+            <!-- Input area -->
+            <footer class="chat-footer">
+                <form class="input-form" id="input-form">
+                    <input type="text" class="chat-input" id="chat-input" placeholder="Ask a question about the papers..." autocomplete="off" required>
+                    <button type="submit" class="send-btn" id="send-btn">
+                        <svg viewBox="0 0 24 24" width="18" height="18">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </form>
+            </footer>
+        </div>
+
+        <!-- Panel 2: Interactive Graph Visualizer -->
+        <div class="graph-explorer-container" id="panel-graph" style="display: none;">
+            <div class="graph-toolbar">
+                <div class="toolbar-title">Knowledge Graph Visualization</div>
+                <div class="toolbar-actions">
+                    <select id="graph-type-filter" class="model-select-dropdown" style="padding: 4px 10px; font-size: 0.8rem; background: rgba(7, 9, 19, 0.4); border-color: rgba(99, 102, 241, 0.2);">
+                        <option value="all">Show All Types</option>
+                        <option value="Paper">Papers Only</option>
+                        <option value="Author">Authors Only</option>
+                        <option value="Method">Methods Only</option>
+                        <option value="Dataset">Datasets Only</option>
+                        <option value="Institution">Institutions Only</option>
+                        <option value="Benchmark">Benchmarks Only</option>
+                        <option value="Task">Tasks Only</option>
+                        <option value="Metric">Metrics Only</option>
+                    </select>
+                    <button class="tool-btn" id="btn-fit-graph">Fit View</button>
+                    <button class="tool-btn" id="btn-toggle-physics">Freeze Physics</button>
+                    <button class="tool-btn" id="btn-clear-highlights" style="display: none;">Clear Search Path Highlights</button>
+                </div>
+            </div>
+            
+            <div class="graph-main-layout">
+                <!-- Visual canvas -->
+                <div id="graph-canvas-container" style="flex: 1;"></div>
+                
+
+
+                <!-- Side Panel showing node detail click details -->
+                <div class="graph-details-sidebar" id="graph-details-sidebar">
+                    <div class="sidebar-empty-state" id="sidebar-empty-state">
+                        <h4>Click a Node</h4>
+                        <p>Select any node in the knowledge network to inspect its attributes, descriptions, and connection metrics.</p>
+                    </div>
+                    <div class="sidebar-content" id="sidebar-node-content" style="display: none;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                            <h3 id="detail-node-name" style="margin: 0;">Node Name</h3>
+                            <button id="sidebar-toggle-maximize" class="tool-btn" style="padding: 4px 8px; font-size: 0.75rem; margin-left: 10px;">
+                                Maximize
+                            </button>
+                        </div>
+                        <span class="badge" id="detail-node-type">Node Type</span>
+                        <div class="stat-row">
+                            <strong>Connections:</strong> <span id="detail-node-connections">0</span>
+                        </div>
+                        <div class="desc-box">
+                            <h5>Description / Summary</h5>
+                            <p id="detail-node-desc">Summary contents go here...</p>
+                        </div>
+                        
+                        <!-- Sidebar Contextual Chat -->
+                        <div class="sidebar-chat-wrapper">
+                            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+                                <h5>Query Entity Connections</h5>
+                                <select id="sidebar-model-select" class="model-select-dropdown" style="padding: 2px 6px; font-size: 0.75rem;">
+                                    <option value="llama-3.3-70b-versatile" selected>⚡ Llama 3.3 70B</option>
+                                    <option value="gemini">🤖 Gemini 2.5 Flash</option>
+                                    <option value="llama-3.1-8b-instant">⚡ Llama 3.1 8B</option>
+                                    <option value="qwen/qwen3-32b">⚡ Qwen 3 32B</option>
+                                    <option value="openai/gpt-oss-120b">⚡ GPT OSS 120B</option>
+                                </select>
+                            </div>
+                            <div class="sidebar-chat-viewport" id="sidebar-chat-viewport"></div>
+                            <form class="sidebar-chat-form" id="sidebar-chat-form">
+                                <input type="text" class="sidebar-chat-input" id="sidebar-chat-input" placeholder="Ask about this entity..." autocomplete="off" required>
+                                <button type="submit" class="sidebar-chat-send-btn">➔</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JS script -->
+    <script src="/static/app.js"></script>
+</body>
+</html>

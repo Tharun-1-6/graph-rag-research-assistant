@@ -45,14 +45,19 @@ class NodeFactory:
         if paper.id in self.graph:
             return
 
+        attrs = {
+            "type": "Paper",
+            "title": paper.title,
+            "year": paper.year,
+            "conference": paper.conference,
+            "abstract": paper.abstract,
+        }
+        # Filter out None values
+        attrs = {k: v for k, v in attrs.items() if v is not None}
+
         self.graph.add_node(
             paper.id,
-            type="Paper",
-            title=paper.title,
-            year=paper.year,
-            conference=paper.conference,
-            abstract=paper.abstract,
-            metadata=paper.metadata,
+            **attrs
         )
 
     # -----------------------------------------------------
@@ -65,12 +70,17 @@ class NodeFactory:
         if entity.id in self.graph:
             return
 
+        attrs = {
+            "type": entity.type,
+            "name": entity.name,
+            "description": entity.description,
+        }
+        # Filter out None values
+        attrs = {k: v for k, v in attrs.items() if v is not None}
+
         self.graph.add_node(
             entity.id,
-            type=entity.type,
-            name=entity.name,
-            description=entity.description,
-            metadata=entity.metadata,
+            **attrs
         )
 
     # -----------------------------------------------------

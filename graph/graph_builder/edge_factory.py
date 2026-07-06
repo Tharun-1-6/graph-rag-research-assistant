@@ -47,7 +47,7 @@ class EdgeFactory:
         Returns
         -------
         bool
-            True if the edge was added,
+            True if the edge was added or updated,
             False if either endpoint does not exist.
         """
 
@@ -57,12 +57,31 @@ class EdgeFactory:
         if relationship.target not in self.graph:
             return False
 
+        # Prevent duplicate edges by merging/updating if relationship exists
+        if self.edge_exists(relationship.source, relationship.target, relationship.relationship):
+            edges_data = self.graph.get_edge_data(relationship.source, relationship.target)
+            if edges_data is not None:
+                for key, edge_attrs in edges_data.items():
+                    if edge_attrs.get("relationship") == relationship.relationship:
+                        if relationship.confidence is not None:
+                            edge_attrs["confidence"] = max(
+                                edge_attrs.get("confidence", 0.0),
+                                relationship.confidence
+                            )
+                        break
+            return True
+
+        attrs = {
+            "relationship": relationship.relationship,
+            "confidence": relationship.confidence,
+        }
+        # Filter out None values
+        attrs = {k: v for k, v in attrs.items() if v is not None}
+
         self.graph.add_edge(
             relationship.source,
             relationship.target,
-            relationship=relationship.relationship,
-            confidence=relationship.confidence,
-            metadata=relationship.metadata,
+            **attrs
         )
 
         return True

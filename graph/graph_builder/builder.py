@@ -73,6 +73,52 @@ class GraphBuilder:
         for relationship in extraction.relationships:
             self._add_relationship(relationship)
 
+        # ---------------------------------------------
+        # Automatic Paper Links
+        # ---------------------------------------------
+        paper_id = extraction.paper.id
+
+        # Link Paper to Authors and proposed Methods/Architectures
+        for entity in extraction.entities:
+            if entity.type == "Author":
+                self.graph.add_edge(
+                    paper_id,
+                    entity.id,
+                    relationship="AUTHORED",
+                    confidence=1.0,
+                )
+            elif entity.type in ("Method", "Architecture"):
+                self.graph.add_edge(
+                    paper_id,
+                    entity.id,
+                    relationship="PROPOSES",
+                    confidence=1.0,
+                )
+
+        # Link Paper to Conference if present
+        conf_name = extraction.paper.conference
+        if conf_name:
+            # Generate graph-safe ID for the conference
+            import re
+            conf_id = conf_name.lower()
+            conf_id = re.sub(r"[^\w\s-]", "", conf_id)
+            conf_id = re.sub(r"[-\s]+", "_", conf_id).strip("_")
+
+            # Add Conference node if it doesn't exist
+            if conf_id not in self.graph:
+                self.graph.add_node(
+                    conf_id,
+                    type="Conference",
+                    name=conf_name,
+                )
+
+            self.graph.add_edge(
+                paper_id,
+                conf_id,
+                relationship="PUBLISHED_AT",
+                confidence=1.0,
+            )
+
         return self.graph
 
     # =====================================================
@@ -85,15 +131,20 @@ class GraphBuilder:
     ) -> None:
 
         paper = extraction.paper
+        
+        attrs = {
+            "type": "Paper",
+            "title": paper.title,
+            "year": paper.year,
+            "conference": paper.conference,
+            "abstract": paper.abstract,
+        }
+        # Filter out None values
+        attrs = {k: v for k, v in attrs.items() if v is not None}
 
         self.graph.add_node(
             paper.id,
-            type="Paper",
-            title=paper.title,
-            year=paper.year,
-            conference=paper.conference,
-            abstract=paper.abstract,
-            metadata=paper.metadata,
+            **attrs
         )
 
     # =====================================================
@@ -105,12 +156,17 @@ class GraphBuilder:
         entity: Entity,
     ) -> None:
 
+        attrs = {
+            "type": entity.type,
+            "name": entity.name,
+            "description": entity.description,
+        }
+        # Filter out None values
+        attrs = {k: v for k, v in attrs.items() if v is not None}
+
         self.graph.add_node(
             entity.id,
-            type=entity.type,
-            name=entity.name,
-            description=entity.description,
-            metadata=entity.metadata,
+            **attrs
         )
 
     # =====================================================
@@ -129,12 +185,17 @@ class GraphBuilder:
         if relationship.target not in self.graph:
             return
 
+        attrs = {
+            "relationship": relationship.relationship,
+            "confidence": relationship.confidence,
+        }
+        # Filter out None values
+        attrs = {k: v for k, v in attrs.items() if v is not None}
+
         self.graph.add_edge(
             relationship.source,
             relationship.target,
-            relationship=relationship.relationship,
-            confidence=relationship.confidence,
-            metadata=relationship.metadata,
+            **attrs
         )
 
     # =====================================================

@@ -28,6 +28,42 @@ class GraphSerializer:
     Handles serialization of NetworkX graphs.
     """
 
+    def __init__(self, base_dir: str | Path = ""):
+        """
+        Instantiate the serializer with a base directory.
+        """
+        self.base_dir = Path(base_dir) if base_dir else Path(".")
+
+    def save_graphml(self, graph: nx.MultiDiGraph, filename: str) -> Path:
+        """
+        Save graph as GraphML to the base directory.
+        """
+        path = self.base_dir / filename
+        path.parent.mkdir(parents=True, exist_ok=True)
+        nx.write_graphml(graph, path)
+        return path
+
+    def load_graphml(self, filename: str) -> nx.MultiDiGraph:
+        """
+        Load GraphML file from the base directory.
+        """
+        path = self.base_dir / filename
+        return nx.read_graphml(path)
+
+    def save_json(self, graph: nx.MultiDiGraph, filename: str) -> Path:
+        """
+        Save graph as JSON to the base directory.
+        """
+        path = self.base_dir / filename
+        return self.save(graph, path)
+
+    def load_json(self, filename: str) -> nx.MultiDiGraph:
+        """
+        Load graph from a JSON file in the base directory.
+        """
+        path = self.base_dir / filename
+        return self.load(path)
+
     # =====================================================
     # Dictionary Conversion
     # =====================================================

@@ -61,7 +61,7 @@ def chat():
     try:
         data = request.get_json() or {}
         user_message = data.get("message", "").strip()
-        model_choice = data.get("model", "gemini").lower()
+        model_choice = data.get("model", "llama-3.3-70b-versatile").lower()
 
         if not user_message:
             return jsonify({"error": "Message content cannot be empty."}), 400
@@ -72,7 +72,7 @@ def chat():
         try:
             from llm.provider.factory import get_provider
             
-            if model_choice.startswith(("llama", "mixtral", "gemma")):
+            if model_choice.startswith(("llama", "qwen", "openai")):
                 provider_name = "groq"
                 model_id = model_choice
             else:
@@ -153,14 +153,245 @@ def chat():
         # Combine the actual LLM answer with the markdown details block
         final_answer_markdown = answer + "\n" + "\n".join(trace_md)
 
+        # Extract graph trace nodes/edges for UI visualization path highlighting
+        path_nodes = []
+        path_edges = []
+        if graph_result and hasattr(graph_result, "retrieval_trace"):
+            trace = graph_result.retrieval_trace
+            ranked = trace.get("ranked_nodes", [])
+            # Map top nodes
+            for node_id, score in ranked:
+                if node_id in graph_retriever.graph:
+                    node_data = graph_retriever.graph.nodes[node_id]
+                    path_nodes.append({
+                        "id": node_id,
+                        "label": node_data.get("name") or node_data.get("title") or node_id,
+                        "type": node_data.get("type", "Unknown"),
+                        "score": score
+                    })
+            # Map paths
+            node_paths = trace.get("node_paths", {})
+            for target_nid, path_links in node_paths.items():
+                for link in path_links:
+                    if len(link) == 3:
+                        u, v, rel = link
+                        path_edges.append({
+                            "source": u,
+                            "target": v,
+                            "relationship": rel
+                        })
+
         return jsonify({
             "answer": final_answer_markdown,
-            "status": "success"
+            "status": "success",
+            "path_nodes": path_nodes,
+            "path_edges": path_edges
         })
 
     except Exception as e:
         print(f"[API Chat] Error: {str(e)}", file=sys.stderr)
         return jsonify({"error": f"An error occurred: {str(e)}"}), 500
+
+@app.route("/api/graph/data")
+def graph_data():
+    """Retrieve full knowledge graph data for interactive visualization."""
+    try:
+        g = graph_retriever.graph
+        nodes = []
+        edges = []
+        
+        for node_id, data in g.nodes(data=True):
+            # Fall back to abstract or summary details for description values
+            desc = data.get("description") or data.get("abstract") or f"Entity Node of type {data.get('type')}"
+            nodes.append({
+                "id": node_id,
+                "label": data.get("name") or data.get("title") or node_id,
+                "type": data.get("type", "Unknown"),
+                "description": desc,
+                "degree": g.degree(node_id)
+            })
+            
+        for u, v, data in g.edges(data=True):
+            edges.append({
+                "from": u,
+                "to": v,
+                "relationship": data.get("relationship", "RELATED_TO"),
+                "confidence": data.get("confidence", 1.0)
+            })
+            
+        return jsonify({
+            "nodes": nodes,
+            "edges": edges
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+@app.route("/api/graph/generate_description", methods=["POST"])
+def generate_description():
+    """Use a lightweight LLM on Groq to fill in node description attributes using RAG contexts."""
+    try:
+        data = request.get_json() or {}
+        node_id = data.get("node_id")
+        node_type = data.get("type", "Entity")
+        node_label = data.get("label", node_id)
+        
+        if not node_id:
+            return jsonify({"error": "Node ID is required."}), 400
+
+        # Retrieve localized vector snippets for context grounding
+        context = ""
+        try:
+            raw_context = rag_retriever.run(f"Explain or define what {node_label} is in the context of research literature.")
+            if isinstance(raw_context, dict) and "retrieved_chunks" in raw_context:
+                from context_builder import build_context
+                llm_context_data = build_context(raw_context)
+                context = "\n".join([item.get("content", "") for item in llm_context_data.get("context", [])])
+            else:
+                context = str(raw_context)
+        except Exception as e:
+            print(f"[Generate Description] Context retrieval warning: {e}")
+
+        # Instantiate a lightweight model specifically for node explanations
+        from llm.provider.factory import get_provider
+        desc_provider = get_provider(name="groq", model="llama-3.1-8b-instant")
+        
+        prompt = f"""You are a lightweight metadata summarizer. 
+Write a clear, concise definition or summary of the following entity. 
+Ensure the summary is grounded ONLY in the retrieved document text below. 
+Do not speculate, and do not write introductory remarks like "Here is the summary".
+Write exactly 2 to 3 sentences.
+
+Entity: {node_label} (Type: {node_type})
+
+Document Context:
+---
+{context}
+---
+
+Definition/Summary:"""
+        
+        description_text = desc_provider.generate(prompt, temperature=0.2).strip()
+        
+        # Save back into live memory graph
+        g = graph_retriever.graph
+        if node_id in g:
+            g.nodes[node_id]["description"] = description_text
+            
+            # Persist to local GraphML file database
+            try:
+                import networkx as nx
+                nx.write_graphml(g, global_graph_path)
+                print(f"[Generate Description] Successfully updated and persisted node '{node_id}' description.")
+            except Exception as save_err:
+                print(f"[Generate Description] Disk persist error: {save_err}")
+                
+        return jsonify({
+            "status": "success",
+            "description": description_text
+        })
+    except Exception as e:
+        import traceback
+        print("[Generate Description] Critical Endpoint Error:", file=sys.stderr)
+        traceback.print_exc()
+        return jsonify({"error": str(e)}), 500
+
+@app.route("/api/graph/chat", methods=["POST"])
+def graph_node_chat():
+    """Contextual chat interface focused around a single node with custom selected models."""
+    try:
+        data = request.get_json() or {}
+        node_id = data.get("node_id")
+        node_type = data.get("type", "Entity")
+        node_label = data.get("label", node_id)
+        user_message = data.get("message", "").strip()
+        model_choice = data.get("model", "llama-3.3-70b-versatile").lower()
+
+        if not node_id or not user_message:
+            return jsonify({"error": "Node ID and message are required."}), 400
+
+        print(f"\n[Graph Chat] Querying '{node_label}' connections: '{user_message}' using model: '{model_choice}'")
+
+        # 1. Fetch relational context from the graph database
+        relationships_context = []
+        g = graph_retriever.graph
+        if node_id in g:
+            # Outbound connections
+            for u, v, rdata in g.out_edges(node_id, data=True):
+                target_name = g.nodes[v].get("name") or g.nodes[v].get("title") or v
+                relationships_context.append(f"- {node_label} --[{rdata.get('relationship', 'RELATED_TO')}]--> {target_name}")
+            # Inbound connections
+            for u, v, rdata in g.in_edges(node_id, data=True):
+                source_name = g.nodes[u].get("name") or g.nodes[u].get("title") or u
+                relationships_context.append(f"- {source_name} --[{rdata.get('relationship', 'RELATED_TO')}]--> {node_label}")
+
+        rels_str = "\n".join(relationships_context) if relationships_context else "No direct relational links found in graph ontology."
+
+        # 2. Fetch document snippet context
+        text_context = ""
+        try:
+            # Call the RetrievalPipeline 'run' method
+            raw_context = rag_retriever.run(f"Explain how {node_label} relates to other entities in: {user_message}")
+            
+            # Check if output is a dict containing retrieved_chunks or needs parsing
+            if isinstance(raw_context, dict) and "retrieved_chunks" in raw_context:
+                from context_builder import build_context
+                llm_context_data = build_context(raw_context)
+                text_context = "\n".join([item.get("content", "") for item in llm_context_data.get("context", [])])
+            elif isinstance(raw_context, str):
+                try:
+                    # In case raw_context is a JSON string return
+                    parsed = json.loads(raw_context)
+                    if isinstance(parsed, dict) and "retrieved_chunks" in parsed:
+                        from context_builder import build_context
+                        llm_context_data = build_context(parsed)
+                        text_context = "\n".join([item.get("content", "") for item in llm_context_data.get("context", [])])
+                    else:
+                        text_context = raw_context
+                except Exception:
+                    text_context = raw_context
+            else:
+                text_context = str(raw_context)
+        except Exception as e:
+            print(f"[Graph Chat] Text context retrieval warning: {e}")
+            text_context = "No relevant text documents found."
+
+        # 3. Instantiate the selected model provider dynamically
+        from llm.provider.factory import get_provider
+        if model_choice.startswith(("llama", "qwen", "openai")):
+            provider_name = "groq"
+            model_id = model_choice
+        else:
+            provider_name = "gemini"
+            model_id = "gemini-2.5-flash"
+
+        chat_provider = get_provider(name=provider_name, model=model_id)
+
+        prompt = f"""You are an expert AI research assistant.
+Answer the user's question about the entity "{node_label}" ({node_type}) and its connections in the research literature.
+Answer the query directly and concisely using the provided context. If the answer cannot be found in the context, say so.
+
+Direct Knowledge Graph Connections:
+{rels_str}
+
+Relevant Document Excerpts:
+---
+{text_context}
+---
+
+User Question: {user_message}
+Answer:"""
+
+        answer_text = chat_provider.generate(prompt, temperature=0.3).strip()
+
+        return jsonify({
+            "status": "success",
+            "answer": answer_text
+        })
+    except Exception as e:
+        import traceback
+        print("[Graph Chat] Critical Endpoint Error:", file=sys.stderr)
+        traceback.print_exc()
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
     print("Starting Flask server on http://127.0.0.1:5000 ...")

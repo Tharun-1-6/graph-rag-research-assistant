@@ -31,25 +31,32 @@ class LLMClient:
         self.provider = None
         self.fallback_provider = None
 
-        # Check Gemini provider
+        # Determine primary and fallback based on LLM_PROVIDER config
+        from llm.config import LLM_PROVIDER
+        primary_name = (LLM_PROVIDER or "groq").lower()
+        fallback_name = "gemini" if primary_name == "groq" else "groq"
+
+        # Check primary provider
         try:
-            self.provider = get_provider("gemini")
+            self.provider = get_provider(primary_name)
         except Exception:
             pass
 
-        # Check Groq provider
+        # Check fallback provider
         try:
-            self.fallback_provider = get_provider("groq")
+            self.fallback_provider = get_provider(fallback_name)
         except Exception:
             pass
 
         # Shift to active provider silently
         if self.provider:
-            print(f"[LLMClient] Active: Gemini ({self.provider.model})")
+            p_name = "Groq" if primary_name == "groq" else "Gemini"
+            print(f"[LLMClient] Active: {p_name} ({self.provider.model})")
         elif self.fallback_provider:
             self.provider = self.fallback_provider
             self.fallback_provider = None
-            print(f"[LLMClient] Active: Groq ({self.provider.model})")
+            f_name = "Gemini" if fallback_name == "gemini" else "Groq"
+            print(f"[LLMClient] Active: {f_name} ({self.provider.model})")
         else:
             raise ValueError("No LLM providers are configured. Please configure GEMINI_API_KEY or GROQ_API_KEY in your .env file.")
 

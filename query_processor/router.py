@@ -8,6 +8,13 @@ from graph.extraction.schema import NODE_TYPES, RELATIONSHIP_TYPES
 
 logger = logging.getLogger(__name__)
 
+def is_greeting_or_pleasantry(query: str) -> bool:
+    """Helper to detect simple greetings/pleasantries and short-circuit them."""
+    q = query.strip().lower().strip("?!. ")
+    greetings = {"hello", "hi", "hey", "greetings", "good morning", "good afternoon", "good evening", "howdy", "welcome", "thanks", "thank you", "bye", "goodbye"}
+    return q in greetings
+
+
 class QueryRouter:
     """
     Classifies an input query to determine the best retrieval strategy based on
@@ -15,6 +22,7 @@ class QueryRouter:
     - RAG: Text-based/vector search for specific, factual, local details.
     - GRAPH_RAG: Graph traversal for relational, comparative, multi-hop or structural queries.
     - COMBINED: Both methods for complex, cross-cutting queries.
+    - GENERAL: General greetings, pleasantries, off-topic chat, or assistant capabilities queries.
     """
     def __init__(self, llm_client: Optional[LLMClient] = None):
         self.llm_client = llm_client or LLMClient()
@@ -22,8 +30,14 @@ class QueryRouter:
     def route(self, query: str) -> Dict[str, Any]:
         """
         Classifies the query.
-        Returns a dict: {"route": "RAG" | "GRAPH_RAG" | "COMBINED", "reasoning": str}
+        Returns a dict: {"route": "RAG" | "GRAPH_RAG" | "COMBINED" | "GENERAL", "reasoning": str}
         """
+        if is_greeting_or_pleasantry(query):
+            return {
+                "route": "GENERAL",
+                "reasoning": "Query is a simple greeting or pleasantry; routed to GENERAL direct chat."
+            }
+
         # Format schema metadata for the LLM
         nodes_str = ", ".join(sorted(NODE_TYPES))
         relations_str = ", ".join(sorted(RELATIONSHIP_TYPES))
@@ -41,10 +55,11 @@ Analyze the user's query:
 1. "RAG": Choose this if the query is best answered by retrieving raw text paragraphs, specific facts, numbers, parameter details, definitions, or local details from inside the paper texts, without needing to traverse connections between different entities.
 2. "GRAPH_RAG": Choose this if the query is best answered by traversing and analyzing connections, affiliations, or structural relationships between the Entity Types using the Relationship Types (e.g. tracing lineage, authorship, which Method uses which Dataset, etc.).
 3. "COMBINED": Choose this if the query requires both (e.g., tracing a connection or comparing entities across the graph AND needing detailed factual definitions, parameter values, or exact text details from the papers).
+4. "GENERAL": Choose this if the query is a general greeting, pleasantry, off-topic question, or about the assistant's capabilities itself (e.g. "Who are you?", "What can you do?", "Hi"), requiring no search inside the research literature.
 
 Your response MUST be a valid JSON object matching the following schema exactly:
 {{
-    "route": "RAG" | "GRAPH_RAG" | "COMBINED",
+    "route": "RAG" | "GRAPH_RAG" | "COMBINED" | "GENERAL",
     "reasoning": "A detailed explanation of why this route is chosen based on the required node/relationship types and text details."
 }}
 
@@ -57,7 +72,7 @@ User Query:
             
             # Normalize route value
             route = data.get("route", "COMBINED").upper()
-            if route not in ["RAG", "GRAPH_RAG", "COMBINED"]:
+            if route not in ["RAG", "GRAPH_RAG", "COMBINED", "GENERAL"]:
                 route = "COMBINED"
                 
             return {
@@ -168,7 +183,17 @@ Consolidated Context:
         """
         Uses the consolidated context to answer the user's query.
         """
-        prompt = f"""You are a helpful and expert AI research assistant.
+        if not context:
+            prompt = f"""You are a helpful and expert AI research assistant.
+Answer the user's query directly, politely, and conversational. Do NOT mention any documents, papers, or excerpts, as no research database query was executed.
+
+Query:
+{query}
+
+Answer:
+"""
+        else:
+            prompt = f"""You are a helpful and expert AI research assistant.
 Your task is to answer the user's query using the provided context.
 Ensure the answer is comprehensive, accurate, and directly grounded in the provided context.
 
@@ -193,14 +218,7 @@ Answer:
         Runs the full routing, retrieval, and answering pipeline.
         
         Returns:
-            Dict containing:
-                "route": The chosen route.
-                "reasoning": The route decision reasoning.
-                "rag_context": Raw RAG context (if executed).
-                "graph_context": Raw Graph-RAG context (if executed).
-                "graph_result": Full RetrievalResult object (if executed).
-                "final_context": Synthesized and compared context built for the LLM.
-                "answer": The generated answer based on the context.
+             Dict containing all metadata and answer.
         """
         route_decision = self.router.route(query)
         route = route_decision["route"]
@@ -211,7 +229,10 @@ Answer:
         graph_result = None
         final_context = ""
 
-        if route == "RAG":
+        if route == "GENERAL":
+            final_context = ""
+
+        elif route == "RAG":
             rag_context = self._execute_retriever("RAG", self.rag_retriever, query)
             final_context = rag_context
 

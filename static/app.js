@@ -689,16 +689,63 @@ document.addEventListener("DOMContentLoaded", () => {
     function appendSidebarMessage(sender, text) {
         const msgDiv = document.createElement("div");
         msgDiv.classList.add("sidebar-chat-msg", sender);
-        msgDiv.textContent = text;
+        
+        if (sender === "bot") {
+            // Strip out Qwen thinking tags/reasoning chains if present
+            let cleanedText = text;
+            if (text.includes("<think>")) {
+                cleanedText = text.replace(/<think>[\s\S]*?<\/think>/g, "").trim();
+            }
+            
+            // Render markdown content using Marked parser
+            try {
+                msgDiv.innerHTML = marked.parse(cleanedText);
+            } catch (e) {
+                msgDiv.textContent = cleanedText;
+            }
+        } else {
+            msgDiv.textContent = text;
+        }
+        
         sidebarChatViewport.appendChild(msgDiv);
         sidebarChatViewport.scrollTop = sidebarChatViewport.scrollHeight;
     }
+
+    const sidebar = document.getElementById("graph-details-sidebar");
+
+    // Maximize/Restore Toggle Button Handler
+    const toggleMaximizeBtn = document.getElementById("sidebar-toggle-maximize");
+    toggleMaximizeBtn.addEventListener("click", () => {
+        const isMaximized = sidebar.classList.toggle("maximized");
+        
+        if (isMaximized) {
+            toggleMaximizeBtn.textContent = "Restore";
+        } else {
+            toggleMaximizeBtn.textContent = "Maximize";
+            // Revert inline width if user dragged it earlier to restore correctly
+            sidebar.style.width = "";
+        }
+        
+        // Recalculate VisJS canvas layout constraints after transition
+        setTimeout(() => {
+            if (network) {
+                network.setSize(
+                    document.getElementById("graph-canvas-container").offsetWidth,
+                    document.getElementById("graph-canvas-container").offsetHeight
+                );
+                network.redraw();
+            }
+        }, 350); // Matches CSS transition duration (300ms)
+    });
 
     /**
      * Revert side pane state when background is clicked.
      */
     function resetNodeDetails() {
         currentSelectedNode = null;
+        sidebar.classList.remove("maximized");
+        toggleMaximizeBtn.textContent = "Maximize";
+        sidebar.style.width = "";
         document.getElementById("sidebar-node-content").style.display = "none";
         document.getElementById("sidebar-empty-state").style.display = "flex";
     }

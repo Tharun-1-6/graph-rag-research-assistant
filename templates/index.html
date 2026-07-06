@@ -115,8 +115,10 @@
             
             <div class="graph-main-layout">
                 <!-- Visual canvas -->
-                <div id="graph-canvas-container"></div>
+                <div id="graph-canvas-container" style="flex: 1;"></div>
                 
+
+
                 <!-- Side Panel showing node detail click details -->
                 <div class="graph-details-sidebar" id="graph-details-sidebar">
                     <div class="sidebar-empty-state" id="sidebar-empty-state">
@@ -124,7 +126,12 @@
                         <p>Select any node in the knowledge network to inspect its attributes, descriptions, and connection metrics.</p>
                     </div>
                     <div class="sidebar-content" id="sidebar-node-content" style="display: none;">
-                        <h3 id="detail-node-name">Node Name</h3>
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                            <h3 id="detail-node-name" style="margin: 0;">Node Name</h3>
+                            <button id="sidebar-toggle-maximize" class="tool-btn" style="padding: 4px 8px; font-size: 0.75rem; margin-left: 10px;">
+                                Maximize
+                            </button>
+                        </div>
                         <span class="badge" id="detail-node-type">Node Type</span>
                         <div class="stat-row">
                             <strong>Connections:</strong> <span id="detail-node-connections">0</span>

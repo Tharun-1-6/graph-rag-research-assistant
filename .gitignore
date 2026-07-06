@@ -70,3 +70,10 @@ llm_context.json
 
 # Nested Git repositories / libraries
 graph-rag-research-assistant/
+
+# AI tool instruction files
+instructions/
+CLAUDE.md
+AGENTS.md
+.cursor/rules
+*.cursorrules
